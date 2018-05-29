@@ -1,0 +1,21 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "mParticle_Apple_SDK",
+      "hash" : "083b733801c8065cfae89361881f2b9a682441c0570e999063fabdcf3163ad25"
+    }
+  ],
+  "commitish" : "7.3.6",
+  "iOS" : [
+    {
+      "name" : "mParticle_Apple_SDK",
+      "hash" : "160c5e3a231dff1d3cc4a92f8a12531029148b96a063f66a628d98a84d1f4e00"
+    }
+  ]
+}

@@ -1,0 +1,4053 @@
+BCSymbolMap Version: 2.0
++[MPConsentSerialization serverDictionaryFromConsentState:]
++[MPConsentSerialization stringFromConsentState:]
++[MPConsentSerialization consentStateFromString:]
++[MPConsentSerialization dictionaryFromString:]
++[MPConsentSerialization stringFromDictionary:]
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Consent/MPConsentSerialization.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk
+-[MPStateMachine init]
+___22-[MPStateMachine init]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[MPStateMachine dealloc]
+___clang_call_terminate
+-[MPStateMachine reachability]
+-[MPStateMachine setNetworkStatus:]
+-[MPStateMachine storedSDKVersion]
+-[MPStateMachine setStoredSDKVersion:]
++[MPStateMachine getEnvironment]
+-[MPStateMachine resetRampPercentage]
+-[MPStateMachine resetTriggers]
+-[MPStateMachine handleApplicationDidEnterBackground:]
+___54-[MPStateMachine handleApplicationDidEnterBackground:]_block_invoke
+___copy_helper_block_.100
+___destroy_helper_block_.101
+-[MPStateMachine handleApplicationWillEnterForeground:]
+___55-[MPStateMachine handleApplicationWillEnterForeground:]_block_invoke
+___copy_helper_block_.103
+___destroy_helper_block_.104
+-[MPStateMachine handleApplicationWillTerminate:]
+-[MPStateMachine handleMemoryWarningNotification:]
+-[MPStateMachine handleReachabilityChanged:]
++[MPStateMachine sharedInstance]
+___32+[MPStateMachine sharedInstance]_block_invoke
++[MPStateMachine environment]
++[MPStateMachine setEnvironment:]
++[MPStateMachine provisioningProfileString]
++[MPStateMachine runningInBackground]
++[MPStateMachine setRunningInBackground:]
+-[MPStateMachine consoleLogging]
+-[MPStateMachine setConsoleLogging:]
+-[MPStateMachine consumerInfo]
+-[MPStateMachine setLogLevel:]
+-[MPStateMachine deviceTokenType]
+-[MPStateMachine firstSeenInstallation]
+___39-[MPStateMachine firstSeenInstallation]_block_invoke
+___copy_helper_block_.174
+___destroy_helper_block_.175
+-[MPStateMachine setFirstSeenInstallation:]
+___43-[MPStateMachine setFirstSeenInstallation:]_block_invoke
+___copy_helper_block_.177
+___destroy_helper_block_.178
+-[MPStateMachine installationType]
+-[MPStateMachine setInstallationType:]
+-[MPStateMachine locationTrackingMode]
+-[MPStateMachine setLocationTrackingMode:]
+___42-[MPStateMachine setLocationTrackingMode:]_block_invoke
+___copy_helper_block_.194
+___destroy_helper_block_.195
+-[MPStateMachine minUploadDate]
+-[MPStateMachine setMinUploadDate:]
+-[MPStateMachine optOut]
+___24-[MPStateMachine optOut]_block_invoke
+___copy_helper_block_.207
+___destroy_helper_block_.208
+-[MPStateMachine setOptOut:]
+___28-[MPStateMachine setOptOut:]_block_invoke
+___copy_helper_block_.210
+___destroy_helper_block_.211
+-[MPStateMachine alwaysTryToCollectIDFA]
+___40-[MPStateMachine alwaysTryToCollectIDFA]_block_invoke
+___copy_helper_block_.215
+___destroy_helper_block_.216
+-[MPStateMachine setAlwaysTryToCollectIDFA:]
+___44-[MPStateMachine setAlwaysTryToCollectIDFA:]_block_invoke
+___copy_helper_block_.218
+___destroy_helper_block_.219
+-[MPStateMachine pushNotificationMode]
+-[MPStateMachine setPushNotificationMode:]
+___42-[MPStateMachine setPushNotificationMode:]_block_invoke
+___copy_helper_block_.223
+___destroy_helper_block_.224
+-[MPStateMachine startTime]
+-[MPStateMachine triggerEventTypes]
+-[MPStateMachine triggerMessageTypes]
+-[MPStateMachine configureCustomModules:]
+-[MPStateMachine configureRampPercentage:]
+-[MPStateMachine configureTriggers:]
+-[MPStateMachine configureRestrictIDFA:]
+-[MPStateMachine setConsumerInfo:]
+-[MPStateMachine logLevel]
+-[MPStateMachine automaticSessionTracking]
+-[MPStateMachine setAutomaticSessionTracking:]
+-[MPStateMachine apiKey]
+-[MPStateMachine setApiKey:]
+-[MPStateMachine currentSession]
+-[MPStateMachine setCurrentSession:]
+-[MPStateMachine customModules]
+-[MPStateMachine setCustomModules:]
+-[MPStateMachine exceptionHandlingMode]
+-[MPStateMachine setExceptionHandlingMode:]
+-[MPStateMachine launchOptions]
+-[MPStateMachine setLaunchOptions:]
+-[MPStateMachine locationManager]
+-[MPStateMachine setLocationManager:]
+-[MPStateMachine networkPerformanceMeasuringMode]
+-[MPStateMachine setNetworkPerformanceMeasuringMode:]
+-[MPStateMachine secret]
+-[MPStateMachine setSecret:]
+-[MPStateMachine setStartTime:]
+-[MPStateMachine launchInfo]
+-[MPStateMachine setLaunchInfo:]
+-[MPStateMachine launchDate]
+-[MPStateMachine networkStatus]
+-[MPStateMachine uploadStatus]
+-[MPStateMachine setUploadStatus:]
+-[MPStateMachine backgrounded]
+-[MPStateMachine dataRamped]
+-[MPStateMachine searchAttribution]
+-[MPStateMachine setSearchAttribution:]
+-[MPStateMachine setReachability:]
+-[MPStateMachine .cxx_destruct]
+_OBJC_IVAR_$_MPStateMachine.messageQueue
+_OBJC_IVAR_$_MPStateMachine.optOutSet
+_OBJC_IVAR_$_MPStateMachine._exceptionHandlingMode
+_OBJC_IVAR_$_MPStateMachine._networkPerformanceMeasuringMode
+_OBJC_IVAR_$_MPStateMachine._uploadStatus
+_OBJC_IVAR_$_MPStateMachine._startTime
+_OBJC_IVAR_$_MPStateMachine._backgrounded
+_OBJC_IVAR_$_MPStateMachine._consoleLogging
+_OBJC_IVAR_$_MPStateMachine._dataRamped
+_OBJC_IVAR_$_MPStateMachine._installationType
+_OBJC_IVAR_$_MPStateMachine._launchDate
+_OBJC_IVAR_$_MPStateMachine._launchOptions
+_OBJC_IVAR_$_MPStateMachine._logLevel
+_OBJC_IVAR_$_MPStateMachine._searchAttribution
+_OBJC_IVAR_$_MPStateMachine._reachability
+___block_descriptor_tmp
+_OBJC_IVAR_$_MPStateMachine._networkStatus
+_OBJC_IVAR_$_MPStateMachine._storedSDKVersion
+_OBJC_IVAR_$_MPStateMachine._triggerEventTypes
+_OBJC_IVAR_$_MPStateMachine._triggerMessageTypes
+___block_descriptor_tmp.102
+___block_descriptor_tmp.105
+__ZZ32+[MPStateMachine sharedInstance]E14sharedInstance
+__ZZ32+[MPStateMachine sharedInstance]E21stateMachinePredicate
+___block_descriptor_tmp.114
+___block_literal_global
+__ZL18runningEnvironment
+__ZL19runningInBackground
+_OBJC_IVAR_$_MPStateMachine._consumerInfo
+_OBJC_IVAR_$_MPStateMachine._deviceTokenType
+_OBJC_IVAR_$_MPStateMachine._firstSeenInstallation
+___block_descriptor_tmp.176
+___block_descriptor_tmp.179
+_OBJC_IVAR_$_MPStateMachine._locationTrackingMode
+___block_descriptor_tmp.196
+_OBJC_IVAR_$_MPStateMachine._minUploadDate
+_OBJC_IVAR_$_MPStateMachine._optOut
+___block_descriptor_tmp.209
+___block_descriptor_tmp.212
+_OBJC_IVAR_$_MPStateMachine.alwaysTryToCollectIDFASet
+_OBJC_IVAR_$_MPStateMachine._alwaysTryToCollectIDFA
+___block_descriptor_tmp.217
+___block_descriptor_tmp.220
+_OBJC_IVAR_$_MPStateMachine._pushNotificationMode
+___block_descriptor_tmp.225
+_OBJC_IVAR_$_MPStateMachine._automaticSessionTracking
+_OBJC_IVAR_$_MPStateMachine._apiKey
+_OBJC_IVAR_$_MPStateMachine._currentSession
+_OBJC_IVAR_$_MPStateMachine._customModules
+_OBJC_IVAR_$_MPStateMachine._locationManager
+_OBJC_IVAR_$_MPStateMachine._secret
+_OBJC_IVAR_$_MPStateMachine._launchInfo
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPStateMachine.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPStateMachine.h
+~basic_string
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string
+deallocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory
+__libcpp_deallocate
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/new
+__get_long_pointer
+__is_long
+c_str
+data
+__get_pointer
+__destroy_helper_block_
+__copy_helper_block_
+__42-[MPStateMachine setPushNotificationMode:]_block_invoke
+__44-[MPStateMachine setAlwaysTryToCollectIDFA:]_block_invoke
+__40-[MPStateMachine alwaysTryToCollectIDFA]_block_invoke
+__28-[MPStateMachine setOptOut:]_block_invoke
+__24-[MPStateMachine optOut]_block_invoke
+__42-[MPStateMachine setLocationTrackingMode:]_block_invoke
+__43-[MPStateMachine setFirstSeenInstallation:]_block_invoke
+__39-[MPStateMachine firstSeenInstallation]_block_invoke
+__32+[MPStateMachine sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/usr/include/dispatch/once.h
+__55-[MPStateMachine handleApplicationWillEnterForeground:]_block_invoke
+__54-[MPStateMachine handleApplicationDidEnterBackground:]_block_invoke
+__22-[MPStateMachine init]_block_invoke
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MParticleUserNotification.m
+-[NSDictionary(MPCaseInsensitive) caseInsensitiveKey:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___54-[NSDictionary(MPCaseInsensitive) caseInsensitiveKey:]_block_invoke
+-[NSDictionary(MPCaseInsensitive) valueForCaseInsensitiveKey:]
+___62-[NSDictionary(MPCaseInsensitive) valueForCaseInsensitiveKey:]_block_invoke
+___copy_helper_block_.16
+___destroy_helper_block_.17
+-[NSDictionary(MPCaseInsensitive) transformValuesToString]
+___58-[NSDictionary(MPCaseInsensitive) transformValuesToString]_block_invoke
+___copy_helper_block_.57
+___destroy_helper_block_.58
+___block_descriptor_tmp.18
+___block_descriptor_tmp.60
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/NSDictionary+MPCaseInsensitive.m
+__58-[NSDictionary(MPCaseInsensitive) transformValuesToString]_block_invoke
+__62-[NSDictionary(MPCaseInsensitive) valueForCaseInsensitiveKey:]_block_invoke
+__54-[NSDictionary(MPCaseInsensitive) caseInsensitiveKey:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+-[MPURLConnectionAssociate delegate]
+-[MPURLConnectionAssociate setDelegate:]
+-[MPURLConnectionAssociate networkPerformance]
+-[MPURLConnectionAssociate setNetworkPerformance:]
+-[MPURLConnectionAssociate .cxx_destruct]
+_OBJC_IVAR_$_MPURLConnectionAssociate._delegate
+_OBJC_IVAR_$_MPURLConnectionAssociate._networkPerformance
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPURLConnectionAssociate.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPURLConnectionAssociate.h
+-[MPEvent(Internal) timestamp]
+-[MPEvent(Internal) setTimestamp:]
+-[MPEvent(Internal) beginTiming]
+-[MPEvent(Internal) breadcrumbDictionaryRepresentation]
+-[MPEvent(Internal) dictionaryRepresentation]
+-[MPEvent(Internal) endTiming]
+-[MPEvent(Internal) screenDictionaryRepresentation]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/MPEvent+Internal.mm
+-[FilteredMParticleUser initWithMParticleUser:kitConfiguration:]
+-[FilteredMParticleUser userId]
+-[FilteredMParticleUser userIdentities]
+-[FilteredMParticleUser userAttributes]
+-[FilteredMParticleUser user]
+-[FilteredMParticleUser setUser:]
+-[FilteredMParticleUser kitConfiguration]
+-[FilteredMParticleUser setKitConfiguration:]
+-[FilteredMParticleUser .cxx_destruct]
+_OBJC_IVAR_$_FilteredMParticleUser._user
+_OBJC_IVAR_$_FilteredMParticleUser._kitConfiguration
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/FilteredMParticleUser.m
+_OBJC_IVAR_$_MPNotificationController.appJustFinishedLaunching
+_OBJC_IVAR_$_MPNotificationController.backgrounded
+_OBJC_IVAR_$_MPNotificationController.notificationLaunchedApp
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Notifications/MPNotificationController.mm
+-[MPCommerce cart]
+-[MPCommerce checkout]
+-[MPCommerce checkoutWithOptions:step:]
+-[MPCommerce clearCart]
+-[MPCommerce purchaseWithTransactionAttributes:clearCart:]
+-[MPCommerce refundTransactionAttributes:clearCart:]
+-[MPCommerce currency]
+-[MPCommerce setCurrency:]
+-[MPCommerce .cxx_destruct]
+_OBJC_IVAR_$_MPCommerce._currency
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerce.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerce.h
+-[MPCustomModule initWithDictionary:]
+-[MPCustomModule description]
+-[MPCustomModule isEqual:]
+-[MPCustomModule copyWithZone:]
+-[MPCustomModule encodeWithCoder:]
+-[MPCustomModule initWithCoder:]
+-[MPCustomModule dictionaryRepresentation]
+-[MPCustomModule customModuleId]
+-[MPCustomModule preferences]
+-[MPCustomModule setDictionaryRepresentation:]
+-[MPCustomModule .cxx_destruct]
+_OBJC_IVAR_$_MPCustomModule._customModuleId
+_OBJC_IVAR_$_MPCustomModule._preferences
+_OBJC_IVAR_$_MPCustomModule._dictionaryRepresentation
+l_OBJC_PROTOCOL_$_NSCopying
+l_OBJC_LABEL_PROTOCOL_$_NSCopying
+l_OBJC_PROTOCOL_$_NSCoding
+l_OBJC_LABEL_PROTOCOL_$_NSCoding
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPCustomModule.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPCustomModule.h
+-[MPKitRegister init]
+-[MPKitRegister initWithName:className:]
+-[MPKitRegister description]
+-[MPKitRegister code]
+-[MPKitRegister wrapperInstance]
+-[MPKitRegister setWrapperInstance:]
+-[MPKitRegister name]
+-[MPKitRegister className]
+-[MPKitRegister .cxx_destruct]
+_OBJC_IVAR_$_MPKitRegister._name
+_OBJC_IVAR_$_MPKitRegister._className
+_OBJC_IVAR_$_MPKitRegister._code
+_OBJC_IVAR_$_MPKitRegister._wrapperInstance
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_MPExtensionProtocol
+l_OBJC_LABEL_PROTOCOL_$_MPExtensionProtocol
+l_OBJC_PROTOCOL_$_MPExtensionKitProtocol
+l_OBJC_LABEL_PROTOCOL_$_MPExtensionKitProtocol
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitRegister.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitRegister.h
+-[FilteredMPIdentityApiRequest initWithIdentityRequest:kitConfiguration:]
+-[FilteredMPIdentityApiRequest userIdentities]
+-[FilteredMPIdentityApiRequest email]
+-[FilteredMPIdentityApiRequest customerId]
+-[FilteredMPIdentityApiRequest request]
+-[FilteredMPIdentityApiRequest setRequest:]
+-[FilteredMPIdentityApiRequest kitConfiguration]
+-[FilteredMPIdentityApiRequest setKitConfiguration:]
+-[FilteredMPIdentityApiRequest .cxx_destruct]
+_OBJC_IVAR_$_FilteredMPIdentityApiRequest._kitConfiguration
+_OBJC_IVAR_$_FilteredMPIdentityApiRequest._request
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/FilteredMPIdentityApiRequest.m
+-[MPIdentityApi init]
+-[MPIdentityApi onModifyRequestComplete:httpResponse:completion:error:]
+___71-[MPIdentityApi onModifyRequestComplete:httpResponse:completion:error:]_block_invoke
+___71-[MPIdentityApi onModifyRequestComplete:httpResponse:completion:error:]_block_invoke.21
+___copy_helper_block_.28
+___destroy_helper_block_.29
+-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]
+___93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke
+___copy_helper_block_.93
+___destroy_helper_block_.94
+___93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.120
+___copy_helper_block_.121
+___destroy_helper_block_.122
+___93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.126
+___copy_helper_block_.127
+___destroy_helper_block_.128
+___93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.132
+___copy_helper_block_.133
+___destroy_helper_block_.134
+___93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.136
+___copy_helper_block_.137
+___destroy_helper_block_.138
+-[MPIdentityApi currentUser]
+-[MPIdentityApi getUser:]
+-[MPIdentityApi identifyNoDispatch:completion:]
+___47-[MPIdentityApi identifyNoDispatch:completion:]_block_invoke
+___copy_helper_block_.148
+___destroy_helper_block_.149
+-[MPIdentityApi identify:completion:]
+___37-[MPIdentityApi identify:completion:]_block_invoke
+___37-[MPIdentityApi identify:completion:]_block_invoke_2
+___copy_helper_block_.154
+___destroy_helper_block_.155
+___copy_helper_block_.158
+___destroy_helper_block_.159
+___37-[MPIdentityApi identify:completion:]_block_invoke.164
+___copy_helper_block_.167
+___destroy_helper_block_.168
+-[MPIdentityApi identifyWithCompletion:]
+-[MPIdentityApi login:completion:]
+___34-[MPIdentityApi login:completion:]_block_invoke
+___34-[MPIdentityApi login:completion:]_block_invoke_2
+___copy_helper_block_.170
+___destroy_helper_block_.171
+___copy_helper_block_.173
+___destroy_helper_block_.174
+___34-[MPIdentityApi login:completion:]_block_invoke.176
+___34-[MPIdentityApi login:completion:]_block_invoke_2.177
+___copy_helper_block_.178
+___destroy_helper_block_.179
+___copy_helper_block_.183
+___destroy_helper_block_.184
+-[MPIdentityApi loginWithCompletion:]
+-[MPIdentityApi logout:completion:]
+___35-[MPIdentityApi logout:completion:]_block_invoke
+___35-[MPIdentityApi logout:completion:]_block_invoke_2
+___copy_helper_block_.188
+___destroy_helper_block_.189
+___copy_helper_block_.191
+___destroy_helper_block_.192
+___35-[MPIdentityApi logout:completion:]_block_invoke.194
+___35-[MPIdentityApi logout:completion:]_block_invoke_2.195
+___copy_helper_block_.196
+___destroy_helper_block_.197
+___copy_helper_block_.201
+___destroy_helper_block_.202
+-[MPIdentityApi logoutWithCompletion:]
+-[MPIdentityApi modify:completion:]
+___35-[MPIdentityApi modify:completion:]_block_invoke
+___35-[MPIdentityApi modify:completion:]_block_invoke_2
+___copy_helper_block_.204
+___destroy_helper_block_.205
+___35-[MPIdentityApi modify:completion:]_block_invoke.210
+___35-[MPIdentityApi modify:completion:]_block_invoke_2.211
+___copy_helper_block_.214
+___destroy_helper_block_.215
+___copy_helper_block_.220
+___destroy_helper_block_.221
+-[MPIdentityApi setCurrentUser:]
+-[MPIdentityApi apiManager]
+-[MPIdentityApi setApiManager:]
+-[MPIdentityApi .cxx_destruct]
+-[MPIdentityApiResult user]
+-[MPIdentityApiResult setUser:]
+-[MPIdentityApiResult .cxx_destruct]
+-[MPIdentityHTTPErrorResponse initWithJsonObject:httpCode:]
+-[MPIdentityHTTPErrorResponse initWithCode:message:error:]
+-[MPIdentityHTTPErrorResponse description]
+-[MPIdentityHTTPErrorResponse httpCode]
+-[MPIdentityHTTPErrorResponse setHttpCode:]
+-[MPIdentityHTTPErrorResponse code]
+-[MPIdentityHTTPErrorResponse setCode:]
+-[MPIdentityHTTPErrorResponse message]
+-[MPIdentityHTTPErrorResponse setMessage:]
+-[MPIdentityHTTPErrorResponse innerError]
+-[MPIdentityHTTPErrorResponse setInnerError:]
+-[MPIdentityHTTPErrorResponse .cxx_destruct]
+_OBJC_IVAR_$_MPIdentityApi._apiManager
+___block_descriptor_tmp.31
+___block_descriptor_tmp.95
+___block_descriptor_tmp.123
+___block_descriptor_tmp.129
+___block_descriptor_tmp.135
+___block_descriptor_tmp.139
+_OBJC_IVAR_$_MPIdentityApi._currentUser
+___block_descriptor_tmp.151
+___block_descriptor_tmp.157
+___block_descriptor_tmp.161
+___block_descriptor_tmp.169
+___block_descriptor_tmp.172
+___block_descriptor_tmp.175
+___block_descriptor_tmp.180
+___block_descriptor_tmp.185
+___block_descriptor_tmp.190
+___block_descriptor_tmp.193
+___block_descriptor_tmp.198
+___block_descriptor_tmp.203
+___block_descriptor_tmp.206
+___block_descriptor_tmp.222
+_OBJC_IVAR_$_MPIdentityApiResult._user
+_OBJC_IVAR_$_MPIdentityHTTPErrorResponse._httpCode
+_OBJC_IVAR_$_MPIdentityHTTPErrorResponse._code
+_OBJC_IVAR_$_MPIdentityHTTPErrorResponse._message
+_OBJC_IVAR_$_MPIdentityHTTPErrorResponse._innerError
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityApi.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityApi.h
+__35-[MPIdentityApi modify:completion:]_block_invoke_2.211
+__35-[MPIdentityApi modify:completion:]_block_invoke.210
+__35-[MPIdentityApi modify:completion:]_block_invoke_2
+__35-[MPIdentityApi modify:completion:]_block_invoke
+__35-[MPIdentityApi logout:completion:]_block_invoke_2.195
+__35-[MPIdentityApi logout:completion:]_block_invoke.194
+__35-[MPIdentityApi logout:completion:]_block_invoke_2
+__35-[MPIdentityApi logout:completion:]_block_invoke
+__34-[MPIdentityApi login:completion:]_block_invoke_2.177
+__34-[MPIdentityApi login:completion:]_block_invoke.176
+__34-[MPIdentityApi login:completion:]_block_invoke_2
+__34-[MPIdentityApi login:completion:]_block_invoke
+__37-[MPIdentityApi identify:completion:]_block_invoke.164
+__37-[MPIdentityApi identify:completion:]_block_invoke_2
+__37-[MPIdentityApi identify:completion:]_block_invoke
+__47-[MPIdentityApi identifyNoDispatch:completion:]_block_invoke
+__93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.136
+__93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.132
+__93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.126
+__93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke.120
+__93-[MPIdentityApi onIdentityRequestComplete:identityRequestType:httpResponse:completion:error:]_block_invoke
+__71-[MPIdentityApi onModifyRequestComplete:httpResponse:completion:error:]_block_invoke.21
+__71-[MPIdentityApi onModifyRequestComplete:httpResponse:completion:error:]_block_invoke
+-[NSArray(MPCaseInsensitive) caseInsensitiveContainsObject:]
+___60-[NSArray(MPCaseInsensitive) caseInsensitiveContainsObject:]_block_invoke
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/NSArray+MPCaseInsensitive.m
+__60-[NSArray(MPCaseInsensitive) caseInsensitiveContainsObject:]_block_invoke
++[MPExceptionHandler initialize]
+-[MPExceptionHandler init]
+-[MPExceptionHandler initWithSession:]
+-[MPExceptionHandler dealloc]
+-[MPExceptionHandler crashSession]
+-[MPExceptionHandler logException:]
+-[MPExceptionHandler topViewControllerForController:]
+-[MPExceptionHandler topmostContext]
+-[MPExceptionHandler loadArchivedCrashInfo]
+___43-[MPExceptionHandler loadArchivedCrashInfo]_block_invoke
+-[MPExceptionHandler processPendingCrashReport]
+-[MPExceptionHandler registerCallback]
+_addImageListCallback
+-[MPExceptionHandler handleCrashReportOccurred:]
+-[MPExceptionHandler handleConfigureExceptionHandling:]
++[MPExceptionHandler appImageInfo]
++[MPExceptionHandler callStack]
++[MPExceptionHandler isHandlingExceptions]
++[MPExceptionHandler generateLiveExceptionReport]
+-[MPExceptionHandler beginUncaughtExceptionLogging]
+_debuggerRunning
+-[MPExceptionHandler endUncaughtExceptionLogging]
+-[MPExceptionHandler session]
+-[MPExceptionHandler setSession:]
+-[MPExceptionHandler .cxx_destruct]
+_handlingExceptions
+_OBJC_IVAR_$_MPExceptionHandler._session
+_sharedImageList
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPExceptionHandler.m
+handleException
+SignalHandler
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPExceptionHandler.h
+EndUncaughtExceptionLogging
+debuggerRunning
+nextImageList
+processBinaryImage
+flagReadingImageList
+addImageListCallback
+appendImageList
+__43-[MPExceptionHandler loadArchivedCrashInfo]_block_invoke
++[MPResponseEvents parseConfiguration:]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPResponseEvents.mm
+-[MPAppNotificationHandler init]
+-[MPAppNotificationHandler dealloc]
++[MPAppNotificationHandler sharedInstance]
+___42+[MPAppNotificationHandler sharedInstance]_block_invoke
+-[MPAppNotificationHandler handleApplicationDidEnterBackground:]
+-[MPAppNotificationHandler handleApplicationWillEnterForeground:]
+-[MPAppNotificationHandler continueUserActivity:restorationHandler:]
+___68-[MPAppNotificationHandler continueUserActivity:restorationHandler:]_block_invoke
+___68-[MPAppNotificationHandler continueUserActivity:restorationHandler:]_block_invoke_2
+-[MPAppNotificationHandler openURL:options:]
+___44-[MPAppNotificationHandler openURL:options:]_block_invoke
+___44-[MPAppNotificationHandler openURL:options:]_block_invoke_2
+-[MPAppNotificationHandler openURL:sourceApplication:annotation:]
+___65-[MPAppNotificationHandler openURL:sourceApplication:annotation:]_block_invoke
+___65-[MPAppNotificationHandler openURL:sourceApplication:annotation:]_block_invoke_2
+___copy_helper_block_.66
+___destroy_helper_block_.67
+__ZZ42+[MPAppNotificationHandler sharedInstance]E14sharedInstance
+__ZZ42+[MPAppNotificationHandler sharedInstance]E9predicate
+___block_descriptor_tmp.38
+___block_literal_global.39
+___block_descriptor_tmp.44
+___block_descriptor_tmp.55
+___block_literal_global.56
+___block_descriptor_tmp.59
+___block_descriptor_tmp.64
+___block_literal_global.65
+___block_descriptor_tmp.68
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/AppNotifications/MPAppNotificationHandler.mm
+__65-[MPAppNotificationHandler openURL:sourceApplication:annotation:]_block_invoke_2
+__65-[MPAppNotificationHandler openURL:sourceApplication:annotation:]_block_invoke
+__44-[MPAppNotificationHandler openURL:options:]_block_invoke_2
+__44-[MPAppNotificationHandler openURL:options:]_block_invoke
+__68-[MPAppNotificationHandler continueUserActivity:restorationHandler:]_block_invoke_2
+__68-[MPAppNotificationHandler continueUserActivity:restorationHandler:]_block_invoke
+__42+[MPAppNotificationHandler sharedInstance]_block_invoke
++[MPPersistenceController initialize]
+-[MPPersistenceController init]
+-[MPPersistenceController migrateDatabaseIfNeeded]
++[MPPersistenceController mpId]
++[MPPersistenceController setMpid:]
++[MPPersistenceController consentStateForMpid:]
++[MPPersistenceController setConsentState:forMpid:]
+-[MPPersistenceController databasePath]
+-[MPPersistenceController deleteCookie:]
+-[MPPersistenceController deleteCookies]
+-[MPPersistenceController isDatabaseOpen]
+-[MPPersistenceController removeDatabase]
+-[MPPersistenceController saveCookie:forConsumerInfo:]
+-[MPPersistenceController setupDatabase]
+-[MPPersistenceController updateCookie:]
+-[MPPersistenceController verifyDatabaseState]
++[MPPersistenceController sharedInstance]
+___41+[MPPersistenceController sharedInstance]_block_invoke
+-[MPPersistenceController archiveSession:]
+-[MPPersistenceController closeDatabase]
+-[MPPersistenceController deleteConsumerInfo]
+-[MPPersistenceController deleteForwardRecordsIds:]
+-[MPPersistenceController deleteAllIntegrationAttributes]
+-[MPPersistenceController deleteIntegrationAttributes:]
+-[MPPersistenceController deleteIntegrationAttributesForKitCode:]
+-[MPPersistenceController deleteMessages:]
+-[MPPersistenceController deleteNetworkPerformanceMessages]
+-[MPPersistenceController deletePreviousSession]
+-[MPPersistenceController deleteRecordsOlderThan:]
+-[MPPersistenceController deleteSegments]
+-[MPPersistenceController deleteAllSessionsExcept:]
+-[MPPersistenceController deleteSession:]
+-[MPPersistenceController deleteUpload:]
+-[MPPersistenceController deleteUploadId:]
+-[MPPersistenceController fetchBreadcrumbs]
+-[MPPersistenceController fetchConsumerInfoForUserId:]
+-[MPPersistenceController fetchCookiesForUserId:]
+-[MPPersistenceController fetchForwardRecords]
+-[MPPersistenceController fetchIntegrationAttributes]
+-[MPPersistenceController fetchMessagesInSession:userId:]
+-[MPPersistenceController fetchMessagesForUploading]
+-[MPPersistenceController fetchPossibleSessionsFromCrash]
+__ZL24dictionaryRepresentationP12sqlite3_stmti
+-[MPPersistenceController fetchPreviousSession]
+-[MPPersistenceController fetchSegments]
+___40-[MPPersistenceController fetchSegments]_block_invoke
+-[MPPersistenceController fetchSessionEndMessageInSession:]
+-[MPPersistenceController fetchSessions]
+-[MPPersistenceController fetchUploadedMessagesInSession:]
+-[MPPersistenceController fetchUploads]
+-[MPPersistenceController moveContentFromMpidZeroToMpid:]
+-[MPPersistenceController moveUserDefaultsFromMpidZeroToMpid:]
+___62-[MPPersistenceController moveUserDefaultsFromMpidZeroToMpid:]_block_invoke
+___copy_helper_block_.369
+___destroy_helper_block_.370
+-[MPPersistenceController moveDatabasesFromMpidZeroToMpid:]
+___59-[MPPersistenceController moveDatabasesFromMpidZeroToMpid:]_block_invoke
+___copy_helper_block_.395
+___destroy_helper_block_.396
+-[MPPersistenceController purgeMemory]
+-[MPPersistenceController openDatabase]
+-[MPPersistenceController saveBreadcrumb:session:]
+-[MPPersistenceController saveConsumerInfo:]
+-[MPPersistenceController saveForwardRecord:]
+-[MPPersistenceController saveIntegrationAttributes:]
+-[MPPersistenceController saveMessage:]
+-[MPPersistenceController saveSegment:]
+___39-[MPPersistenceController saveSegment:]_block_invoke
+___copy_helper_block_.464
+___destroy_helper_block_.465
+-[MPPersistenceController saveSession:]
+-[MPPersistenceController saveUpload:messageIds:operation:]
+-[MPPersistenceController updateConsumerInfo:]
+-[MPPersistenceController updateSession:]
+-[MPPersistenceController setDatabasePath:]
+-[MPPersistenceController .cxx_destruct]
+__ZL16databaseVersions
+_OBJC_IVAR_$_MPPersistenceController.databaseOpen
+_OBJC_IVAR_$_MPPersistenceController._databasePath
+_OBJC_IVAR_$_MPPersistenceController.mParticleDB
+__ZZ41+[MPPersistenceController sharedInstance]E14sharedInstance
+__ZZ41+[MPPersistenceController sharedInstance]E30persistenceControllerPredicate
+___block_descriptor_tmp.336
+___block_descriptor_tmp.372
+___block_descriptor_tmp.398
+___block_descriptor_tmp.467
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Persistence/MPPersistenceController.mm
+~__split_buffer
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__split_buffer
+clear
+__destruct_at_end
+destroy<MPUpload *>
+__destroy<MPUpload *>
+destroy
+__split_buffer
+allocate
+__allocate
+__throw_length_error
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdexcept
+length_error
+__compressed_pair<nullptr_t, std::__1::allocator<MPUpload *> &>
+__compressed_pair_elem<std::__1::allocator<MPUpload *> &, void>
+__compressed_pair_elem<nullptr_t, void>
+__push_back_slow_path<MPUpload *const __strong &>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector
+__swap_out_circular_buffer
+swap<MPUpload *__strong *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits
+__end_cap
+first
+__get
+__construct_backward<MPUpload *__strong *>
+construct<MPUpload *, MPUpload *>
+__construct<MPUpload *, MPUpload *>
+construct<MPUpload *, MPUpload *const __strong &>
+__construct<MPUpload *, MPUpload *const __strong &>
+__recommend
+max<unsigned long>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
+max<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+operator()
+capacity
+size
+__alloc
+second
+destroy<MPSession *>
+__destroy<MPSession *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPSession *> &>
+__compressed_pair_elem<std::__1::allocator<MPSession *> &, void>
+__push_back_slow_path<MPSession *const __strong &>
+swap<MPSession *__strong *>
+__construct_backward<MPSession *__strong *>
+construct<MPSession *, MPSession *>
+__construct<MPSession *, MPSession *>
+construct<MPSession *, MPSession *const __strong &>
+__construct<MPSession *, MPSession *const __strong &>
+destroy<MPMessage *>
+__destroy<MPMessage *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPMessage *> &>
+__compressed_pair_elem<std::__1::allocator<MPMessage *> &, void>
+__push_back_slow_path<MPMessage *const __strong &>
+swap<MPMessage *__strong *>
+__construct_backward<MPMessage *__strong *>
+construct<MPMessage *, MPMessage *>
+__construct<MPMessage *, MPMessage *>
+construct<MPMessage *, MPMessage *const __strong &>
+__construct<MPMessage *, MPMessage *const __strong &>
+destroy<MPIntegrationAttributes *>
+__destroy<MPIntegrationAttributes *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPIntegrationAttributes *> &>
+__compressed_pair_elem<std::__1::allocator<MPIntegrationAttributes *> &, void>
+__push_back_slow_path<MPIntegrationAttributes *const __strong &>
+swap<MPIntegrationAttributes *__strong *>
+__construct_backward<MPIntegrationAttributes *__strong *>
+construct<MPIntegrationAttributes *, MPIntegrationAttributes *>
+__construct<MPIntegrationAttributes *, MPIntegrationAttributes *>
+construct<MPIntegrationAttributes *, MPIntegrationAttributes *const __strong &>
+__construct<MPIntegrationAttributes *, MPIntegrationAttributes *const __strong &>
+destroy<MPForwardRecord *>
+__destroy<MPForwardRecord *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPForwardRecord *> &>
+__compressed_pair_elem<std::__1::allocator<MPForwardRecord *> &, void>
+__push_back_slow_path<MPForwardRecord *const __strong &>
+swap<MPForwardRecord *__strong *>
+__construct_backward<MPForwardRecord *__strong *>
+construct<MPForwardRecord *, MPForwardRecord *>
+__construct<MPForwardRecord *, MPForwardRecord *>
+construct<MPForwardRecord *, MPForwardRecord *const __strong &>
+__construct<MPForwardRecord *, MPForwardRecord *const __strong &>
+destroy<MPCookie *>
+__destroy<MPCookie *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPCookie *> &>
+__compressed_pair_elem<std::__1::allocator<MPCookie *> &, void>
+__push_back_slow_path<MPCookie *const __strong &>
+swap<MPCookie *__strong *>
+__construct_backward<MPCookie *__strong *>
+construct<MPCookie *, MPCookie *>
+__construct<MPCookie *, MPCookie *>
+construct<MPCookie *, MPCookie *const __strong &>
+__construct<MPCookie *, MPCookie *const __strong &>
+destroy<MPBreadcrumb *>
+__destroy<MPBreadcrumb *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPBreadcrumb *> &>
+__compressed_pair_elem<std::__1::allocator<MPBreadcrumb *> &, void>
+__push_back_slow_path<MPBreadcrumb *const __strong &>
+swap<MPBreadcrumb *__strong *>
+__construct_backward<MPBreadcrumb *__strong *>
+construct<MPBreadcrumb *, MPBreadcrumb *>
+__construct<MPBreadcrumb *, MPBreadcrumb *>
+construct<MPBreadcrumb *, MPBreadcrumb *const __strong &>
+__construct<MPBreadcrumb *, MPBreadcrumb *const __strong &>
+destroy<std::__1::basic_string<char> >
+__destroy<std::__1::basic_string<char> >
+__compressed_pair<nullptr_t, std::__1::allocator<std::__1::basic_string<char> > &>
+__compressed_pair_elem<std::__1::allocator<std::__1::basic_string<char> > &, void>
+__push_back_slow_path<std::__1::basic_string<char> >
+swap<std::__1::basic_string<char> *>
+__construct_backward<std::__1::basic_string<char> *>
+construct<std::__1::basic_string<char>, std::__1::basic_string<char> >
+__construct<std::__1::basic_string<char>, std::__1::basic_string<char> >
+basic_string
+__zero
+~__vector_base
+__init
+assign
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string
+copy
+__get_short_size
+__get_long_size
+operator=
+__move_assign
+shrink_to_fit
+__set_short_size
+__set_long_size
+__set_long_cap
+__set_long_pointer
+__align_it<16>
+length
+__compressed_pair<true, void>
+__compressed_pair_elem
+__39-[MPPersistenceController saveSegment:]_block_invoke
+~vector
+operator!=<std::__1::basic_string<char> *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator
+operator==<std::__1::basic_string<char> *, std::__1::basic_string<char> *>
+operator++
+operator+=
+append
+end
+begin
+push_back
+operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+vector
+__vector_base
+__59-[MPPersistenceController moveDatabasesFromMpidZeroToMpid:]_block_invoke
+__62-[MPPersistenceController moveUserDefaultsFromMpidZeroToMpid:]_block_invoke
+empty
+doubleValue
+dataValue
+stringValue
+int64Value
+intValue
+__40-[MPPersistenceController fetchSegments]_block_invoke
+dictionaryRepresentation
+__41+[MPPersistenceController sharedInstance]_block_invoke
+operator==<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+__get_short_pointer
+__construct_at_end<const std::__1::basic_string<char> *>
+__construct_range_forward<const std::__1::basic_string<char> *, std::__1::basic_string<char> *>
+construct<std::__1::basic_string<char>, const std::__1::basic_string<char> &>
+__construct<std::__1::basic_string<char>, const std::__1::basic_string<char> &>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/initializer_list
+-[MPKitConfiguration initWithDictionary:]
+-[MPKitConfiguration isEqual:]
+-[MPKitConfiguration encodeWithCoder:]
+-[MPKitConfiguration initWithCoder:]
+-[MPKitConfiguration copyWithZone:]
+-[MPKitConfiguration setFilters:]
+___33-[MPKitConfiguration setFilters:]_block_invoke
+-[MPKitConfiguration configureProjections:]
+-[MPKitConfiguration configurationDictionary]
+-[MPKitConfiguration setConfigurationDictionary:]
+-[MPKitConfiguration configurationHash]
+-[MPKitConfiguration configuration]
+-[MPKitConfiguration setConfiguration:]
+-[MPKitConfiguration filters]
+-[MPKitConfiguration bracketConfiguration]
+-[MPKitConfiguration configuredMessageTypeProjections]
+-[MPKitConfiguration defaultProjections]
+-[MPKitConfiguration projections]
+-[MPKitConfiguration kitCode]
+-[MPKitConfiguration attributeValueFilteringIsActive]
+-[MPKitConfiguration setAttributeValueFilteringIsActive:]
+-[MPKitConfiguration attributeValueFilteringShouldIncludeMatches]
+-[MPKitConfiguration setAttributeValueFilteringShouldIncludeMatches:]
+-[MPKitConfiguration attributeValueFilteringHashedAttribute]
+-[MPKitConfiguration setAttributeValueFilteringHashedAttribute:]
+-[MPKitConfiguration attributeValueFilteringHashedValue]
+-[MPKitConfiguration setAttributeValueFilteringHashedValue:]
+-[MPKitConfiguration eventTypeFilters]
+-[MPKitConfiguration eventNameFilters]
+-[MPKitConfiguration eventAttributeFilters]
+-[MPKitConfiguration messageTypeFilters]
+-[MPKitConfiguration screenNameFilters]
+-[MPKitConfiguration screenAttributeFilters]
+-[MPKitConfiguration userIdentityFilters]
+-[MPKitConfiguration userAttributeFilters]
+-[MPKitConfiguration commerceEventAttributeFilters]
+-[MPKitConfiguration commerceEventEntityTypeFilters]
+-[MPKitConfiguration commerceEventAppFamilyAttributeFilters]
+-[MPKitConfiguration addEventAttributeList]
+-[MPKitConfiguration removeEventAttributeList]
+-[MPKitConfiguration singleItemEventAttributeList]
+-[MPKitConfiguration .cxx_destruct]
+_OBJC_IVAR_$_MPKitConfiguration._configurationHash
+_OBJC_IVAR_$_MPKitConfiguration._attributeValueFilteringIsActive
+_OBJC_IVAR_$_MPKitConfiguration._attributeValueFilteringShouldIncludeMatches
+_OBJC_IVAR_$_MPKitConfiguration._attributeValueFilteringHashedAttribute
+_OBJC_IVAR_$_MPKitConfiguration._attributeValueFilteringHashedValue
+_OBJC_IVAR_$_MPKitConfiguration._configuration
+_OBJC_IVAR_$_MPKitConfiguration._addEventAttributeList
+_OBJC_IVAR_$_MPKitConfiguration._removeEventAttributeList
+_OBJC_IVAR_$_MPKitConfiguration._singleItemEventAttributeList
+_OBJC_IVAR_$_MPKitConfiguration._bracketConfiguration
+_OBJC_IVAR_$_MPKitConfiguration._kitCode
+_OBJC_IVAR_$_MPKitConfiguration._configurationDictionary
+_OBJC_IVAR_$_MPKitConfiguration._filters
+_OBJC_IVAR_$_MPKitConfiguration._eventTypeFilters
+_OBJC_IVAR_$_MPKitConfiguration._eventNameFilters
+_OBJC_IVAR_$_MPKitConfiguration._eventAttributeFilters
+_OBJC_IVAR_$_MPKitConfiguration._messageTypeFilters
+_OBJC_IVAR_$_MPKitConfiguration._screenNameFilters
+_OBJC_IVAR_$_MPKitConfiguration._screenAttributeFilters
+_OBJC_IVAR_$_MPKitConfiguration._userIdentityFilters
+_OBJC_IVAR_$_MPKitConfiguration._userAttributeFilters
+_OBJC_IVAR_$_MPKitConfiguration._commerceEventAttributeFilters
+_OBJC_IVAR_$_MPKitConfiguration._commerceEventEntityTypeFilters
+_OBJC_IVAR_$_MPKitConfiguration._commerceEventAppFamilyAttributeFilters
+_OBJC_IVAR_$_MPKitConfiguration._defaultProjections
+_OBJC_IVAR_$_MPKitConfiguration._projections
+_OBJC_IVAR_$_MPKitConfiguration._configuredMessageTypeProjections
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitConfiguration.mm
+__push_back_slow_path<MPEventProjection *const __strong &>
+swap<MPEventProjection *__strong *>
+__construct_backward<MPEventProjection *__strong *>
+construct<MPEventProjection *, MPEventProjection *>
+__construct<MPEventProjection *, MPEventProjection *>
+construct<MPEventProjection *, MPEventProjection *const __strong &>
+__construct<MPEventProjection *, MPEventProjection *const __strong &>
+__push_back_slow_path<MPEventProjection *>
+__push_back_slow_path<NSNumber *>
+swap<NSNumber *__strong *>
+__construct_backward<NSNumber *__strong *>
+construct<NSNumber *, NSNumber *>
+__construct<NSNumber *, NSNumber *>
+destroy<MPEventProjection *>
+__destroy<MPEventProjection *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPEventProjection *> &>
+__compressed_pair_elem<std::__1::allocator<MPEventProjection *> &, void>
+destroy<NSNumber *>
+__destroy<NSNumber *>
+__compressed_pair<nullptr_t, std::__1::allocator<NSNumber *> &>
+__compressed_pair_elem<std::__1::allocator<NSNumber *> &, void>
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitConfiguration.h
+reserve
+operator[]
+__33-[MPKitConfiguration setFilters:]_block_invoke
+-[MPSearchAdsAttribution init]
+-[MPSearchAdsAttribution requestAttributionDetailsWithBlock:]
+-[MPSearchAdsAttribution dictionaryRepresentation]
+-[MPSearchAdsAttribution dictionary]
+-[MPSearchAdsAttribution setDictionary:]
+-[MPSearchAdsAttribution .cxx_destruct]
+_OBJC_IVAR_$_MPSearchAdsAttribution._dictionary
+_OBJC_IVAR_$_MPSearchAdsAttribution.messageQueue
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPSearchAdsAttribution.m
+-[MPIdentityApiRequest init]
+-[MPIdentityApiRequest setUserIdentity:identityType:]
++[MPIdentityApiRequest requestWithEmptyUser]
++[MPIdentityApiRequest requestWithUser:]
+___40+[MPIdentityApiRequest requestWithUser:]_block_invoke
+-[MPIdentityApiRequest dictionaryRepresentation]
+___48-[MPIdentityApiRequest dictionaryRepresentation]_block_invoke
+___copy_helper_block_.48
+___destroy_helper_block_.49
+-[MPIdentityApiRequest email]
+-[MPIdentityApiRequest setEmail:]
+-[MPIdentityApiRequest customerId]
+-[MPIdentityApiRequest setCustomerId:]
+-[MPIdentityApiRequest userIdentities]
+-[MPIdentityApiRequest onUserAlias]
+-[MPIdentityApiRequest setOnUserAlias:]
+-[MPIdentityApiRequest .cxx_destruct]
+_OBJC_IVAR_$_MPIdentityApiRequest._userIdentities
+___block_descriptor_tmp.50
+_OBJC_IVAR_$_MPIdentityApiRequest._onUserAlias
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityApiRequest.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityApiRequest.h
+__48-[MPIdentityApiRequest dictionaryRepresentation]_block_invoke
+__40+[MPIdentityApiRequest requestWithUser:]_block_invoke
+-[MPConnectorResponse init]
+-[MPConnectorResponse data]
+-[MPConnectorResponse setData:]
+-[MPConnectorResponse error]
+-[MPConnectorResponse setError:]
+-[MPConnectorResponse downloadTime]
+-[MPConnectorResponse setDownloadTime:]
+-[MPConnectorResponse httpResponse]
+-[MPConnectorResponse setHttpResponse:]
+-[MPConnectorResponse .cxx_destruct]
++[MPConnector initialize]
+-[MPConnector init]
+-[MPConnector cleariVars]
+-[MPConnector urlSession]
+-[MPConnector URLSession:didBecomeInvalidWithError:]
+-[MPConnector URLSession:task:didReceiveChallenge:completionHandler:]
+___69-[MPConnector URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
+-[MPConnector URLSession:dataTask:didReceiveResponse:completionHandler:]
+-[MPConnector URLSession:dataTask:didReceiveData:]
+-[MPConnector URLSession:task:didCompleteWithError:]
+-[MPConnector setCharacterEncoding:]
+-[MPConnector responseFromGetRequestToURL:]
+___43-[MPConnector responseFromGetRequestToURL:]_block_invoke
+___copy_helper_block_.136
+___destroy_helper_block_.137
+-[MPConnector responseFromPostRequestToURL:message:serializedParams:]
+___69-[MPConnector responseFromPostRequestToURL:message:serializedParams:]_block_invoke
+___copy_helper_block_.155
+___destroy_helper_block_.156
+-[MPConnector cancelRequest]
+-[MPConnector active]
+-[MPConnector characterEncoding]
+-[MPConnector connectionId]
+-[MPConnector setConnectionId:]
+-[MPConnector completionHandler]
+-[MPConnector setCompletionHandler:]
+-[MPConnector dataTask]
+-[MPConnector setDataTask:]
+-[MPConnector setUrlSession:]
+-[MPConnector .cxx_destruct]
+_mpStoredCertificates
+_mpFiddlerCertificates
+_OBJC_IVAR_$_MPConnectorResponse._data
+_OBJC_IVAR_$_MPConnectorResponse._error
+_OBJC_IVAR_$_MPConnectorResponse._downloadTime
+_OBJC_IVAR_$_MPConnectorResponse._httpResponse
+_OBJC_IVAR_$_MPConnector._active
+_OBJC_IVAR_$_MPConnector._characterEncoding
+_OBJC_IVAR_$_MPConnector._dataTask
+_OBJC_IVAR_$_MPConnector.requestStartTime
+_OBJC_IVAR_$_MPConnector._completionHandler
+_OBJC_IVAR_$_MPConnector.httpURLResponse
+_OBJC_IVAR_$_MPConnector.receivedData
+_OBJC_IVAR_$_MPConnector._urlSession
+_OBJC_IVAR_$_MPConnector._connectionId
+l_OBJC_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
+l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLSessionTaskDelegate
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPConnector.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPConnector.h
+__69-[MPConnector responseFromPostRequestToURL:message:serializedParams:]_block_invoke
+__43-[MPConnector responseFromGetRequestToURL:]_block_invoke
+__69-[MPConnector URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
++[MPCommerceEvent initialize]
+-[MPCommerceEvent init]
+-[MPCommerceEvent initWithAction:]
+-[MPCommerceEvent initWithAction:product:]
+-[MPCommerceEvent initWithImpressionName:product:]
+-[MPCommerceEvent initWithPromotionContainer:]
+-[MPCommerceEvent description]
+___30-[MPCommerceEvent description]_block_invoke
+___30-[MPCommerceEvent description]_block_invoke.119
+___copy_helper_block_.120
+___destroy_helper_block_.121
+___30-[MPCommerceEvent description]_block_invoke.129
+___copy_helper_block_.132
+___destroy_helper_block_.133
+-[MPCommerceEvent attributes]
+-[MPCommerceEvent beautifiedAttributes]
+___39-[MPCommerceEvent beautifiedAttributes]_block_invoke
+___copy_helper_block_.152
+___destroy_helper_block_.153
+-[MPCommerceEvent latestAddedProducts]
+-[MPCommerceEvent latestRemovedProducts]
+-[MPCommerceEvent productImpressions]
+-[MPCommerceEvent productsList]
+-[MPCommerceEvent userDefinedAttributes]
+-[MPCommerceEvent setEventType]
+__ZNSt3__16vectorIN9mParticle9EventTypeENS_9allocatorIS2_EEED1Ev
+-[MPCommerceEvent objectForKeyedSubscript:]
+-[MPCommerceEvent setObject:forKeyedSubscript:]
+-[MPCommerceEvent allKeys]
+-[MPCommerceEvent copyWithZone:]
+-[MPCommerceEvent encodeWithCoder:]
+-[MPCommerceEvent initWithCoder:]
+-[MPCommerceEvent actionNameForAction:]
+-[MPCommerceEvent actionWithName:]
+-[MPCommerceEvent addProducts:]
+-[MPCommerceEvent dictionaryRepresentation]
+___43-[MPCommerceEvent dictionaryRepresentation]_block_invoke
+___copy_helper_block_.249
+___destroy_helper_block_.250
+___43-[MPCommerceEvent dictionaryRepresentation]_block_invoke.265
+___copy_helper_block_.266
+___destroy_helper_block_.267
+-[MPCommerceEvent expandedInstructions]
+___Block_byref_object_copy_.269
+___Block_byref_object_dispose_.270
+___39-[MPCommerceEvent expandedInstructions]_block_invoke
+___copy_helper_block_.312
+___destroy_helper_block_.313
+-[MPCommerceEvent addedProducts]
+-[MPCommerceEvent kind]
+-[MPCommerceEvent removeProducts:]
+-[MPCommerceEvent removedProducts]
+-[MPCommerceEvent resetLatestProducts]
+-[MPCommerceEvent type]
+-[MPCommerceEvent setImpressions:]
+-[MPCommerceEvent setProducts:]
+-[MPCommerceEvent copyImpressionsMatchingHashedProperties:]
+___59-[MPCommerceEvent copyImpressionsMatchingHashedProperties:]_block_invoke
+___59-[MPCommerceEvent copyImpressionsMatchingHashedProperties:]_block_invoke_2
+___copy_helper_block_.324
+___destroy_helper_block_.325
+___copy_helper_block_.328
+___destroy_helper_block_.329
+-[MPCommerceEvent timestamp]
+-[MPCommerceEvent setTimestamp:]
+-[MPCommerceEvent checkoutOptions]
+-[MPCommerceEvent setCheckoutOptions:]
+-[MPCommerceEvent currency]
+-[MPCommerceEvent setCurrency:]
+-[MPCommerceEvent impressions]
+-[MPCommerceEvent products]
+-[MPCommerceEvent productListName]
+-[MPCommerceEvent setProductListName:]
+-[MPCommerceEvent productListSource]
+-[MPCommerceEvent setProductListSource:]
+-[MPCommerceEvent setPromotionContainer:]
+-[MPCommerceEvent action]
+-[MPCommerceEvent setAction:]
+-[MPCommerceEvent checkoutStep]
+-[MPCommerceEvent setCheckoutStep:]
+-[MPCommerceEvent addImpression:listName:]
+-[MPCommerceEvent addProduct:]
+-[MPCommerceEvent removeProduct:]
+-[MPCommerceEvent setCustomAttributes:]
+-[MPCommerceEvent transactionAttributes]
+-[MPCommerceEvent setTransactionAttributes:]
+-[MPCommerceEvent setBeautifiedAttributes:]
+-[MPCommerceEvent setUserDefinedAttributes:]
+-[MPCommerceEvent screenName]
+-[MPCommerceEvent setScreenName:]
+-[MPCommerceEvent nonInteractive]
+-[MPCommerceEvent setNonInteractive:]
+-[MPCommerceEvent promotionContainer]
+-[MPCommerceEvent setAttributes:]
+-[MPCommerceEvent setLatestAddedProducts:]
+-[MPCommerceEvent setLatestRemovedProducts:]
+-[MPCommerceEvent setProductImpressions:]
+-[MPCommerceEvent setProductsList:]
+-[MPCommerceEvent shoppingCartState]
+-[MPCommerceEvent setShoppingCartState:]
+-[MPCommerceEvent .cxx_destruct]
+__ZL11actionNames
+_OBJC_IVAR_$_MPCommerceEvent.commerceEventKind
+_OBJC_IVAR_$_MPCommerceEvent._shoppingCartState
+_OBJC_IVAR_$_MPCommerceEvent._promotionContainer
+_OBJC_IVAR_$_MPCommerceEvent._attributes
+_OBJC_IVAR_$_MPCommerceEvent._userDefinedAttributes
+___block_descriptor_tmp.122
+_OBJC_IVAR_$_MPCommerceEvent._productImpressions
+_OBJC_IVAR_$_MPCommerceEvent._beautifiedAttributes
+___block_descriptor_tmp.154
+_OBJC_IVAR_$_MPCommerceEvent._currency
+_OBJC_IVAR_$_MPCommerceEvent._latestAddedProducts
+_OBJC_IVAR_$_MPCommerceEvent._latestRemovedProducts
+_OBJC_IVAR_$_MPCommerceEvent._productsList
+__ZZ31-[MPCommerceEvent setEventType]E22productActionEventType
+__ZGVZ31-[MPCommerceEvent setEventType]E22productActionEventType
+__ZZ31-[MPCommerceEvent setEventType]E24promotionActionEventType
+__ZGVZ31-[MPCommerceEvent setEventType]E24promotionActionEventType
+_OBJC_IVAR_$_MPCommerceEvent.type
+_OBJC_IVAR_$_MPCommerceEvent._transactionAttributes
+_OBJC_IVAR_$_MPCommerceEvent._screenName
+_OBJC_IVAR_$_MPCommerceEvent._nonInteractive
+___block_descriptor_tmp.252
+___block_descriptor_tmp.268
+___block_descriptor_tmp.314
+___block_descriptor_tmp.327
+___block_descriptor_tmp.330
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerceEvent.mm
+destroy<MPCommerceEventInstruction *>
+__destroy<MPCommerceEventInstruction *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPCommerceEventInstruction *> &>
+__compressed_pair_elem<std::__1::allocator<MPCommerceEventInstruction *> &, void>
+__push_back_slow_path<MPCommerceEventInstruction *const __strong &>
+swap<MPCommerceEventInstruction *__strong *>
+__construct_backward<MPCommerceEventInstruction *__strong *>
+construct<MPCommerceEventInstruction *, MPCommerceEventInstruction *>
+__construct<MPCommerceEventInstruction *, MPCommerceEventInstruction *>
+construct<MPCommerceEventInstruction *, MPCommerceEventInstruction *const __strong &>
+__construct<MPCommerceEventInstruction *, MPCommerceEventInstruction *const __strong &>
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerceEvent.h
+__59-[MPCommerceEvent copyImpressionsMatchingHashedProperties:]_block_invoke_2
+__59-[MPCommerceEvent copyImpressionsMatchingHashedProperties:]_block_invoke
+__39-[MPCommerceEvent expandedInstructions]_block_invoke
+__43-[MPCommerceEvent dictionaryRepresentation]_block_invoke.265
+__43-[MPCommerceEvent dictionaryRepresentation]_block_invoke
+__construct_at_end<const mParticle::EventType *>
+__construct_range_forward<const mParticle::EventType *, mParticle::EventType *>
+construct<mParticle::EventType, const mParticle::EventType &>
+__construct<mParticle::EventType, const mParticle::EventType &>
+__39-[MPCommerceEvent beautifiedAttributes]_block_invoke
+__30-[MPCommerceEvent description]_block_invoke.129
+__30-[MPCommerceEvent description]_block_invoke.119
+__30-[MPCommerceEvent description]_block_invoke
+-[MPCookie initWithName:configuration:]
+-[MPCookie isEqual:]
+-[MPCookie encodeWithCoder:]
+-[MPCookie initWithCoder:]
+-[MPCookie expired]
+-[MPCookie setContent:]
+-[MPCookie setDomain:]
+-[MPCookie setExpiration:]
+-[MPCookie setName:]
+-[MPCookie dictionaryRepresentation]
+-[MPCookie cookieId]
+-[MPCookie setCookieId:]
+-[MPCookie content]
+-[MPCookie domain]
+-[MPCookie expiration]
+-[MPCookie name]
+-[MPCookie .cxx_destruct]
+-[MPConsumerInfo init]
+-[MPConsumerInfo encodeWithCoder:]
+-[MPConsumerInfo initWithCoder:]
+-[MPConsumerInfo configureCookiesWithDictionary:]
+-[MPConsumerInfo localCookiesDictionary]
+-[MPConsumerInfo uniqueIdentifier]
+-[MPConsumerInfo setUniqueIdentifier:]
+-[MPConsumerInfo deviceApplicationStamp]
+___40-[MPConsumerInfo deviceApplicationStamp]_block_invoke
+___40-[MPConsumerInfo deviceApplicationStamp]_block_invoke_2
+___copy_helper_block_.172
+___destroy_helper_block_.173
+-[MPConsumerInfo cookiesDictionaryRepresentation]
+-[MPConsumerInfo updateWithConfiguration:]
+-[MPConsumerInfo cookies]
+-[MPConsumerInfo setCookies:]
+-[MPConsumerInfo consumerInfoId]
+-[MPConsumerInfo setConsumerInfoId:]
+-[MPConsumerInfo .cxx_destruct]
+_OBJC_IVAR_$_MPCookie._cookieId
+_OBJC_IVAR_$_MPCookie._name
+_OBJC_IVAR_$_MPCookie._content
+_OBJC_IVAR_$_MPCookie._domain
+_OBJC_IVAR_$_MPCookie._expiration
+_OBJC_IVAR_$_MPConsumerInfo._consumerInfoId
+_OBJC_IVAR_$_MPConsumerInfo.semaphore
+_OBJC_IVAR_$_MPConsumerInfo._cookies
+_OBJC_IVAR_$_MPConsumerInfo._uniqueIdentifier
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPConsumerInfo.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPConsumerInfo.h
+__40-[MPConsumerInfo deviceApplicationStamp]_block_invoke_2
+__40-[MPConsumerInfo deviceApplicationStamp]_block_invoke
+-[MPDataModelAbstract copyWithZone:]
+-[MPDataModelAbstract uuid]
+-[MPDataModelAbstract setUuid:]
+-[MPDataModelAbstract .cxx_destruct]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPDataModelAbstract.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPDataModelAbstract.h
+-[MPTransactionAttributes description]
+___38-[MPTransactionAttributes description]_block_invoke
+-[MPTransactionAttributes isEqual:]
+-[MPTransactionAttributes attributes]
+-[MPTransactionAttributes beautifiedAttributes]
+-[MPTransactionAttributes copyWithZone:]
+-[MPTransactionAttributes encodeWithCoder:]
+-[MPTransactionAttributes initWithCoder:]
+-[MPTransactionAttributes dictionaryRepresentation]
+-[MPTransactionAttributes beautifiedDictionaryRepresentation]
+-[MPTransactionAttributes affiliation]
+-[MPTransactionAttributes setAffiliation:]
+-[MPTransactionAttributes couponCode]
+-[MPTransactionAttributes setCouponCode:]
+-[MPTransactionAttributes shipping]
+-[MPTransactionAttributes setShipping:]
+-[MPTransactionAttributes tax]
+-[MPTransactionAttributes setTax:]
+-[MPTransactionAttributes revenue]
+-[MPTransactionAttributes setRevenue:]
+-[MPTransactionAttributes transactionId]
+-[MPTransactionAttributes setTransactionId:]
+-[MPTransactionAttributes setAttributes:]
+-[MPTransactionAttributes setBeautifiedAttributes:]
+-[MPTransactionAttributes .cxx_destruct]
+_OBJC_IVAR_$_MPTransactionAttributes._attributes
+_OBJC_IVAR_$_MPTransactionAttributes._beautifiedAttributes
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPTransactionAttributes.m
+__38-[MPTransactionAttributes description]_block_invoke
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPHasher.cpp
+__construct_at_end
+construct<int>
+__construct<int>
+__push_back_slow_path<const std::__1::basic_string<char> &>
+hashFNV1a
+hashEvent
+hashedAllEventTypes
+for_each<std::__1::__wrap_iter<int *>, (lambda at /Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPHasher.cpp:54:56)>
+operator!=<int *>
+operator==<int *, int *>
+hashedEventTypes
+operator!=<const int *>
+operator==<const int *, const int *>
+hashString
+hashFromString
+operator!=<const char *>
+operator==<const char *, const char *>
+transform<std::__1::__wrap_iter<char *>, std::__1::__wrap_iter<char *>, int (*)(int)>
+operator!=<char *>
+operator==<char *, char *>
+tolower
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/usr/include/_ctype.h
+-[MParticleUser init]
+-[MParticleUser cart]
+-[MParticleUser userIdentities]
+___31-[MParticleUser userIdentities]_block_invoke
+-[MParticleUser userAttributes]
+-[MParticleUser setUserAttributes:]
+___35-[MParticleUser setUserAttributes:]_block_invoke
+___copy_helper_block_.40
+___destroy_helper_block_.41
+___35-[MParticleUser setUserAttributes:]_block_invoke.46
+___copy_helper_block_.56
+___destroy_helper_block_.57
+-[MParticleUser setUserId:]
+-[MParticleUser setUserIdentity:identityType:]
+___46-[MParticleUser setUserIdentity:identityType:]_block_invoke
+___46-[MParticleUser setUserIdentity:identityType:]_block_invoke_2
+___46-[MParticleUser setUserIdentity:identityType:]_block_invoke_3
+___copy_helper_block_.74
+___destroy_helper_block_.75
+___copy_helper_block_.82
+___destroy_helper_block_.83
+-[MParticleUser incrementUserAttribute:byValue:]
+___48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke
+___48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke_2
+___copy_helper_block_.99
+___destroy_helper_block_.100
+___48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke.104
+___copy_helper_block_.107
+___destroy_helper_block_.108
+___copy_helper_block_.110
+___destroy_helper_block_.111
+-[MParticleUser setUserAttribute:value:]
+___40-[MParticleUser setUserAttribute:value:]_block_invoke
+___40-[MParticleUser setUserAttribute:value:]_block_invoke_2
+___40-[MParticleUser setUserAttribute:value:]_block_invoke_3
+___copy_helper_block_.125
+___destroy_helper_block_.126
+___copy_helper_block_.128
+___destroy_helper_block_.129
+___copy_helper_block_.134
+___destroy_helper_block_.135
+-[MParticleUser setUserAttributeList:values:]
+___45-[MParticleUser setUserAttributeList:values:]_block_invoke
+___45-[MParticleUser setUserAttributeList:values:]_block_invoke_2
+___45-[MParticleUser setUserAttributeList:values:]_block_invoke_3
+___copy_helper_block_.147
+___destroy_helper_block_.148
+___copy_helper_block_.150
+___destroy_helper_block_.151
+___copy_helper_block_.156
+___destroy_helper_block_.157
+-[MParticleUser setUserTag:]
+___28-[MParticleUser setUserTag:]_block_invoke
+___28-[MParticleUser setUserTag:]_block_invoke_2
+___28-[MParticleUser setUserTag:]_block_invoke_3
+___copy_helper_block_.165
+___destroy_helper_block_.166
+___copy_helper_block_.168
+___destroy_helper_block_.169
+___copy_helper_block_.171
+___destroy_helper_block_.172
+-[MParticleUser removeUserAttribute:]
+___37-[MParticleUser removeUserAttribute:]_block_invoke
+___37-[MParticleUser removeUserAttribute:]_block_invoke_2
+___37-[MParticleUser removeUserAttribute:]_block_invoke_3
+___copy_helper_block_.181
+___destroy_helper_block_.182
+___copy_helper_block_.186
+___destroy_helper_block_.187
+-[MParticleUser userSegments:endpointId:completionHandler:]
+___59-[MParticleUser userSegments:endpointId:completionHandler:]_block_invoke
+___59-[MParticleUser userSegments:endpointId:completionHandler:]_block_invoke_2
+___copy_helper_block_.192
+___destroy_helper_block_.193
+-[MParticleUser setConsentState:]
+-[MParticleUser consentState]
+-[MParticleUser userId]
+-[MParticleUser backendController]
+-[MParticleUser setBackendController:]
+-[MParticleUser .cxx_destruct]
+_OBJC_IVAR_$_MParticleUser._backendController
+_OBJC_IVAR_$_MParticleUser._cart
+_OBJC_IVAR_$_MParticleUser._userId
+___block_descriptor_tmp.43
+___block_descriptor_tmp.58
+___block_descriptor_tmp.65
+___block_descriptor_tmp.77
+___block_descriptor_tmp.85
+___block_descriptor_tmp.101
+___block_descriptor_tmp.109
+___block_descriptor_tmp.112
+___block_descriptor_tmp.127
+___block_descriptor_tmp.131
+___block_descriptor_tmp.136
+___block_descriptor_tmp.149
+___block_descriptor_tmp.153
+___block_descriptor_tmp.158
+___block_descriptor_tmp.167
+___block_descriptor_tmp.170
+___block_descriptor_tmp.173
+___block_descriptor_tmp.183
+___block_descriptor_tmp.188
+___block_descriptor_tmp.195
+_OBJC_IVAR_$_MParticleUser._consentState
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MParticleUser.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MParticleUser.h
+__59-[MParticleUser userSegments:endpointId:completionHandler:]_block_invoke_2
+__59-[MParticleUser userSegments:endpointId:completionHandler:]_block_invoke
+__37-[MParticleUser removeUserAttribute:]_block_invoke_3
+__37-[MParticleUser removeUserAttribute:]_block_invoke_2
+__37-[MParticleUser removeUserAttribute:]_block_invoke
+__28-[MParticleUser setUserTag:]_block_invoke_3
+__28-[MParticleUser setUserTag:]_block_invoke_2
+__28-[MParticleUser setUserTag:]_block_invoke
+__45-[MParticleUser setUserAttributeList:values:]_block_invoke_3
+__45-[MParticleUser setUserAttributeList:values:]_block_invoke_2
+__45-[MParticleUser setUserAttributeList:values:]_block_invoke
+__40-[MParticleUser setUserAttribute:value:]_block_invoke_3
+__40-[MParticleUser setUserAttribute:value:]_block_invoke_2
+__40-[MParticleUser setUserAttribute:value:]_block_invoke
+__48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke.104
+__48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke_2
+__48-[MParticleUser incrementUserAttribute:byValue:]_block_invoke
+__46-[MParticleUser setUserIdentity:identityType:]_block_invoke_3
+__46-[MParticleUser setUserIdentity:identityType:]_block_invoke_2
+__46-[MParticleUser setUserIdentity:identityType:]_block_invoke
+__35-[MParticleUser setUserAttributes:]_block_invoke.46
+__35-[MParticleUser setUserAttributes:]_block_invoke
+__31-[MParticleUser userIdentities]_block_invoke
+-[MPConsentState init]
++[MPConsentState canonicalizeForDeduplication:]
+-[MPConsentState gdprConsentState]
+-[MPConsentState addGDPRConsentState:purpose:]
+-[MPConsentState removeGDPRConsentStateWithPurpose:]
+-[MPConsentState setGDPRConsentState:]
+-[MPConsentState .cxx_destruct]
+_OBJC_IVAR_$_MPConsentState._gdprConsentState
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Consent/MPConsentState.m
+-[MPUserIdentityInstance initWithType:value:]
+-[MPUserIdentityInstance initWithType:value:dateFirstSet:isFirstTimeSet:]
+-[MPUserIdentityInstance initWithUserIdentityDictionary:]
+-[MPUserIdentityInstance dictionaryRepresentation]
+-[MPUserIdentityInstance value]
+-[MPUserIdentityInstance setValue:]
+-[MPUserIdentityInstance dateFirstSet]
+-[MPUserIdentityInstance setDateFirstSet:]
+-[MPUserIdentityInstance type]
+-[MPUserIdentityInstance setType:]
+-[MPUserIdentityInstance isFirstTimeSet]
+-[MPUserIdentityInstance setIsFirstTimeSet:]
+-[MPUserIdentityInstance .cxx_destruct]
+-[MPUserIdentityChange initWithNewUserIdentity:userIdentities:]
+___63-[MPUserIdentityChange initWithNewUserIdentity:userIdentities:]_block_invoke
+-[MPUserIdentityChange initWithNewUserIdentity:oldUserIdentity:timestamp:userIdentities:]
+-[MPUserIdentityChange timestamp]
+-[MPUserIdentityChange userIdentityNew]
+-[MPUserIdentityChange setUserIdentityNew:]
+-[MPUserIdentityChange userIdentityOld]
+-[MPUserIdentityChange setUserIdentityOld:]
+-[MPUserIdentityChange setTimestamp:]
+-[MPUserIdentityChange changed]
+-[MPUserIdentityChange .cxx_destruct]
+_OBJC_IVAR_$_MPUserIdentityInstance._type
+_OBJC_IVAR_$_MPUserIdentityInstance._value
+_OBJC_IVAR_$_MPUserIdentityInstance._dateFirstSet
+_OBJC_IVAR_$_MPUserIdentityInstance._isFirstTimeSet
+_OBJC_IVAR_$_MPUserIdentityChange._userIdentityNew
+_OBJC_IVAR_$_MPUserIdentityChange._changed
+_OBJC_IVAR_$_MPUserIdentityChange._userIdentityOld
+_OBJC_IVAR_$_MPUserIdentityChange._timestamp
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUserIdentityChange.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUserIdentityChange.h
+__63-[MPUserIdentityChange initWithNewUserIdentity:userIdentities:]_block_invoke
+-[MPAppboy encodeWithCoder:]
+-[MPAppboy initWithCoder:]
+-[MPAppboy jsonString]
+-[MPAppboy userInfoPerUser]
+-[MPAppboy setUserInfoPerUser:]
+-[MPAppboy pushToken]
+-[MPAppboy setPushToken:]
+-[MPAppboy deviceIdentifier]
+-[MPAppboy setDeviceIdentifier:]
+-[MPAppboy sessionsPerUser]
+-[MPAppboy setSessionsPerUser:]
+-[MPAppboy feedArrayUpdateTime]
+-[MPAppboy setFeedArrayUpdateTime:]
+-[MPAppboy acksPerUser]
+-[MPAppboy setAcksPerUser:]
+-[MPAppboy externalUserId]
+-[MPAppboy setExternalUserId:]
+-[MPAppboy .cxx_destruct]
+_OBJC_IVAR_$_MPAppboy._userInfoPerUser
+_OBJC_IVAR_$_MPAppboy._pushToken
+_OBJC_IVAR_$_MPAppboy._deviceIdentifier
+_OBJC_IVAR_$_MPAppboy._sessionsPerUser
+_OBJC_IVAR_$_MPAppboy._feedArrayUpdateTime
+_OBJC_IVAR_$_MPAppboy._acksPerUser
+_OBJC_IVAR_$_MPAppboy._externalUserId
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPAppboy.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPAppboy.h
+-[MPAppDelegateProxy initWithOriginalAppDelegate:]
+-[MPAppDelegateProxy conformsToProtocol:]
+-[MPAppDelegateProxy forwardInvocation:]
+-[MPAppDelegateProxy forwardingTargetForSelector:]
+-[MPAppDelegateProxy isKindOfClass:]
+-[MPAppDelegateProxy isMemberOfClass:]
+-[MPAppDelegateProxy methodSignatureForSelector:]
+-[MPAppDelegateProxy respondsToSelector:]
+-[MPAppDelegateProxy surrogateAppDelegate]
+-[MPAppDelegateProxy originalAppDelegate]
+-[MPAppDelegateProxy setOriginalAppDelegate:]
+-[MPAppDelegateProxy setSurrogateAppDelegate:]
+-[MPAppDelegateProxy .cxx_destruct]
+_OBJC_IVAR_$_MPAppDelegateProxy._originalAppDelegate
+_OBJC_IVAR_$_MPAppDelegateProxy.applicationOpenURLOptionsSelector
+_OBJC_IVAR_$_MPAppDelegateProxy._surrogateAppDelegate
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/AppNotifications/MPAppDelegateProxy.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/AppNotifications/MPAppDelegateProxy.h
+-[MPUploadBuilder initWithMpid:sessionId:messages:sessionTimeout:uploadInterval:]
+___81-[MPUploadBuilder initWithMpid:sessionId:messages:sessionTimeout:uploadInterval:]_block_invoke
+-[MPUploadBuilder description]
++[MPUploadBuilder newBuilderWithMpid:messages:uploadInterval:]
++[MPUploadBuilder newBuilderWithMpid:sessionId:messages:sessionTimeout:uploadInterval:]
+-[MPUploadBuilder build:]
+-[MPUploadBuilder withUserAttributes:deletedUserAttributes:]
+-[MPUploadBuilder withUserIdentities:]
+-[MPUploadBuilder sessionId]
+-[MPUploadBuilder preparedMessageIds]
+-[MPUploadBuilder .cxx_destruct]
+_OBJC_IVAR_$_MPUploadBuilder._sessionId
+_OBJC_IVAR_$_MPUploadBuilder._preparedMessageIds
+_OBJC_IVAR_$_MPUploadBuilder.uploadDictionary
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUploadBuilder.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUploadBuilder.h
+__81-[MPUploadBuilder initWithMpid:sessionId:messages:sessionTimeout:uploadInterval:]_block_invoke
++[MParticleReachability reachabilityWithHostName:]
++[MParticleReachability reachabilityWithAddress:]
++[MParticleReachability reachabilityForInternetConnection]
++[MParticleReachability reachabilityForLocalWiFi]
+-[MParticleReachability startNotifier]
+_ReachabilityCallback
+-[MParticleReachability stopNotifier]
+-[MParticleReachability dealloc]
+-[MParticleReachability localWiFiStatusForFlags:]
+-[MParticleReachability networkStatusForFlags:]
+-[MParticleReachability connectionRequired]
+-[MParticleReachability currentReachabilityStatus]
+_OBJC_IVAR_$_MParticleReachability.reachabilityRef
+_OBJC_IVAR_$_MParticleReachability.localWiFiRef
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Libraries/Reachability/MParticleReachability.m
+ReachabilityCallback
+-[MPMessageBuilder initWithMessageType:session:]
+___48-[MPMessageBuilder initWithMessageType:session:]_block_invoke
+-[MPMessageBuilder initWithMessageType:session:commerceEvent:]
+-[MPMessageBuilder initWithMessageType:session:messageInfo:]
+-[MPMessageBuilder shouldBuildMessage]
+-[MPMessageBuilder withCurrentState]
+-[MPMessageBuilder withUserAttributeChange:]
+-[MPMessageBuilder withUserIdentityChange:]
++[MPMessageBuilder newBuilderWithMessageType:session:commerceEvent:]
++[MPMessageBuilder newBuilderWithMessageType:session:userIdentityChange:]
++[MPMessageBuilder newBuilderWithMessageType:session:messageInfo:]
++[MPMessageBuilder newBuilderWithMessageType:session:userAttributeChange:]
+-[MPMessageBuilder messageInfo]
+-[MPMessageBuilder withLaunchInfo:]
+-[MPMessageBuilder withTimestamp:]
+-[MPMessageBuilder withStateTransition:previousSession:]
+-[MPMessageBuilder build]
+-[MPMessageBuilder messageType]
+-[MPMessageBuilder session]
+-[MPMessageBuilder timestamp]
+-[MPMessageBuilder .cxx_destruct]
+_OBJC_IVAR_$_MPMessageBuilder._timestamp
+_OBJC_IVAR_$_MPMessageBuilder._messageType
+_OBJC_IVAR_$_MPMessageBuilder._session
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPMessageBuilder.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPMessageBuilder.h
+__48-[MPMessageBuilder initWithMessageType:session:]_block_invoke
+-[MPAttributeProjection init]
+-[MPAttributeProjection initWithConfiguration:projectionType:attributeIndex:]
+-[MPAttributeProjection isEqual:]
+-[MPAttributeProjection encodeWithCoder:]
+-[MPAttributeProjection initWithCoder:]
+-[MPAttributeProjection copyWithZone:]
+-[MPAttributeProjection setDataType:]
+-[MPAttributeProjection dataType]
+-[MPAttributeProjection required]
+-[MPAttributeProjection setRequired:]
+_OBJC_IVAR_$_MPAttributeProjection._required
+_OBJC_IVAR_$_MPAttributeProjection._dataType
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPAttributeProjection.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPAttributeProjection.h
+-[MPLaunchInfo initWithURL:sourceApplication:annotation:]
+-[MPLaunchInfo initWithURL:options:]
+-[MPLaunchInfo annotationKey]
+-[MPLaunchInfo sourceAppKey]
+-[MPLaunchInfo setAnnotation:]
+___30-[MPLaunchInfo setAnnotation:]_block_invoke
+___30-[MPLaunchInfo setAnnotation:]_block_invoke_2
+___30-[MPLaunchInfo setAnnotation:]_block_invoke.52
+___30-[MPLaunchInfo setAnnotation:]_block_invoke.58
+___copy_helper_block_.61
+___destroy_helper_block_.62
+-[MPLaunchInfo setUrl:]
+-[MPLaunchInfo url]
+-[MPLaunchInfo sourceApplication]
+-[MPLaunchInfo annotation]
+-[MPLaunchInfo options]
+-[MPLaunchInfo .cxx_destruct]
+_OBJC_IVAR_$_MPLaunchInfo.sourceApp
+_OBJC_IVAR_$_MPLaunchInfo._sourceApplication
+_OBJC_IVAR_$_MPLaunchInfo._annotation
+_OBJC_IVAR_$_MPLaunchInfo._options
+_OBJC_IVAR_$_MPLaunchInfo._annotationKey
+_OBJC_IVAR_$_MPLaunchInfo._sourceAppKey
+___block_descriptor_tmp.37
+___block_descriptor_tmp.54
+_OBJC_IVAR_$_MPLaunchInfo._url
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPLaunchInfo.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPLaunchInfo.h
+__30-[MPLaunchInfo setAnnotation:]_block_invoke.58
+__30-[MPLaunchInfo setAnnotation:]_block_invoke.52
+__30-[MPLaunchInfo setAnnotation:]_block_invoke_2
+__30-[MPLaunchInfo setAnnotation:]_block_invoke
+-[MPCommerceEventInstruction init]
+-[MPCommerceEventInstruction initWithInstruction:event:]
+-[MPCommerceEventInstruction initWithInstruction:event:product:]
+-[MPCommerceEventInstruction event]
+-[MPCommerceEventInstruction product]
+-[MPCommerceEventInstruction instruction]
+-[MPCommerceEventInstruction .cxx_destruct]
+_OBJC_IVAR_$_MPCommerceEventInstruction._instruction
+_OBJC_IVAR_$_MPCommerceEventInstruction._event
+_OBJC_IVAR_$_MPCommerceEventInstruction._product
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerceEventInstruction.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCommerceEventInstruction.h
+-[MPSession init]
+-[MPSession initWithStartTime:userId:]
+-[MPSession initWithSessionId:UUID:backgroundTime:startTime:endTime:attributes:numberOfInterruptions:eventCounter:suspendTime:userId:sessionUserIds:]
+-[MPSession description]
+-[MPSession isEqual:]
+-[MPSession copyWithZone:]
+-[MPSession foregroundTime]
+-[MPSession setEndTime:]
+-[MPSession length]
+-[MPSession setSessionId:]
+-[MPSession incrementCounter]
+-[MPSession suspendSession]
+-[MPSession attributesDictionary]
+-[MPSession setAttributesDictionary:]
+-[MPSession backgroundTime]
+-[MPSession setBackgroundTime:]
+-[MPSession startTime]
+-[MPSession setStartTime:]
+-[MPSession endTime]
+-[MPSession setLength:]
+-[MPSession suspendTime]
+-[MPSession eventCounter]
+-[MPSession numberOfInterruptions]
+-[MPSession sessionId]
+-[MPSession persisted]
+-[MPSession userId]
+-[MPSession setUserId:]
+-[MPSession sessionUserIds]
+-[MPSession setSessionUserIds:]
+-[MPSession .cxx_destruct]
+_OBJC_IVAR_$_MPSession._sessionId
+_OBJC_IVAR_$_MPSession._backgroundTime
+_OBJC_IVAR_$_MPSession._startTime
+_OBJC_IVAR_$_MPSession._endTime
+_OBJC_IVAR_$_MPSession._length
+_OBJC_IVAR_$_MPSession._eventCounter
+_OBJC_IVAR_$_MPSession._persisted
+_OBJC_IVAR_$_MPSession._numberOfInterruptions
+_OBJC_IVAR_$_MPSession._suspendTime
+_OBJC_IVAR_$_MPSession._sessionUserIds
+_OBJC_IVAR_$_MPSession._attributesDictionary
+_OBJC_IVAR_$_MPSession._userId
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSession.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSession.h
+-[MPKitExecStatus init]
+-[MPKitExecStatus initWithSDKCode:returnCode:]
+-[MPKitExecStatus initWithSDKCode:returnCode:forwardCount:]
+-[MPKitExecStatus success]
+-[MPKitExecStatus incrementForwardCount]
+-[MPKitExecStatus kitCode]
+-[MPKitExecStatus returnCode]
+-[MPKitExecStatus setReturnCode:]
+-[MPKitExecStatus forwardCount]
+-[MPKitExecStatus .cxx_destruct]
+_OBJC_IVAR_$_MPKitExecStatus._returnCode
+_OBJC_IVAR_$_MPKitExecStatus._forwardCount
+_OBJC_IVAR_$_MPKitExecStatus._kitCode
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitExecStatus.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitExecStatus.h
++[MPLocationManager trackingLocation]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Location/MPLocationManager.m
+-[MPKitActivityMapping initWithKitCode:handler:]
+-[MPKitActivityMapping kitCode]
+-[MPKitActivityMapping handler]
+-[MPKitActivityMapping .cxx_destruct]
+-[MPKitActivity init]
+-[MPKitActivity dealloc]
+-[MPKitActivity activityMappings]
+-[MPKitActivity kitInstanceAndConfiguration:handler:]
+-[MPKitActivity isKitActive:]
+-[MPKitActivity kitInstance:]
+___29-[MPKitActivity kitInstance:]_block_invoke
+-[MPKitActivity kitInstance:withHandler:]
+___41-[MPKitActivity kitInstance:withHandler:]_block_invoke
+___copy_helper_block_.55
+___destroy_helper_block_.56
+-[MPKitActivity handleKitDidBecomeActive:]
+___42-[MPKitActivity handleKitDidBecomeActive:]_block_invoke
+___copy_helper_block_.76
+___destroy_helper_block_.77
+-[MPKitActivity setActivityMappings:]
+-[MPKitActivity .cxx_destruct]
+_OBJC_IVAR_$_MPKitActivityMapping._kitCode
+_OBJC_IVAR_$_MPKitActivityMapping._handler
+_OBJC_IVAR_$_MPKitActivity._activityMappings
+___block_descriptor_tmp.57
+___block_descriptor_tmp.78
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitActivity.m
+__42-[MPKitActivity handleKitDidBecomeActive:]_block_invoke
+__41-[MPKitActivity kitInstance:withHandler:]_block_invoke
+__29-[MPKitActivity kitInstance:]_block_invoke
+-[MPAttributionResult description]
+-[MPAttributionResult linkInfo]
+-[MPAttributionResult setLinkInfo:]
+-[MPAttributionResult kitCode]
+-[MPAttributionResult setKitCode:]
+-[MPAttributionResult kitName]
+-[MPAttributionResult setKitName:]
+-[MPAttributionResult .cxx_destruct]
+-[MParticleOptions init]
++[MParticleOptions optionsWithKey:secret:]
+-[MParticleOptions setLogLevel:]
+-[MParticleOptions logLevel]
+-[MParticleOptions setUploadInterval:]
+-[MParticleOptions uploadInterval]
+-[MParticleOptions apiKey]
+-[MParticleOptions setApiKey:]
+-[MParticleOptions apiSecret]
+-[MParticleOptions setApiSecret:]
+-[MParticleOptions sharedGroupID]
+-[MParticleOptions setSharedGroupID:]
+-[MParticleOptions installType]
+-[MParticleOptions setInstallType:]
+-[MParticleOptions identifyRequest]
+-[MParticleOptions setIdentifyRequest:]
+-[MParticleOptions environment]
+-[MParticleOptions setEnvironment:]
+-[MParticleOptions proxyAppDelegate]
+-[MParticleOptions setProxyAppDelegate:]
+-[MParticleOptions automaticSessionTracking]
+-[MParticleOptions setAutomaticSessionTracking:]
+-[MParticleOptions customUserAgent]
+-[MParticleOptions setCustomUserAgent:]
+-[MParticleOptions collectUserAgent]
+-[MParticleOptions setCollectUserAgent:]
+-[MParticleOptions startKitsAsync]
+-[MParticleOptions setStartKitsAsync:]
+-[MParticleOptions onIdentifyComplete]
+-[MParticleOptions setOnIdentifyComplete:]
+-[MParticleOptions onAttributionComplete]
+-[MParticleOptions setOnAttributionComplete:]
+-[MParticleOptions isLogLevelSet]
+-[MParticleOptions setIsLogLevelSet:]
+-[MParticleOptions isUploadIntervalSet]
+-[MParticleOptions setIsUploadIntervalSet:]
+-[MParticleOptions .cxx_destruct]
++[MParticle initialize]
++[MParticle messageQueue]
+-[MParticle init]
+-[MParticle dealloc]
+-[MParticle backendController]
+-[MParticle configSettings]
+-[MParticle handleApplicationDidBecomeActive:]
+___46-[MParticle handleApplicationDidBecomeActive:]_block_invoke
+___46-[MParticle handleApplicationDidBecomeActive:]_block_invoke_2
+-[MParticle handleMemoryWarningNotification:]
+-[MParticle sessionDidBegin:]
+___29-[MParticle sessionDidBegin:]_block_invoke
+___29-[MParticle sessionDidBegin:]_block_invoke_2
+-[MParticle sessionDidEnd:]
+___27-[MParticle sessionDidEnd:]_block_invoke
+___27-[MParticle sessionDidEnd:]_block_invoke_2
+-[MParticle forwardLogInstall]
+___30-[MParticle forwardLogInstall]_block_invoke
+___30-[MParticle forwardLogInstall]_block_invoke_2
+-[MParticle forwardLogUpdate]
+___29-[MParticle forwardLogUpdate]_block_invoke
+___29-[MParticle forwardLogUpdate]_block_invoke_2
+-[MParticle identity]
+-[MParticle commerce]
+-[MParticle setDebugMode:]
+___26-[MParticle setDebugMode:]_block_invoke
+___26-[MParticle setDebugMode:]_block_invoke_2
+-[MParticle consoleLogging]
+-[MParticle setConsoleLogging:]
+___31-[MParticle setConsoleLogging:]_block_invoke
+___31-[MParticle setConsoleLogging:]_block_invoke_2
+-[MParticle environment]
+-[MParticle logLevel]
+-[MParticle setLogLevel:]
+___25-[MParticle setLogLevel:]_block_invoke
+-[MParticle optOut]
+-[MParticle setOptOut:]
+___23-[MParticle setOptOut:]_block_invoke
+___23-[MParticle setOptOut:]_block_invoke_2
+___23-[MParticle setOptOut:]_block_invoke_3
+___copy_helper_block_.291
+___destroy_helper_block_.292
+-[MParticle sessionTimeout]
+-[MParticle setSessionTimeout:]
+-[MParticle uniqueIdentifier]
+-[MParticle uploadInterval]
+-[MParticle setUploadInterval:]
+-[MParticle userAttributesForUserId:]
+-[MParticle version]
++[MParticle sharedInstance]
+___27+[MParticle sharedInstance]_block_invoke
+-[MParticle start]
+-[MParticle startWithOptions:]
+___30-[MParticle startWithOptions:]_block_invoke
+___30-[MParticle startWithOptions:]_block_invoke_2
+___30-[MParticle startWithOptions:]_block_invoke_3
+___copy_helper_block_.376
+___destroy_helper_block_.377
+___copy_helper_block_.379
+___destroy_helper_block_.380
+-[MParticle openURL:sourceApplication:annotation:]
+-[MParticle openURL:options:]
+-[MParticle continueUserActivity:restorationHandler:]
+-[MParticle activeTimedEvents]
+-[MParticle beginTimedEvent:]
+___29-[MParticle beginTimedEvent:]_block_invoke
+___29-[MParticle beginTimedEvent:]_block_invoke_2
+___29-[MParticle beginTimedEvent:]_block_invoke_3
+___copy_helper_block_.427
+___destroy_helper_block_.428
+-[MParticle endTimedEvent:]
+___27-[MParticle endTimedEvent:]_block_invoke
+___27-[MParticle endTimedEvent:]_block_invoke_2
+___27-[MParticle endTimedEvent:]_block_invoke_3
+___27-[MParticle endTimedEvent:]_block_invoke_4
+___copy_helper_block_.450
+___destroy_helper_block_.451
+-[MParticle eventWithName:]
+-[MParticle logEvent:]
+___22-[MParticle logEvent:]_block_invoke
+___22-[MParticle logEvent:]_block_invoke_2
+___22-[MParticle logEvent:]_block_invoke_3
+___copy_helper_block_.461
+___destroy_helper_block_.462
+-[MParticle logEvent:eventType:eventInfo:]
+-[MParticle logScreenEvent:]
+___28-[MParticle logScreenEvent:]_block_invoke
+___28-[MParticle logScreenEvent:]_block_invoke_2
+___28-[MParticle logScreenEvent:]_block_invoke_3
+___copy_helper_block_.488
+___destroy_helper_block_.489
+-[MParticle logScreen:eventInfo:]
+-[MParticle attributionInfo]
+-[MParticle beginUncaughtExceptionLogging]
+-[MParticle endUncaughtExceptionLogging]
+-[MParticle leaveBreadcrumb:]
+-[MParticle leaveBreadcrumb:eventInfo:]
+___39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke
+___39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke_2
+___39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke_3
+___copy_helper_block_.511
+___destroy_helper_block_.512
+-[MParticle logError:]
+-[MParticle logError:eventInfo:]
+___32-[MParticle logError:eventInfo:]_block_invoke
+___32-[MParticle logError:eventInfo:]_block_invoke_2
+___32-[MParticle logError:eventInfo:]_block_invoke_3
+___copy_helper_block_.520
+___destroy_helper_block_.521
+___copy_helper_block_.526
+___destroy_helper_block_.527
+___copy_helper_block_.532
+___destroy_helper_block_.533
+-[MParticle logException:]
+-[MParticle logException:topmostContext:]
+___41-[MParticle logException:topmostContext:]_block_invoke
+___41-[MParticle logException:topmostContext:]_block_invoke_2
+___41-[MParticle logException:topmostContext:]_block_invoke_3
+___copy_helper_block_.543
+___destroy_helper_block_.544
+___copy_helper_block_.546
+___destroy_helper_block_.547
+___copy_helper_block_.549
+___destroy_helper_block_.550
+-[MParticle logCommerceEvent:]
+___30-[MParticle logCommerceEvent:]_block_invoke
+___30-[MParticle logCommerceEvent:]_block_invoke_2
+___30-[MParticle logCommerceEvent:]_block_invoke_3
+___copy_helper_block_.582
+___destroy_helper_block_.583
+-[MParticle logLTVIncrease:eventName:]
+-[MParticle logLTVIncrease:eventName:eventInfo:]
+___48-[MParticle logLTVIncrease:eventName:eventInfo:]_block_invoke
+___48-[MParticle logLTVIncrease:eventName:eventInfo:]_block_invoke_2
++[MParticle registerExtension:]
+-[MParticle setIntegrationAttributes:forKit:]
+___45-[MParticle setIntegrationAttributes:forKit:]_block_invoke
+___copy_helper_block_.668
+___destroy_helper_block_.669
+-[MParticle clearIntegrationAttributesForKit:]
+___46-[MParticle clearIntegrationAttributesForKit:]_block_invoke
+___copy_helper_block_.678
+___destroy_helper_block_.679
+-[MParticle onKitsInitialized:]
+-[MParticle executeKitsInitializedBlocks]
+___41-[MParticle executeKitsInitializedBlocks]_block_invoke
+-[MParticle isKitActive:]
+-[MParticle kitInstance:]
+-[MParticle kitInstance:completionHandler:]
+-[MParticle logNetworkPerformance:httpMethod:startTime:duration:bytesSent:bytesReceived:]
+___89-[MParticle logNetworkPerformance:httpMethod:startTime:duration:bytesSent:bytesReceived:]_block_invoke
+___89-[MParticle logNetworkPerformance:httpMethod:startTime:duration:bytesSent:bytesReceived:]_block_invoke_2
+___copy_helper_block_.729
+___destroy_helper_block_.730
+-[MParticle incrementSessionAttribute:byValue:]
+___47-[MParticle incrementSessionAttribute:byValue:]_block_invoke
+___copy_helper_block_.738
+___destroy_helper_block_.739
+-[MParticle setSessionAttribute:value:]
+___39-[MParticle setSessionAttribute:value:]_block_invoke
+___copy_helper_block_.751
+___destroy_helper_block_.752
+-[MParticle upload]
+___19-[MParticle upload]_block_invoke
+___copy_helper_block_.760
+___destroy_helper_block_.761
+-[MParticle surveyURL:]
+___23-[MParticle surveyURL:]_block_invoke
+___copy_helper_block_.781
+___destroy_helper_block_.782
+-[MParticle debugMode]
+-[MParticle initialized]
+-[MParticle setInitialized:]
+-[MParticle proxiedAppDelegate]
+-[MParticle automaticSessionTracking]
+-[MParticle customUserAgent]
+-[MParticle setCustomUserAgent:]
+-[MParticle collectUserAgent]
+-[MParticle setCollectUserAgent:]
+-[MParticle setBackendController:]
+-[MParticle options]
+-[MParticle setOptions:]
+-[MParticle setConfigSettings:]
+-[MParticle kitActivity]
+-[MParticle setKitActivity:]
+-[MParticle kitsInitializedBlocks]
+-[MParticle setKitsInitializedBlocks:]
+-[MParticle .cxx_destruct]
+_messageQueue
+_eventTypeStrings
+_OBJC_IVAR_$_MPAttributionResult._kitCode
+_OBJC_IVAR_$_MPAttributionResult._kitName
+_OBJC_IVAR_$_MPAttributionResult._linkInfo
+_OBJC_IVAR_$_MParticleOptions._proxyAppDelegate
+_OBJC_IVAR_$_MParticleOptions._collectUserAgent
+_OBJC_IVAR_$_MParticleOptions._automaticSessionTracking
+_OBJC_IVAR_$_MParticleOptions._startKitsAsync
+_OBJC_IVAR_$_MParticleOptions._logLevel
+_OBJC_IVAR_$_MParticleOptions._isLogLevelSet
+_OBJC_IVAR_$_MParticleOptions._isUploadIntervalSet
+_OBJC_IVAR_$_MParticleOptions._uploadInterval
+_OBJC_IVAR_$_MParticleOptions._apiKey
+_OBJC_IVAR_$_MParticleOptions._apiSecret
+_OBJC_IVAR_$_MParticleOptions._sharedGroupID
+_OBJC_IVAR_$_MParticleOptions._installType
+_OBJC_IVAR_$_MParticleOptions._identifyRequest
+_OBJC_IVAR_$_MParticleOptions._environment
+_OBJC_IVAR_$_MParticleOptions._customUserAgent
+_OBJC_IVAR_$_MParticleOptions._onIdentifyComplete
+_OBJC_IVAR_$_MParticleOptions._onAttributionComplete
+_OBJC_IVAR_$_MParticle.sdkInitialized
+_OBJC_IVAR_$_MParticle.privateOptOut
+_OBJC_IVAR_$_MParticle.isLoggingUncaughtExceptions
+_OBJC_IVAR_$_MParticle._initialized
+_OBJC_IVAR_$_MParticle._kitActivity
+_OBJC_IVAR_$_MParticle._kitsInitializedBlocks
+_OBJC_IVAR_$_MParticle._automaticSessionTracking
+_OBJC_IVAR_$_MParticle._backendController
+_OBJC_IVAR_$_MParticle._configSettings
+___block_descriptor_tmp.219
+___block_descriptor_tmp.224
+___block_literal_global.225
+___block_descriptor_tmp.228
+___block_literal_global.229
+___block_descriptor_tmp.230
+___block_literal_global.231
+___block_descriptor_tmp.234
+___block_literal_global.235
+___block_descriptor_tmp.236
+___block_literal_global.237
+___block_descriptor_tmp.241
+___block_descriptor_tmp.242
+___block_literal_global.243
+___block_descriptor_tmp.247
+_OBJC_IVAR_$_MParticle._identity
+_OBJC_IVAR_$_MParticle._commerce
+___block_descriptor_tmp.259
+___block_descriptor_tmp.261
+___block_descriptor_tmp.269
+___block_descriptor_tmp.271
+___block_descriptor_tmp.275
+_OBJC_IVAR_$_MParticle._optOut
+___block_descriptor_tmp.281
+___block_descriptor_tmp.285
+___block_literal_global.286
+___block_descriptor_tmp.293
+_sharedInstance.sharedInstance
+_sharedInstance.predicate
+___block_descriptor_tmp.310
+___block_literal_global.311
+_OBJC_IVAR_$_MParticle._proxiedAppDelegate
+_OBJC_IVAR_$_MParticle._customUserAgent
+_OBJC_IVAR_$_MParticle._collectUserAgent
+___block_descriptor_tmp.378
+___block_descriptor_tmp.382
+___block_descriptor_tmp.397
+___block_descriptor_tmp.419
+___block_literal_global.420
+___block_descriptor_tmp.425
+___block_literal_global.426
+___block_descriptor_tmp.429
+___block_descriptor_tmp.434
+___block_literal_global.435
+___block_descriptor_tmp.440
+___block_literal_global.441
+___block_descriptor_tmp.444
+___block_literal_global.445
+___block_descriptor_tmp.452
+___block_descriptor_tmp.455
+___block_literal_global.456
+___block_descriptor_tmp.459
+___block_literal_global.460
+___block_descriptor_tmp.463
+___block_descriptor_tmp.478
+___block_literal_global.479
+___block_descriptor_tmp.484
+___block_literal_global.485
+___block_descriptor_tmp.490
+___block_descriptor_tmp.501
+___block_literal_global.502
+___block_descriptor_tmp.507
+___block_literal_global.508
+___block_descriptor_tmp.513
+___block_descriptor_tmp.523
+___block_descriptor_tmp.529
+___block_descriptor_tmp.534
+___block_descriptor_tmp.545
+___block_descriptor_tmp.548
+___block_descriptor_tmp.551
+___block_descriptor_tmp.553
+___block_literal_global.554
+___block_descriptor_tmp.577
+___block_descriptor_tmp.584
+___block_descriptor_tmp.602
+___block_descriptor_tmp.604
+l_OBJC_PROTOCOL_REFERENCE_$_MPExtensionKitProtocol
+___block_descriptor_tmp.670
+___block_descriptor_tmp.680
+___block_descriptor_tmp.688
+___block_literal_global.689
+___block_descriptor_tmp.723
+___block_literal_global.724
+___block_descriptor_tmp.731
+___block_descriptor_tmp.740
+___block_descriptor_tmp.753
+___block_descriptor_tmp.762
+___block_descriptor_tmp.784
+_OBJC_IVAR_$_MParticle._debugMode
+_OBJC_IVAR_$_MParticle._options
+l_OBJC_PROTOCOL_$_MPBackendControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_MPBackendControllerDelegate
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/mParticle.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/mParticle.h
+__23-[MParticle surveyURL:]_block_invoke
+__19-[MParticle upload]_block_invoke
+__39-[MParticle setSessionAttribute:value:]_block_invoke
+__47-[MParticle incrementSessionAttribute:byValue:]_block_invoke
+__89-[MParticle logNetworkPerformance:httpMethod:startTime:duration:bytesSent:bytesReceived:]_block_invoke_2
+__89-[MParticle logNetworkPerformance:httpMethod:startTime:duration:bytesSent:bytesReceived:]_block_invoke
+__41-[MParticle executeKitsInitializedBlocks]_block_invoke
+__46-[MParticle clearIntegrationAttributesForKit:]_block_invoke
+__45-[MParticle setIntegrationAttributes:forKit:]_block_invoke
+__48-[MParticle logLTVIncrease:eventName:eventInfo:]_block_invoke_2
+__48-[MParticle logLTVIncrease:eventName:eventInfo:]_block_invoke
+__30-[MParticle logCommerceEvent:]_block_invoke_3
+__30-[MParticle logCommerceEvent:]_block_invoke_2
+__30-[MParticle logCommerceEvent:]_block_invoke
+__41-[MParticle logException:topmostContext:]_block_invoke_3
+__41-[MParticle logException:topmostContext:]_block_invoke_2
+__41-[MParticle logException:topmostContext:]_block_invoke
+__32-[MParticle logError:eventInfo:]_block_invoke_3
+__32-[MParticle logError:eventInfo:]_block_invoke_2
+__32-[MParticle logError:eventInfo:]_block_invoke
+__39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke_3
+__39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke_2
+__39-[MParticle leaveBreadcrumb:eventInfo:]_block_invoke
+__28-[MParticle logScreenEvent:]_block_invoke_3
+__28-[MParticle logScreenEvent:]_block_invoke_2
+__28-[MParticle logScreenEvent:]_block_invoke
+__22-[MParticle logEvent:]_block_invoke_3
+__22-[MParticle logEvent:]_block_invoke_2
+__22-[MParticle logEvent:]_block_invoke
+__27-[MParticle endTimedEvent:]_block_invoke_4
+__27-[MParticle endTimedEvent:]_block_invoke_3
+__27-[MParticle endTimedEvent:]_block_invoke_2
+__27-[MParticle endTimedEvent:]_block_invoke
+__29-[MParticle beginTimedEvent:]_block_invoke_3
+__29-[MParticle beginTimedEvent:]_block_invoke_2
+__29-[MParticle beginTimedEvent:]_block_invoke
+__30-[MParticle startWithOptions:]_block_invoke_3
+__30-[MParticle startWithOptions:]_block_invoke_2
+__30-[MParticle startWithOptions:]_block_invoke
+__27+[MParticle sharedInstance]_block_invoke
+__23-[MParticle setOptOut:]_block_invoke_3
+__23-[MParticle setOptOut:]_block_invoke_2
+__23-[MParticle setOptOut:]_block_invoke
+__25-[MParticle setLogLevel:]_block_invoke
+__31-[MParticle setConsoleLogging:]_block_invoke_2
+__31-[MParticle setConsoleLogging:]_block_invoke
+__26-[MParticle setDebugMode:]_block_invoke_2
+__26-[MParticle setDebugMode:]_block_invoke
+__29-[MParticle forwardLogUpdate]_block_invoke_2
+__29-[MParticle forwardLogUpdate]_block_invoke
+__30-[MParticle forwardLogInstall]_block_invoke_2
+__30-[MParticle forwardLogInstall]_block_invoke
+__27-[MParticle sessionDidEnd:]_block_invoke_2
+__27-[MParticle sessionDidEnd:]_block_invoke
+__29-[MParticle sessionDidBegin:]_block_invoke_2
+__29-[MParticle sessionDidBegin:]_block_invoke
+__46-[MParticle handleApplicationDidBecomeActive:]_block_invoke_2
+__46-[MParticle handleApplicationDidBecomeActive:]_block_invoke
+-[MPIdentityApiManager identify:completion:]
+___44-[MPIdentityApiManager identify:completion:]_block_invoke
+-[MPIdentityApiManager loginRequest:completion:]
+___48-[MPIdentityApiManager loginRequest:completion:]_block_invoke
+___copy_helper_block_.7
+___destroy_helper_block_.8
+-[MPIdentityApiManager logout:completion:]
+___42-[MPIdentityApiManager logout:completion:]_block_invoke
+___copy_helper_block_.12
+___destroy_helper_block_.13
+-[MPIdentityApiManager modify:completion:]
+___42-[MPIdentityApiManager modify:completion:]_block_invoke
+___copy_helper_block_.17
+___destroy_helper_block_.18
+-[MPIdentityApiManager context]
+-[MPIdentityApiManager setContext:]
+-[MPIdentityApiManager .cxx_destruct]
+___block_descriptor_tmp.9
+___block_descriptor_tmp.14
+___block_descriptor_tmp.20
+_OBJC_IVAR_$_MPIdentityApiManager._context
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityApiManager.m
+__42-[MPIdentityApiManager modify:completion:]_block_invoke
+__42-[MPIdentityApiManager logout:completion:]_block_invoke
+__48-[MPIdentityApiManager loginRequest:completion:]_block_invoke
+__44-[MPIdentityApiManager identify:completion:]_block_invoke
+-[MPResponseConfig initWithConfiguration:]
+-[MPResponseConfig initWithConfiguration:dataReceivedFromServer:]
+___65-[MPResponseConfig initWithConfiguration:dataReceivedFromServer:]_block_invoke
+-[MPResponseConfig encodeWithCoder:]
+-[MPResponseConfig initWithCoder:]
++[MPResponseConfig save:eTag:]
++[MPResponseConfig restore]
+-[MPResponseConfig configuration]
+-[MPResponseConfig .cxx_destruct]
+_OBJC_IVAR_$_MPResponseConfig._configuration
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPResponseConfig.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPResponseConfig.h
+__65-[MPResponseConfig initWithConfiguration:dataReceivedFromServer:]_block_invoke
+-[MPUserAttributeChange initWithUserAttributes:key:value:]
+-[MPUserAttributeChange valueToLog]
+-[MPUserAttributeChange setValueToLog:]
+-[MPUserAttributeChange key]
+-[MPUserAttributeChange setKey:]
+-[MPUserAttributeChange timestamp]
+-[MPUserAttributeChange setTimestamp:]
+-[MPUserAttributeChange userAttributes]
+-[MPUserAttributeChange setUserAttributes:]
+-[MPUserAttributeChange value]
+-[MPUserAttributeChange setValue:]
+-[MPUserAttributeChange changed]
+-[MPUserAttributeChange deleted]
+-[MPUserAttributeChange setDeleted:]
+-[MPUserAttributeChange isArray]
+-[MPUserAttributeChange setIsArray:]
+-[MPUserAttributeChange .cxx_destruct]
+_OBJC_IVAR_$_MPUserAttributeChange._userAttributes
+_OBJC_IVAR_$_MPUserAttributeChange._key
+_OBJC_IVAR_$_MPUserAttributeChange._value
+_OBJC_IVAR_$_MPUserAttributeChange._changed
+_OBJC_IVAR_$_MPUserAttributeChange._deleted
+_OBJC_IVAR_$_MPUserAttributeChange._isArray
+_OBJC_IVAR_$_MPUserAttributeChange._valueToLog
+_OBJC_IVAR_$_MPUserAttributeChange._timestamp
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUserAttributeChange.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPUserAttributeChange.h
+-[MPIUserDefaults userSpecificKeys]
+-[MPIUserDefaults extensionExcludedKeys]
+-[MPIUserDefaults globalKeyForKey:]
+-[MPIUserDefaults userKeyForKey:userId:]
+-[MPIUserDefaults isUserSpecificKey:]
+-[MPIUserDefaults prefixedKey:userId:]
+-[MPIUserDefaults customUserDefaults]
++[MPIUserDefaults standardUserDefaults]
+___39+[MPIUserDefaults standardUserDefaults]_block_invoke
+-[MPIUserDefaults mpObjectForKey:userId:]
+-[MPIUserDefaults setMPObject:forKey:userId:]
+-[MPIUserDefaults removeMPObjectForKey:userId:]
+-[MPIUserDefaults removeMPObjectForKey:]
+-[MPIUserDefaults synchronize]
+-[MPIUserDefaults migrateUserKeysWithUserId:]
+___45-[MPIUserDefaults migrateUserKeysWithUserId:]_block_invoke
+-[MPIUserDefaults migrateToSharedGroupIdentifier:]
+-[MPIUserDefaults migrateFromSharedGroupIdentifier]
+-[MPIUserDefaults getConfiguration]
+-[MPIUserDefaults getKitConfigurations]
+-[MPIUserDefaults setConfiguration:andETag:]
+-[MPIUserDefaults migrateConfiguration]
+-[MPIUserDefaults deleteConfiguration]
+-[MPIUserDefaults isExistingUserId:]
+-[MPIUserDefaults objectForKeyedSubscript:]
+-[MPIUserDefaults setObject:forKeyedSubscript:]
+_standardUserDefaults.standardUserDefaults
+_standardUserDefaults.predicate
+___block_descriptor_tmp.71
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPIUserDefaults.m
+__45-[MPIUserDefaults migrateUserKeysWithUserId:]_block_invoke
+__39+[MPIUserDefaults standardUserDefaults]_block_invoke
++[MPKitContainer initialize]
+-[MPKitContainer init]
+___22-[MPKitContainer init]_block_invoke
+___22-[MPKitContainer init]_block_invoke_2
+___copy_helper_block_.23
+___destroy_helper_block_.24
+-[MPKitContainer dealloc]
+-[MPKitContainer handleApplicationDidBecomeActive:]
+-[MPKitContainer handleApplicationDidFinishLaunching:]
+-[MPKitContainer forwardQueue]
+-[MPKitContainer kitsInitialized]
+-[MPKitContainer setKitsInitialized:]
+-[MPKitContainer bracketForKit:]
+-[MPKitContainer flushSerializedKits]
+-[MPKitContainer freeKit:]
+___26-[MPKitContainer freeKit:]_block_invoke
+___copy_helper_block_.116
+___destroy_helper_block_.117
+-[MPKitContainer initializeKits]
+___32-[MPKitContainer initializeKits]_block_invoke
+-[MPKitContainer methodMessageTypeMapping]
+-[MPKitContainer nameForKitCode:]
+-[MPKitContainer replayQueuedItems]
+___35-[MPKitContainer replayQueuedItems]_block_invoke
+___copy_helper_block_.205
+___destroy_helper_block_.206
+___35-[MPKitContainer replayQueuedItems]_block_invoke.208
+___35-[MPKitContainer replayQueuedItems]_block_invoke.218
+___copy_helper_block_.225
+___destroy_helper_block_.226
+-[MPKitContainer shouldIncludeEventWithAttributes:afterAttributeValueFilteringWithConfiguration:]
+___97-[MPKitContainer shouldIncludeEventWithAttributes:afterAttributeValueFilteringWithConfiguration:]_block_invoke
+___copy_helper_block_.244
+___destroy_helper_block_.245
+-[MPKitContainer isDisabledByBracketConfiguration:]
+-[MPKitContainer startKit:configuration:]
+-[MPKitContainer startKitRegister:configuration:]
+-[MPKitContainer validateAndTransformToSafeConfiguration:]
+___58-[MPKitContainer validateAndTransformToSafeConfiguration:]_block_invoke
+___copy_helper_block_.287
+___destroy_helper_block_.288
+-[MPKitContainer transformValue:dataType:]
+-[MPKitContainer updateBracketsWithConfiguration:kitCode:]
++[MPKitContainer registerKit:]
++[MPKitContainer registeredKits]
++[MPKitContainer sharedInstance]
+___32+[MPKitContainer sharedInstance]_block_invoke
+-[MPKitContainer kitConfigurations]
+-[MPKitContainer filter:forCommerceEvent:completionHandler:]
+___60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke
+___copy_helper_block_.356
+___destroy_helper_block_.357
+___60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.370
+___copy_helper_block_.375
+___destroy_helper_block_.376
+___60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.380
+___copy_helper_block_.381
+___destroy_helper_block_.382
+___60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.391
+___copy_helper_block_.416
+___destroy_helper_block_.417
+___60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.422
+___copy_helper_block_.430
+___destroy_helper_block_.431
+-[MPKitContainer filter:forEvent:selector:completionHandler:]
+___61-[MPKitContainer filter:forEvent:selector:completionHandler:]_block_invoke
+___copy_helper_block_.456
+___destroy_helper_block_.457
+___61-[MPKitContainer filter:forEvent:selector:completionHandler:]_block_invoke.461
+___copy_helper_block_.462
+___destroy_helper_block_.463
+-[MPKitContainer filter:forSelector:]
+-[MPKitContainer filter:forUserAttributes:]
+___43-[MPKitContainer filter:forUserAttributes:]_block_invoke
+___copy_helper_block_.470
+___destroy_helper_block_.471
+-[MPKitContainer filter:forUserAttributeKey:value:]
+-[MPKitContainer filter:forUserIdentityKey:identityType:]
+-[MPKitContainer project:commerceEvent:completionHandler:]
+___Block_byref_object_copy_.491
+___Block_byref_object_dispose_.492
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_3
+___copy_helper_block_.501
+___destroy_helper_block_.502
+___copy_helper_block_.504
+___destroy_helper_block_.505
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.516
+___copy_helper_block_.517
+___destroy_helper_block_.518
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.522
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.523
+___copy_helper_block_.524
+___destroy_helper_block_.525
+___copy_helper_block_.528
+___destroy_helper_block_.529
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.532
+___copy_helper_block_.533
+___destroy_helper_block_.534
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.536
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.537
+___copy_helper_block_.538
+___destroy_helper_block_.539
+___copy_helper_block_.541
+___destroy_helper_block_.542
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.544
+___copy_helper_block_.545
+___destroy_helper_block_.546
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.549
+___copy_helper_block_.568
+___destroy_helper_block_.569
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.572
+___copy_helper_block_.577
+___destroy_helper_block_.578
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.581
+___copy_helper_block_.583
+___destroy_helper_block_.584
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.587
+___58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.599
+-[MPKitContainer project:event:messageType:completionHandler:]
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke
+___Block_byref_object_copy_.626
+___Block_byref_object_dispose_.627
+___Block_byref_object_copy_.629
+___Block_byref_object_dispose_.630
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.633
+___copy_helper_block_.640
+___destroy_helper_block_.641
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.643
+___copy_helper_block_.648
+___destroy_helper_block_.649
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.652
+___copy_helper_block_.653
+___destroy_helper_block_.654
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.656
+___copy_helper_block_.657
+___destroy_helper_block_.658
+___62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.660
+___copy_helper_block_.661
+___destroy_helper_block_.662
+-[MPKitContainer activeKitsRegistry]
+-[MPKitContainer configureKits:]
+-[MPKitContainer supportedKits]
+-[MPKitContainer forwardCommerceEventCall:kitHandler:]
+___54-[MPKitContainer forwardCommerceEventCall:kitHandler:]_block_invoke
+___54-[MPKitContainer forwardCommerceEventCall:kitHandler:]_block_invoke_2
+___copy_helper_block_.720
+___destroy_helper_block_.721
+___copy_helper_block_.732
+___destroy_helper_block_.733
+-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]
+___71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke
+___71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke_2
+___copy_helper_block_.740
+___destroy_helper_block_.741
+___copy_helper_block_.749
+___destroy_helper_block_.750
+___71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke.753
+___copy_helper_block_.754
+___destroy_helper_block_.755
+-[MPKitContainer forwardSDKCall:userAttributeKey:value:kitHandler:]
+___67-[MPKitContainer forwardSDKCall:userAttributeKey:value:kitHandler:]_block_invoke
+___copy_helper_block_.763
+___destroy_helper_block_.764
+-[MPKitContainer forwardSDKCall:userAttributes:kitHandler:]
+___59-[MPKitContainer forwardSDKCall:userAttributes:kitHandler:]_block_invoke
+___copy_helper_block_.770
+___destroy_helper_block_.771
+-[MPKitContainer forwardSDKCall:userIdentity:identityType:kitHandler:]
+___70-[MPKitContainer forwardSDKCall:userIdentity:identityType:kitHandler:]_block_invoke
+___copy_helper_block_.777
+___destroy_helper_block_.778
+-[MPKitContainer forwardSDKCall:errorMessage:exception:eventInfo:kitHandler:]
+___77-[MPKitContainer forwardSDKCall:errorMessage:exception:eventInfo:kitHandler:]_block_invoke
+___copy_helper_block_.782
+___destroy_helper_block_.783
+-[MPKitContainer forwardSDKCall:kitHandler:]
+___44-[MPKitContainer forwardSDKCall:kitHandler:]_block_invoke
+___copy_helper_block_.785
+___destroy_helper_block_.786
+-[MPKitContainer forwardSDKCall:parameters:messageType:kitHandler:]
+___67-[MPKitContainer forwardSDKCall:parameters:messageType:kitHandler:]_block_invoke
+___copy_helper_block_.790
+___destroy_helper_block_.791
+-[MPKitContainer forwardIdentitySDKCall:kitHandler:]
+-[MPKitContainer userIdentitiesArrayForKit:]
+___44-[MPKitContainer userIdentitiesArrayForKit:]_block_invoke
+___copy_helper_block_.803
+___destroy_helper_block_.804
+-[MPKitContainer integrationAttributesForKit:]
+___46-[MPKitContainer integrationAttributesForKit:]_block_invoke
+___copy_helper_block_.811
+___destroy_helper_block_.812
+-[MPKitContainer shouldDelayUpload:]
+-[MPKitContainer attributionCompletionHandler]
+-[MPKitContainer setAttributionCompletionHandler:]
+-[MPKitContainer attributionInfo]
+-[MPKitContainer setAttributionInfo:]
+-[MPKitContainer setForwardQueue:]
+-[MPKitContainer setKitConfigurations:]
+-[MPKitContainer initializedTime]
+-[MPKitContainer setInitializedTime:]
+-[MPKitContainer .cxx_destruct]
+-[MPKitContainer .cxx_construct]
+__ZNSt3__110shared_ptrIN9mParticle7BracketEE18__enable_weak_thisEz
+__ZNSt3__120__shared_ptr_emplaceIN9mParticle7BracketENS_9allocatorIS2_EEED1Ev
+__ZNSt3__120__shared_ptr_emplaceIN9mParticle7BracketENS_9allocatorIS2_EEED0Ev
+__ZL12kitsRegistry
+_OBJC_IVAR_$_MPKitContainer._kitsInitialized
+_OBJC_IVAR_$_MPKitContainer._attributionInfo
+_OBJC_IVAR_$_MPKitContainer._initializedTime
+_OBJC_IVAR_$_MPKitContainer.kitsSemaphore
+___block_descriptor_tmp.26
+_OBJC_IVAR_$_MPKitContainer._attributionCompletionHandler
+_OBJC_IVAR_$_MPKitContainer._forwardQueue
+_OBJC_IVAR_$_MPKitContainer.brackets
+___block_descriptor_tmp.118
+___block_descriptor_tmp.160
+___block_descriptor_tmp.207
+___block_descriptor_tmp.227
+___block_descriptor_tmp.289
+__ZZ32+[MPKitContainer sharedInstance]E14sharedInstance
+__ZZ32+[MPKitContainer sharedInstance]E21kitContainerPredicate
+___block_descriptor_tmp.319
+_OBJC_IVAR_$_MPKitContainer._kitConfigurations
+___block_descriptor_tmp.359
+___block_descriptor_tmp.377
+___block_descriptor_tmp.383
+___block_descriptor_tmp.433
+___block_descriptor_tmp.458
+___block_descriptor_tmp.465
+___block_descriptor_tmp.472
+___block_descriptor_tmp.503
+___block_descriptor_tmp.509
+___block_descriptor_tmp.519
+___block_descriptor_tmp.527
+___block_descriptor_tmp.531
+___block_descriptor_tmp.535
+___block_descriptor_tmp.540
+___block_descriptor_tmp.543
+___block_descriptor_tmp.571
+___block_descriptor_tmp.580
+___block_descriptor_tmp.586
+___block_descriptor_tmp.589
+___block_literal_global.590
+___block_descriptor_tmp.601
+___block_literal_global.602
+___block_descriptor_tmp.642
+___block_descriptor_tmp.644
+___block_literal_global.645
+___block_descriptor_tmp.651
+___block_descriptor_tmp.655
+___block_descriptor_tmp.659
+___block_descriptor_tmp.663
+___block_descriptor_tmp.722
+___block_descriptor_tmp.735
+___block_descriptor_tmp.742
+___block_descriptor_tmp.752
+___block_descriptor_tmp.756
+___block_descriptor_tmp.765
+___block_descriptor_tmp.772
+___block_descriptor_tmp.779
+___block_descriptor_tmp.787
+___block_descriptor_tmp.792
+___block_descriptor_tmp.806
+___block_descriptor_tmp.814
+__ZNSt3__1L19piecewise_constructE
+__ZTSNSt3__120__shared_ptr_emplaceIN9mParticle7BracketENS_9allocatorIS2_EEEE
+__ZTINSt3__120__shared_ptr_emplaceIN9mParticle7BracketENS_9allocatorIS2_EEEE
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitContainer.mm
+__insert_node_at
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__tree
+__begin_node
+__emplace_unique_key_args<NSString *, const std::__1::piecewise_construct_t &, std::__1::tuple<NSString *const __strong &>, std::__1::tuple<> >
+__tree_iterator
+get
+__construct_node<const std::__1::piecewise_construct_t &, std::__1::tuple<NSString *const __strong &>, std::__1::tuple<> >
+construct<std::__1::pair<NSString *const, int>, const std::__1::piecewise_construct_t &, std::__1::tuple<NSString *const __strong &>, std::__1::tuple<> >
+__construct<std::__1::pair<NSString *const, int>, const std::__1::piecewise_construct_t &, std::__1::tuple<NSString *const __strong &>, std::__1::tuple<> >
+pair<NSString *const __strong &>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/utility
+pair<NSString *const __strong &, 0>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/tuple
+__find_equal<NSString *>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/map
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__functional_base
+__root_ptr
+__root
+__end_node
+destroy<MPEvent *>
+__destroy<MPEvent *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPEvent *> &>
+__compressed_pair_elem<std::__1::allocator<MPEvent *> &, void>
+__push_back_slow_path<MPEvent *const __strong &>
+swap<MPEvent *__strong *>
+__construct_backward<MPEvent *__strong *>
+construct<MPEvent *, MPEvent *>
+__construct<MPEvent *, MPEvent *>
+construct<MPEvent *, MPEvent *const __strong &>
+__construct<MPEvent *, MPEvent *const __strong &>
+destroy<NSMutableDictionary *>
+__destroy<NSMutableDictionary *>
+__compressed_pair<nullptr_t, std::__1::allocator<NSMutableDictionary *> &>
+__compressed_pair_elem<std::__1::allocator<NSMutableDictionary *> &, void>
+__push_back_slow_path<NSMutableDictionary *const __strong &>
+swap<NSMutableDictionary *__strong *>
+__construct_backward<NSMutableDictionary *__strong *>
+construct<NSMutableDictionary *, NSMutableDictionary *>
+__construct<NSMutableDictionary *, NSMutableDictionary *>
+construct<NSMutableDictionary *, NSMutableDictionary *const __strong &>
+__construct<NSMutableDictionary *, NSMutableDictionary *const __strong &>
+__push_back_slow_path<unsigned long>
+swap<unsigned long *>
+__construct_backward<unsigned long>
+construct<unsigned long, unsigned long>
+__construct<unsigned long, unsigned long>
+__push_back_slow_path<const unsigned long &>
+construct<unsigned long, const unsigned long &>
+__construct<unsigned long, const unsigned long &>
+__compressed_pair<nullptr_t, std::__1::allocator<unsigned long> &>
+__compressed_pair_elem<std::__1::allocator<unsigned long> &, void>
+__emplace_unique_key_args<int, const std::__1::piecewise_construct_t &, std::__1::tuple<int &&>, std::__1::tuple<> >
+__construct_node<const std::__1::piecewise_construct_t &, std::__1::tuple<int &&>, std::__1::tuple<> >
+construct<std::__1::pair<const int, NSString *>, const std::__1::piecewise_construct_t &, std::__1::tuple<int &&>, std::__1::tuple<> >
+__construct<std::__1::pair<const int, NSString *>, const std::__1::piecewise_construct_t &, std::__1::tuple<int &&>, std::__1::tuple<> >
+pair<int &&>
+pair<int &&, 0>
+__find_equal<int>
+__emplace_unique_key_args<int, const std::__1::piecewise_construct_t &, std::__1::tuple<const int &>, std::__1::tuple<> >
+__construct_node<const std::__1::piecewise_construct_t &, std::__1::tuple<const int &>, std::__1::tuple<> >
+construct<std::__1::pair<const int, NSString *>, const std::__1::piecewise_construct_t &, std::__1::tuple<const int &>, std::__1::tuple<> >
+__construct<std::__1::pair<const int, NSString *>, const std::__1::piecewise_construct_t &, std::__1::tuple<const int &>, std::__1::tuple<> >
+pair<const int &>
+pair<const int &, 0>
+__construct_at_end<MPEventProjection *__strong *>
+__construct_range_forward<MPEventProjection *__strong *, MPEventProjection *__strong *>
+construct<MPEventProjection *, MPEventProjection *__strong &>
+__construct<MPEventProjection *, MPEventProjection *__strong &>
+__construct_at_end<MPEvent *__strong *>
+__construct_range_forward<MPEvent *__strong *, MPEvent *__strong *>
+construct<MPEvent *, MPEvent *__strong &>
+__construct<MPEvent *, MPEvent *__strong &>
+__construct_at_end<MPCommerceEvent *__strong *>
+__construct_range_forward<MPCommerceEvent *__strong *, MPCommerceEvent *__strong *>
+construct<MPCommerceEvent *, MPCommerceEvent *__strong &>
+__construct<MPCommerceEvent *, MPCommerceEvent *__strong &>
+destroy<MPCommerceEvent *>
+__destroy<MPCommerceEvent *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPCommerceEvent *> &>
+__compressed_pair_elem<std::__1::allocator<MPCommerceEvent *> &, void>
+__push_back_slow_path<MPCommerceEvent *const __strong &>
+swap<MPCommerceEvent *__strong *>
+__construct_backward<MPCommerceEvent *__strong *>
+construct<MPCommerceEvent *, MPCommerceEvent *>
+__construct<MPCommerceEvent *, MPCommerceEvent *>
+construct<MPCommerceEvent *, MPCommerceEvent *const __strong &>
+__construct<MPCommerceEvent *, MPCommerceEvent *const __strong &>
+__tree_balance_after_insert<std::__1::__tree_node_base<void *> *>
+__tree_left_rotate<std::__1::__tree_node_base<void *> *>
+__set_parent
+__tree_is_left_child<std::__1::__tree_node_base<void *> *>
+__parent_unsafe
+__tree_right_rotate<std::__1::__tree_node_base<void *> *>
+__emplace_unique_key_args<NSNumber *, const std::__1::piecewise_construct_t &, std::__1::tuple<NSNumber *const __strong &>, std::__1::tuple<> >
+__construct_node<const std::__1::piecewise_construct_t &, std::__1::tuple<NSNumber *const __strong &>, std::__1::tuple<> >
+construct<std::__1::pair<NSNumber *const, std::__1::shared_ptr<mParticle::Bracket> >, const std::__1::piecewise_construct_t &, std::__1::tuple<NSNumber *const __strong &>, std::__1::tuple<> >
+__construct<std::__1::pair<NSNumber *const, std::__1::shared_ptr<mParticle::Bracket> >, const std::__1::piecewise_construct_t &, std::__1::tuple<NSNumber *const __strong &>, std::__1::tuple<> >
+pair<NSNumber *const __strong &>
+pair<NSNumber *const __strong &, 0>
+shared_ptr
+__find_equal<NSNumber *>
+__tree_remove<std::__1::__tree_node_base<void *> *>
+__tree_next<std::__1::__tree_node_base<void *> *>
+__tree_min<std::__1::__tree_node_base<void *> *>
+erase
+destroy<std::__1::pair<NSNumber *const, std::__1::shared_ptr<mParticle::Bracket> > >
+__destroy<std::__1::pair<NSNumber *const, std::__1::shared_ptr<mParticle::Bracket> > >
+~pair
+~shared_ptr
+__get_ptr
+__tree_next_iter<std::__1::__tree_end_node<std::__1::__tree_node_base<void *> *> *, std::__1::__tree_node_base<void *> *>
+__get_np
+__on_zero_shared_weak
+__on_zero_shared
+~__shared_ptr_emplace
+__enable_weak_this
+__release_shared
+__libcpp_atomic_refcount_decrement<long>
+destroy<std::__1::pair<NSString *const, int> >
+__destroy<std::__1::pair<NSString *const, int> >
+destroy<std::__1::pair<const int, NSString *> >
+__destroy<std::__1::pair<const int, NSString *> >
+map
+__tree
+__compressed_pair<int, const std::__1::__map_value_compare<NSNumber *, std::__1::__value_type<NSNumber *, std::__1::shared_ptr<mParticle::Bracket> >, std::__1::less<NSNumber *>, true> &>
+__compressed_pair_elem<int, void>
+__tree_end_node
+~map
+~__tree
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitContainer.h
+__46-[MPKitContainer integrationAttributesForKit:]_block_invoke
+__44-[MPKitContainer userIdentitiesArrayForKit:]_block_invoke
+__67-[MPKitContainer forwardSDKCall:parameters:messageType:kitHandler:]_block_invoke
+__44-[MPKitContainer forwardSDKCall:kitHandler:]_block_invoke
+__77-[MPKitContainer forwardSDKCall:errorMessage:exception:eventInfo:kitHandler:]_block_invoke
+__70-[MPKitContainer forwardSDKCall:userIdentity:identityType:kitHandler:]_block_invoke
+__59-[MPKitContainer forwardSDKCall:userAttributes:kitHandler:]_block_invoke
+__67-[MPKitContainer forwardSDKCall:userAttributeKey:value:kitHandler:]_block_invoke
+__71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke.753
+__71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke_2
+__71-[MPKitContainer forwardSDKCall:event:messageType:userInfo:kitHandler:]_block_invoke
+__54-[MPKitContainer forwardCommerceEventCall:kitHandler:]_block_invoke_2
+__54-[MPKitContainer forwardCommerceEventCall:kitHandler:]_block_invoke
+operator!=<NSNumber *__strong *>
+operator==<NSNumber *__strong *, NSNumber *__strong *>
+move<NSNumber *__strong *, NSNumber *__strong *>
+__move<NSNumber *__strong *, NSNumber *__strong *>
+operator-<NSNumber *const __strong *, NSNumber *const __strong *>
+operator+
+at
+operator==<mParticle::Bracket>
+operator bool
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.660
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.656
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.652
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.643
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke.633
+operator==
+find
+find<int>
+operator*
+operator!=
+__lower_bound<int>
+operator->
+__62-[MPKitContainer project:event:messageType:completionHandler:]_block_invoke
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__compressed_pair<int, const std::__1::__map_value_compare<int, std::__1::__value_type<int, NSString *>, std::__1::less<int>, true> &>
+__compressed_pair<int, const std::__1::__map_value_compare<NSString *, std::__1::__value_type<NSString *, int>, std::__1::less<NSString *>, true> &>
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.599
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.587
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.581
+operator!=<MPProjectionPropertyKind *>
+operator==<MPProjectionPropertyKind *, MPProjectionPropertyKind *>
+__construct_at_end<const MPProjectionPropertyKind *>
+__construct_range_forward<const MPProjectionPropertyKind *, MPProjectionPropertyKind *>
+construct<MPProjectionPropertyKind, const MPProjectionPropertyKind &>
+__construct<MPProjectionPropertyKind, const MPProjectionPropertyKind &>
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.572
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.549
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.544
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.537
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.536
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.532
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2.523
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.522
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke.516
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_3
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke_2
+__58-[MPKitContainer project:commerceEvent:completionHandler:]_block_invoke
+operator!=<MPEventProjection *__strong *>
+operator==<MPEventProjection *__strong *, MPEventProjection *__strong *>
+operator!=<NSMutableDictionary *__strong *>
+operator==<NSMutableDictionary *__strong *, NSMutableDictionary *__strong *>
+operator!=<unsigned long *>
+operator==<unsigned long *, unsigned long *>
+__43-[MPKitContainer filter:forUserAttributes:]_block_invoke
+__61-[MPKitContainer filter:forEvent:selector:completionHandler:]_block_invoke.461
+operator!=<MPEvent *__strong *>
+operator==<MPEvent *__strong *, MPEvent *__strong *>
+back
+__61-[MPKitContainer filter:forEvent:selector:completionHandler:]_block_invoke
+__60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.422
+operator!=<MPCommerceEvent *__strong *>
+operator==<MPCommerceEvent *__strong *, MPCommerceEvent *__strong *>
+__60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.391
+__60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.380
+__60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke.370
+__60-[MPKitContainer filter:forCommerceEvent:completionHandler:]_block_invoke
+__32+[MPKitContainer sharedInstance]_block_invoke
+swap
+swap<std::__1::__shared_weak_count *>
+swap<mParticle::Bracket *>
+make_shared<mParticle::Bracket, long &, short &, short &>
+make_shared<long &, short &, short &>
+__shared_ptr_emplace<long &, short &, short &>
+__compressed_pair<std::__1::allocator<mParticle::Bracket> &, long &, short &, short &>
+__compressed_pair_elem<long &, short &, short &, 0, 1, 2>
+Bracket
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPBracket.h
+__shared_weak_count
+__shared_count
+__add_shared
+__libcpp_atomic_refcount_increment<long>
+__map_iterator
+find<NSNumber *>
+__lower_bound<NSNumber *>
+__58-[MPKitContainer validateAndTransformToSafeConfiguration:]_block_invoke
+__97-[MPKitContainer shouldIncludeEventWithAttributes:afterAttributeValueFilteringWithConfiguration:]_block_invoke
+__35-[MPKitContainer replayQueuedItems]_block_invoke.218
+__35-[MPKitContainer replayQueuedItems]_block_invoke.208
+__35-[MPKitContainer replayQueuedItems]_block_invoke
+__32-[MPKitContainer initializeKits]_block_invoke
+__26-[MPKitContainer freeKit:]_block_invoke
+__22-[MPKitContainer init]_block_invoke_2
+__22-[MPKitContainer init]_block_invoke
+-[MPIdentityHTTPBaseRequest dictionaryRepresentation]
+-[MPIdentifyHTTPRequest initWithIdentityApiRequest:]
+-[MPIdentifyHTTPRequest dictionaryRepresentation]
+-[MPIdentifyHTTPRequest previousMPID]
+-[MPIdentifyHTTPRequest setPreviousMPID:]
+-[MPIdentifyHTTPRequest knownIdentities]
+-[MPIdentifyHTTPRequest setKnownIdentities:]
+-[MPIdentifyHTTPRequest .cxx_destruct]
++[MPIdentityHTTPClientSDK clientSDKDictionaryWithVersion:]
+-[MPIdentityHTTPModifyRequest initWithMPID:identityChanges:]
+-[MPIdentityHTTPModifyRequest dictionaryRepresentation]
+___55-[MPIdentityHTTPModifyRequest dictionaryRepresentation]_block_invoke
+-[MPIdentityHTTPModifyRequest identityChanges]
+-[MPIdentityHTTPModifyRequest setIdentityChanges:]
+-[MPIdentityHTTPModifyRequest mpid]
+-[MPIdentityHTTPModifyRequest setMpid:]
+-[MPIdentityHTTPModifyRequest .cxx_destruct]
+-[MPIdentityHTTPIdentities initWithIdentities:]
+___47-[MPIdentityHTTPIdentities initWithIdentities:]_block_invoke
+-[MPIdentityHTTPIdentities dictionaryRepresentation]
++[MPIdentityHTTPIdentities stringForIdentityType:]
+-[MPIdentityHTTPIdentities advertiserId]
+-[MPIdentityHTTPIdentities setAdvertiserId:]
+-[MPIdentityHTTPIdentities vendorId]
+-[MPIdentityHTTPIdentities setVendorId:]
+-[MPIdentityHTTPIdentities deviceApplicationStamp]
+-[MPIdentityHTTPIdentities setDeviceApplicationStamp:]
+-[MPIdentityHTTPIdentities pushToken]
+-[MPIdentityHTTPIdentities setPushToken:]
+-[MPIdentityHTTPIdentities customerId]
+-[MPIdentityHTTPIdentities setCustomerId:]
+-[MPIdentityHTTPIdentities email]
+-[MPIdentityHTTPIdentities setEmail:]
+-[MPIdentityHTTPIdentities facebook]
+-[MPIdentityHTTPIdentities setFacebook:]
+-[MPIdentityHTTPIdentities facebookCustomAudienceId]
+-[MPIdentityHTTPIdentities setFacebookCustomAudienceId:]
+-[MPIdentityHTTPIdentities google]
+-[MPIdentityHTTPIdentities setGoogle:]
+-[MPIdentityHTTPIdentities microsoft]
+-[MPIdentityHTTPIdentities setMicrosoft:]
+-[MPIdentityHTTPIdentities other]
+-[MPIdentityHTTPIdentities setOther:]
+-[MPIdentityHTTPIdentities twitter]
+-[MPIdentityHTTPIdentities setTwitter:]
+-[MPIdentityHTTPIdentities yahoo]
+-[MPIdentityHTTPIdentities setYahoo:]
+-[MPIdentityHTTPIdentities other2]
+-[MPIdentityHTTPIdentities setOther2:]
+-[MPIdentityHTTPIdentities other3]
+-[MPIdentityHTTPIdentities setOther3:]
+-[MPIdentityHTTPIdentities other4]
+-[MPIdentityHTTPIdentities setOther4:]
+-[MPIdentityHTTPIdentities .cxx_destruct]
+-[MPIdentityHTTPIdentityChange initWithOldValue:value:identityType:]
+-[MPIdentityHTTPIdentityChange dictionaryRepresentation]
+-[MPIdentityHTTPIdentityChange oldValue]
+-[MPIdentityHTTPIdentityChange setOldValue:]
+-[MPIdentityHTTPIdentityChange value]
+-[MPIdentityHTTPIdentityChange setValue:]
+-[MPIdentityHTTPIdentityChange identityType]
+-[MPIdentityHTTPIdentityChange setIdentityType:]
+-[MPIdentityHTTPIdentityChange .cxx_destruct]
+-[MPIdentityHTTPSuccessResponse initWithJsonObject:]
+-[MPIdentityHTTPSuccessResponse context]
+-[MPIdentityHTTPSuccessResponse setContext:]
+-[MPIdentityHTTPSuccessResponse mpid]
+-[MPIdentityHTTPSuccessResponse setMpid:]
+-[MPIdentityHTTPSuccessResponse isEphemeral]
+-[MPIdentityHTTPSuccessResponse setIsEphemeral:]
+-[MPIdentityHTTPSuccessResponse .cxx_destruct]
+-[MPIdentityHTTPModifySuccessResponse initWithJsonObject:]
+_OBJC_IVAR_$_MPIdentifyHTTPRequest._knownIdentities
+_OBJC_IVAR_$_MPIdentifyHTTPRequest._previousMPID
+_OBJC_IVAR_$_MPIdentityHTTPModifyRequest._identityChanges
+_OBJC_IVAR_$_MPIdentityHTTPModifyRequest._mpid
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._customerId
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._email
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._facebook
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._facebookCustomAudienceId
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._google
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._microsoft
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._other
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._twitter
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._yahoo
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._other2
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._other3
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._other4
+___block_descriptor_tmp.137
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._advertiserId
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._vendorId
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._deviceApplicationStamp
+_OBJC_IVAR_$_MPIdentityHTTPIdentities._pushToken
+_OBJC_IVAR_$_MPIdentityHTTPIdentityChange._oldValue
+_OBJC_IVAR_$_MPIdentityHTTPIdentityChange._value
+_OBJC_IVAR_$_MPIdentityHTTPIdentityChange._identityType
+_OBJC_IVAR_$_MPIdentityHTTPSuccessResponse._context
+_OBJC_IVAR_$_MPIdentityHTTPSuccessResponse._mpid
+_OBJC_IVAR_$_MPIdentityHTTPSuccessResponse._isEphemeral
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityDTO.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Identity/MPIdentityDTO.h
+__47-[MPIdentityHTTPIdentities initWithIdentities:]_block_invoke
+__55-[MPIdentityHTTPModifyRequest dictionaryRepresentation]_block_invoke
+-[MPBreadcrumb initWithSessionUUID:breadcrumbId:UUID:breadcrumbData:timestamp:]
+-[MPBreadcrumb description]
+-[MPBreadcrumb isEqual:]
+-[MPBreadcrumb copyWithZone:]
+-[MPBreadcrumb encodeWithCoder:]
+-[MPBreadcrumb initWithCoder:]
+-[MPBreadcrumb dictionaryRepresentation]
+-[MPBreadcrumb serializedString]
+-[MPBreadcrumb sessionUUID]
+-[MPBreadcrumb setSessionUUID:]
+-[MPBreadcrumb breadcrumbData]
+-[MPBreadcrumb setBreadcrumbData:]
+-[MPBreadcrumb timestamp]
+-[MPBreadcrumb setTimestamp:]
+-[MPBreadcrumb breadcrumbId]
+-[MPBreadcrumb setBreadcrumbId:]
+-[MPBreadcrumb content]
+-[MPBreadcrumb setContent:]
+-[MPBreadcrumb .cxx_destruct]
+_OBJC_IVAR_$_MPBreadcrumb._sessionUUID
+_OBJC_IVAR_$_MPBreadcrumb._breadcrumbId
+_OBJC_IVAR_$_MPBreadcrumb._timestamp
+_OBJC_IVAR_$_MPBreadcrumb._breadcrumbData
+_OBJC_IVAR_$_MPBreadcrumb._content
+l_OBJC_PROTOCOL_$_MPDataModelProtocol
+l_OBJC_LABEL_PROTOCOL_$_MPDataModelProtocol
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPBreadcrumb.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPBreadcrumb.h
+-[MPIntegrationAttributes initWithKitCode:attributes:]
+___54-[MPIntegrationAttributes initWithKitCode:attributes:]_block_invoke
+-[MPIntegrationAttributes initWithKitCode:attributesData:]
+-[MPIntegrationAttributes dictionaryRepresentation]
+-[MPIntegrationAttributes serializedString]
+-[MPIntegrationAttributes kitCode]
+-[MPIntegrationAttributes setKitCode:]
+-[MPIntegrationAttributes attributes]
+-[MPIntegrationAttributes setAttributes:]
+-[MPIntegrationAttributes .cxx_destruct]
+_OBJC_IVAR_$_MPIntegrationAttributes._kitCode
+_OBJC_IVAR_$_MPIntegrationAttributes._attributes
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPIntegrationAttributes.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPIntegrationAttributes.h
+__54-[MPIntegrationAttributes initWithKitCode:attributes:]_block_invoke
+-[MPCustomModulePreference initWithDictionary:location:moduleId:]
+-[MPCustomModulePreference encodeWithCoder:]
+-[MPCustomModulePreference initWithCoder:]
+-[MPCustomModulePreference appBoyJSONStringFromDictionary:]
+-[MPCustomModulePreference defaultValueForMacroPlaceholder:]
+-[MPCustomModulePreference uuidWithNoDashes]
+-[MPCustomModulePreference value]
+-[MPCustomModulePreference moduleId]
+-[MPCustomModulePreference defaultValue]
+-[MPCustomModulePreference readKey]
+-[MPCustomModulePreference setValue:]
+-[MPCustomModulePreference writeKey]
+-[MPCustomModulePreference dataType]
+-[MPCustomModulePreference location]
+-[MPCustomModulePreference setLocation:]
+-[MPCustomModulePreference .cxx_destruct]
+_OBJC_IVAR_$_MPCustomModulePreference._readKey
+_OBJC_IVAR_$_MPCustomModulePreference._writeKey
+_OBJC_IVAR_$_MPCustomModulePreference._dataType
+_OBJC_IVAR_$_MPCustomModulePreference._moduleId
+_OBJC_IVAR_$_MPCustomModulePreference._defaultValue
+_OBJC_IVAR_$_MPCustomModulePreference._location
+_OBJC_IVAR_$_MPCustomModulePreference._value
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPCustomModulePreference.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Custom Modules/MPCustomModulePreference.h
++[MPDateFormatter initialize]
++[MPDateFormatter dateFromString:]
++[MPDateFormatter dateFromStringRFC3339:]
++[MPDateFormatter dateFromStringRFC1123:]
++[MPDateFormatter stringFromDateRFC1123:]
++[MPDateFormatter stringFromDateRFC3339:]
+_dateFormatterRFC3339
+_dateFormatterRFC1123
+_dateFormatterRFC850
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPDateFormatter.m
+-[MPMessage initWithSessionId:messageId:UUID:messageType:messageData:timestamp:uploadStatus:userId:]
+-[MPMessage initWithSession:messageType:messageInfo:uploadStatus:UUID:timestamp:userId:]
+-[MPMessage description]
+-[MPMessage isEqual:]
+-[MPMessage copyWithZone:]
+-[MPMessage dictionaryRepresentation]
+-[MPMessage serializedString]
+-[MPMessage messageType]
+-[MPMessage setMessageType:]
+-[MPMessage messageData]
+-[MPMessage setMessageData:]
+-[MPMessage timestamp]
+-[MPMessage setTimestamp:]
+-[MPMessage messageId]
+-[MPMessage setMessageId:]
+-[MPMessage sessionId]
+-[MPMessage setSessionId:]
+-[MPMessage userId]
+-[MPMessage setUserId:]
+-[MPMessage uploadStatus]
+-[MPMessage setUploadStatus:]
+-[MPMessage .cxx_destruct]
+_OBJC_IVAR_$_MPMessage._sessionId
+_OBJC_IVAR_$_MPMessage._messageId
+_OBJC_IVAR_$_MPMessage._messageType
+_OBJC_IVAR_$_MPMessage._messageData
+_OBJC_IVAR_$_MPMessage._timestamp
+_OBJC_IVAR_$_MPMessage._uploadStatus
+_OBJC_IVAR_$_MPMessage._userId
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPMessage.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPMessage.h
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPBracket.cpp
+shouldForward
+-[MPCurrentState init]
+-[MPCurrentState description]
+-[MPCurrentState applicationMemory]
+-[MPCurrentState cpuUsageInfo]
+-[MPCurrentState dataConnectionStatus]
+-[MPCurrentState diskSpaceInfo]
+-[MPCurrentState systemMemoryInfo]
+-[MPCurrentState timeSinceStart]
+-[MPCurrentState dictionaryRepresentation]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPCurrentState.m
+-[MPKitFilter init]
+-[MPKitFilter initWithFilter:]
+-[MPKitFilter initWithFilter:filteredAttributes:]
+-[MPKitFilter initWithEvent:shouldFilter:]
+-[MPKitFilter initWithEvent:shouldFilter:appliedProjections:]
+-[MPKitFilter initWithCommerceEvent:shouldFilter:]
+-[MPKitFilter initWithCommerceEvent:shouldFilter:appliedProjections:]
+-[MPKitFilter appliedProjections]
+-[MPKitFilter filteredAttributes]
+-[MPKitFilter forwardCommerceEvent]
+-[MPKitFilter forwardEvent]
+-[MPKitFilter shouldFilter]
+-[MPKitFilter .cxx_destruct]
+_OBJC_IVAR_$_MPKitFilter._shouldFilter
+_OBJC_IVAR_$_MPKitFilter._filteredAttributes
+_OBJC_IVAR_$_MPKitFilter._forwardEvent
+_OBJC_IVAR_$_MPKitFilter._appliedProjections
+_OBJC_IVAR_$_MPKitFilter._forwardCommerceEvent
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitFilter.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitFilter.h
++[MPBackendController initialize]
+-[MPBackendController initWithDelegate:]
+-[MPBackendController dealloc]
+-[MPBackendController eventSet]
+-[MPBackendController networkCommunication]
+-[MPBackendController session]
+-[MPBackendController userAttributesForUserId:]
+-[MPBackendController userIdentitiesForUserId:]
+-[MPBackendController beginBackgroundTask]
+___42-[MPBackendController beginBackgroundTask]_block_invoke
+-[MPBackendController endBackgroundTask]
+-[MPBackendController broadcastSessionDidBegin:]
+___48-[MPBackendController broadcastSessionDidBegin:]_block_invoke
+___copy_helper_block_.145
+___destroy_helper_block_.146
+___48-[MPBackendController broadcastSessionDidBegin:]_block_invoke.148
+___copy_helper_block_.159
+___destroy_helper_block_.160
+-[MPBackendController broadcastSessionDidEnd:]
+___46-[MPBackendController broadcastSessionDidEnd:]_block_invoke
+___copy_helper_block_.164
+___destroy_helper_block_.165
+-[MPBackendController cleanUp]
+-[MPBackendController logUserAttributeChange:]
+-[MPBackendController logUserIdentityChange:]
+-[MPBackendController previousSessionSuccessfullyClosed]
+-[MPBackendController setPreviousSessionSuccessfullyClosed:]
+-[MPBackendController processDidFinishLaunching:]
+-[MPBackendController processOpenSessionsEndingCurrent:completionHandler:]
+-[MPBackendController processPendingArchivedMessages]
+___53-[MPBackendController processPendingArchivedMessages]_block_invoke
+___copy_helper_block_.276
+___destroy_helper_block_.277
+-[MPBackendController processPendingUploads]
+___44-[MPBackendController processPendingUploads]_block_invoke
+___copy_helper_block_.290
+___destroy_helper_block_.291
+-[MPBackendController proxyOriginalAppDelegate]
+-[MPBackendController requestConfig:]
+___37-[MPBackendController requestConfig:]_block_invoke
+___copy_helper_block_.314
+___destroy_helper_block_.315
+-[MPBackendController setUserAttributeChange:completionHandler:]
+-[MPBackendController uploadBatchesWithCompletionHandler:]
+___58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke
+___58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke_2
+___58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke_3
+___copy_helper_block_.385
+___destroy_helper_block_.386
+___copy_helper_block_.391
+___destroy_helper_block_.392
+___copy_helper_block_.397
+___destroy_helper_block_.398
+___58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke.407
+___copy_helper_block_.411
+___destroy_helper_block_.412
+-[MPBackendController uploadOpenSessions:completionHandler:]
+___60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke
+___60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke_2
+___copy_helper_block_.417
+___destroy_helper_block_.418
+___copy_helper_block_.420
+___destroy_helper_block_.421
+___60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke.444
+___60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke_2.445
+___copy_helper_block_.446
+___destroy_helper_block_.447
+___copy_helper_block_.451
+___destroy_helper_block_.452
+-[MPBackendController handleApplicationDidEnterBackground:]
+___59-[MPBackendController handleApplicationDidEnterBackground:]_block_invoke
+___59-[MPBackendController handleApplicationDidEnterBackground:]_block_invoke_2
+___copy_helper_block_.468
+___destroy_helper_block_.469
+___copy_helper_block_.473
+___destroy_helper_block_.474
+-[MPBackendController handleApplicationWillEnterForeground:]
+___60-[MPBackendController handleApplicationWillEnterForeground:]_block_invoke
+___copy_helper_block_.476
+___destroy_helper_block_.477
+-[MPBackendController handleApplicationDidFinishLaunching:]
+-[MPBackendController handleApplicationWillTerminate:]
+___54-[MPBackendController handleApplicationWillTerminate:]_block_invoke
+___54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_2
+___54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_3
+___54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_4
+___copy_helper_block_.487
+___destroy_helper_block_.488
+___copy_helper_block_.490
+___destroy_helper_block_.491
+___copy_helper_block_.493
+___destroy_helper_block_.494
+-[MPBackendController handleMemoryWarningNotification:]
+-[MPBackendController handleNetworkPerformanceNotification:]
+-[MPBackendController handleApplicationDidBecomeActive:]
+___56-[MPBackendController handleApplicationDidBecomeActive:]_block_invoke
+-[MPBackendController handleApplicationWillResignActive:]
+-[MPBackendController beginBackgroundTimer]
+___43-[MPBackendController beginBackgroundTimer]_block_invoke
+___43-[MPBackendController beginBackgroundTimer]_block_invoke_2
+___copy_helper_block_.522
+___destroy_helper_block_.523
+___43-[MPBackendController beginBackgroundTimer]_block_invoke.525
+___43-[MPBackendController beginBackgroundTimer]_block_invoke.536
+___copy_helper_block_.537
+___destroy_helper_block_.538
+-[MPBackendController beginUploadTimer]
+___39-[MPBackendController beginUploadTimer]_block_invoke
+___39-[MPBackendController beginUploadTimer]_block_invoke_2
+___copy_helper_block_.542
+___destroy_helper_block_.543
+___39-[MPBackendController beginUploadTimer]_block_invoke.545
+-[MPBackendController createSourceTimer:eventHandler:cancelHandler:]
+___68-[MPBackendController createSourceTimer:eventHandler:cancelHandler:]_block_invoke
+___copy_helper_block_.552
+___destroy_helper_block_.553
+-[MPBackendController endBackgroundTimer]
+-[MPBackendController endUploadTimer]
+-[MPBackendController setSessionTimeout:]
+-[MPBackendController uploadInterval]
+-[MPBackendController setUploadInterval:]
+-[MPBackendController beginSession:]
+-[MPBackendController endSession]
+-[MPBackendController beginTimedEvent:completionHandler:]
+-[MPBackendController checkAttribute:key:value:error:]
+-[MPBackendController checkAttribute:key:value:maxValueLength:error:]
+-[MPBackendController eventWithName:]
+-[MPBackendController fetchSegments:endpointId:completionHandler:]
+___66-[MPBackendController fetchSegments:endpointId:completionHandler:]_block_invoke
+___copy_helper_block_.630
+___destroy_helper_block_.631
+___66-[MPBackendController fetchSegments:endpointId:completionHandler:]_block_invoke.634
+___copy_helper_block_.641
+___destroy_helper_block_.642
+-[MPBackendController execStatusDescription:]
+-[MPBackendController incrementSessionAttribute:key:byValue:]
+___61-[MPBackendController incrementSessionAttribute:key:byValue:]_block_invoke
+___copy_helper_block_.656
+___destroy_helper_block_.657
+-[MPBackendController incrementUserAttribute:byValue:]
+-[MPBackendController leaveBreadcrumb:completionHandler:]
+-[MPBackendController logCommerceEvent:completionHandler:]
+-[MPBackendController logError:exception:topmostContext:eventInfo:completionHandler:]
+-[MPBackendController logEvent:completionHandler:]
+-[MPBackendController logNetworkPerformanceMeasurement:completionHandler:]
+-[MPBackendController logScreen:completionHandler:]
+-[MPBackendController setOptOut:completionHandler:]
+-[MPBackendController setSessionAttribute:key:value:]
+-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]
+___119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke
+___119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_2
+___119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_3
+___119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_4
+___copy_helper_block_.767
+___destroy_helper_block_.768
+___copy_helper_block_.778
+___destroy_helper_block_.779
+-[MPBackendController saveMessage:updateSession:]
+-[MPBackendController uploadDatabaseWithCompletionHandler:]
+___59-[MPBackendController uploadDatabaseWithCompletionHandler:]_block_invoke
+___59-[MPBackendController uploadDatabaseWithCompletionHandler:]_block_invoke_2
+___copy_helper_block_.797
+___destroy_helper_block_.798
+___copy_helper_block_.800
+___destroy_helper_block_.801
+-[MPBackendController setUserAttribute:value:timestamp:completionHandler:]
+-[MPBackendController setUserAttribute:values:timestamp:completionHandler:]
+-[MPBackendController removeUserAttribute:timestamp:completionHandler:]
+-[MPBackendController setUserIdentity:identityType:timestamp:completionHandler:]
+___80-[MPBackendController setUserIdentity:identityType:timestamp:completionHandler:]_block_invoke
+___copy_helper_block_.828
+___destroy_helper_block_.829
+-[MPBackendController clearUserAttributes]
+-[MPBackendController setSession:]
+-[MPBackendController delegate]
+-[MPBackendController setDelegate:]
+-[MPBackendController setEventSet:]
+-[MPBackendController setNetworkCommunication:]
+-[MPBackendController sessionTimeout]
+-[MPBackendController .cxx_destruct]
+__ZL22execStatusDescriptions
+_OBJC_IVAR_$_MPBackendController.messageQueue
+_OBJC_IVAR_$_MPBackendController._sessionTimeout
+_OBJC_IVAR_$_MPBackendController.nextCleanUpTime
+_OBJC_IVAR_$_MPBackendController.backendBackgroundTaskIdentifier
+_OBJC_IVAR_$_MPBackendController.retrievingSegments
+_OBJC_IVAR_$_MPBackendController._delegate
+_OBJC_IVAR_$_MPBackendController.backgroundStartTime
+_OBJC_IVAR_$_MPBackendController.longSession
+_OBJC_IVAR_$_MPBackendController.resignedActive
+_OBJC_IVAR_$_MPBackendController.sessionBeingUploaded
+_OBJC_IVAR_$_MPBackendController.backgroundSource
+_OBJC_IVAR_$_MPBackendController.uploadSource
+_OBJC_IVAR_$_MPBackendController.originalAppDelegateProxied
+_OBJC_IVAR_$_MPBackendController.backendSemaphore
+_OBJC_IVAR_$_MPBackendController.timeAppWentToBackground
+_OBJC_IVAR_$_MPBackendController._eventSet
+_OBJC_IVAR_$_MPBackendController._networkCommunication
+_OBJC_IVAR_$_MPBackendController._session
+___block_descriptor_tmp.147
+___block_descriptor_tmp.166
+_OBJC_IVAR_$_MPBackendController.didFinishLaunchingNotification
+___block_descriptor_tmp.279
+_OBJC_IVAR_$_MPBackendController.appDelegateProxy
+___block_descriptor_tmp.317
+_OBJC_IVAR_$_MPBackendController.deletedUserAttributes
+___block_descriptor_tmp.388
+___block_descriptor_tmp.394
+___block_descriptor_tmp.400
+___block_descriptor_tmp.413
+___block_descriptor_tmp.423
+___block_descriptor_tmp.448
+___block_descriptor_tmp.453
+__ZL15appBackgrounded
+___block_descriptor_tmp.470
+___block_descriptor_tmp.475
+___block_descriptor_tmp.489
+___block_descriptor_tmp.492
+___block_descriptor_tmp.495
+___block_descriptor_tmp.506
+___block_descriptor_tmp.524
+___block_descriptor_tmp.530
+___block_descriptor_tmp.539
+___block_descriptor_tmp.544
+___block_descriptor_tmp.554
+_OBJC_IVAR_$_MPBackendController._uploadInterval
+___block_descriptor_tmp.633
+___block_descriptor_tmp.658
+___block_descriptor_tmp.744
+___block_descriptor_tmp.757
+___block_literal_global.758
+___block_descriptor_tmp.769
+___block_descriptor_tmp.780
+___block_descriptor_tmp.799
+___block_descriptor_tmp.802
+___block_descriptor_tmp.831
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPBackendController.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPBackendController.h
+__80-[MPBackendController setUserIdentity:identityType:timestamp:completionHandler:]_block_invoke
+__59-[MPBackendController uploadDatabaseWithCompletionHandler:]_block_invoke_2
+__59-[MPBackendController uploadDatabaseWithCompletionHandler:]_block_invoke
+__119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_4
+__119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_3
+__119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke_2
+__119-[MPBackendController startWithKey:secret:firstRun:installationType:proxyAppDelegate:startKitsAsync:completionHandler:]_block_invoke
+__61-[MPBackendController incrementSessionAttribute:key:byValue:]_block_invoke
+__66-[MPBackendController fetchSegments:endpointId:completionHandler:]_block_invoke.634
+__66-[MPBackendController fetchSegments:endpointId:completionHandler:]_block_invoke
+__68-[MPBackendController createSourceTimer:eventHandler:cancelHandler:]_block_invoke
+__39-[MPBackendController beginUploadTimer]_block_invoke.545
+__39-[MPBackendController beginUploadTimer]_block_invoke_2
+__39-[MPBackendController beginUploadTimer]_block_invoke
+__43-[MPBackendController beginBackgroundTimer]_block_invoke.536
+__43-[MPBackendController beginBackgroundTimer]_block_invoke.525
+__43-[MPBackendController beginBackgroundTimer]_block_invoke_2
+__43-[MPBackendController beginBackgroundTimer]_block_invoke
+__56-[MPBackendController handleApplicationDidBecomeActive:]_block_invoke
+__54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_4
+__54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_3
+__54-[MPBackendController handleApplicationWillTerminate:]_block_invoke_2
+__54-[MPBackendController handleApplicationWillTerminate:]_block_invoke
+__60-[MPBackendController handleApplicationWillEnterForeground:]_block_invoke
+__59-[MPBackendController handleApplicationDidEnterBackground:]_block_invoke_2
+__59-[MPBackendController handleApplicationDidEnterBackground:]_block_invoke
+__60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke_2.445
+__60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke.444
+__60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke_2
+__60-[MPBackendController uploadOpenSessions:completionHandler:]_block_invoke
+__58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke.407
+__58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke_3
+__58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke_2
+__58-[MPBackendController uploadBatchesWithCompletionHandler:]_block_invoke
+__37-[MPBackendController requestConfig:]_block_invoke
+__44-[MPBackendController processPendingUploads]_block_invoke
+__53-[MPBackendController processPendingArchivedMessages]_block_invoke
+__46-[MPBackendController broadcastSessionDidEnd:]_block_invoke
+__48-[MPBackendController broadcastSessionDidBegin:]_block_invoke.148
+__48-[MPBackendController broadcastSessionDidBegin:]_block_invoke
+__42-[MPBackendController beginBackgroundTask]_block_invoke
+-[MPSurrogateAppDelegate application:openURL:options:]
+-[MPSurrogateAppDelegate appDelegateProxy]
+-[MPSurrogateAppDelegate setAppDelegateProxy:]
+-[MPSurrogateAppDelegate .cxx_destruct]
+_OBJC_IVAR_$_MPSurrogateAppDelegate._appDelegateProxy
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/AppNotifications/MPSurrogateAppDelegate.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/AppNotifications/MPSurrogateAppDelegate.h
+-[MPProduct initWithName:sku:quantity:price:]
+-[MPProduct description]
+___24-[MPProduct description]_block_invoke
+___24-[MPProduct description]_block_invoke.85
+___copy_helper_block_.86
+___destroy_helper_block_.87
+-[MPProduct isEqual:]
+-[MPProduct beautifiedAttributes]
+-[MPProduct objectDictionary]
+-[MPProduct userDefinedAttributes]
+-[MPProduct calculateTotalAmount]
+-[MPProduct objectForKeyedSubscript:]
+-[MPProduct setObject:forKeyedSubscript:]
+-[MPProduct allKeys]
+-[MPProduct count]
+-[MPProduct copyWithZone:]
+-[MPProduct encodeWithCoder:]
+-[MPProduct initWithCoder:]
+-[MPProduct commerceDictionaryRepresentation]
+-[MPProduct dictionaryRepresentation]
+-[MPProduct beautifiedDictionaryRepresentation]
+-[MPProduct setTimeAddedToCart:]
+-[MPProduct copyMatchingHashedProperties:]
+___42-[MPProduct copyMatchingHashedProperties:]_block_invoke
+___42-[MPProduct copyMatchingHashedProperties:]_block_invoke.171
+-[MPProduct affiliation]
+-[MPProduct setAffiliation:]
+-[MPProduct brand]
+-[MPProduct setBrand:]
+-[MPProduct category]
+-[MPProduct setCategory:]
+-[MPProduct couponCode]
+-[MPProduct setCouponCode:]
+-[MPProduct currency]
+-[MPProduct setCurrency:]
+-[MPProduct name]
+-[MPProduct setName:]
+-[MPProduct price]
+-[MPProduct setPrice:]
+-[MPProduct sku]
+-[MPProduct setSku:]
+-[MPProduct transactionId]
+-[MPProduct setTransactionId:]
+-[MPProduct variant]
+-[MPProduct setVariant:]
+-[MPProduct shippingAmount]
+-[MPProduct setShippingAmount:]
+-[MPProduct taxAmount]
+-[MPProduct setTaxAmount:]
+-[MPProduct totalAmount]
+-[MPProduct setTotalAmount:]
+-[MPProduct unitPrice]
+-[MPProduct setUnitPrice:]
+-[MPProduct position]
+-[MPProduct setPosition:]
+-[MPProduct quantity]
+-[MPProduct setQuantity:]
+-[MPProduct setBeautifiedAttributes:]
+-[MPProduct setUserDefinedAttributes:]
+-[MPProduct revenueAmount]
+-[MPProduct setRevenueAmount:]
+-[MPProduct setObjectDictionary:]
+-[MPProduct .cxx_destruct]
+_OBJC_IVAR_$_MPProduct._objectDictionary
+_OBJC_IVAR_$_MPProduct._userDefinedAttributes
+___block_descriptor_tmp.88
+_OBJC_IVAR_$_MPProduct._beautifiedAttributes
+___block_descriptor_tmp.174
+_OBJC_IVAR_$_MPProduct._revenueAmount
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPProduct.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPProduct.h
+__42-[MPProduct copyMatchingHashedProperties:]_block_invoke.171
+__42-[MPProduct copyMatchingHashedProperties:]_block_invoke
+__24-[MPProduct description]_block_invoke.85
+__24-[MPProduct description]_block_invoke
+-[MPSegmentMembership init]
+-[MPSegmentMembership initWithSegmentId:segmentMembershipId:timestamp:membershipAction:]
+-[MPSegmentMembership initWithSegmentId:membershipDictionary:]
+-[MPSegmentMembership description]
+-[MPSegmentMembership isEqual:]
+-[MPSegmentMembership copyWithZone:]
+-[MPSegmentMembership segmentId]
+-[MPSegmentMembership setSegmentId:]
+-[MPSegmentMembership segmentMembershipId]
+-[MPSegmentMembership setSegmentMembershipId:]
+-[MPSegmentMembership timestamp]
+-[MPSegmentMembership setTimestamp:]
+-[MPSegmentMembership action]
+-[MPSegmentMembership setAction:]
+_OBJC_IVAR_$_MPSegmentMembership._segmentId
+_OBJC_IVAR_$_MPSegmentMembership._segmentMembershipId
+_OBJC_IVAR_$_MPSegmentMembership._timestamp
+_OBJC_IVAR_$_MPSegmentMembership._action
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSegmentMembership.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSegmentMembership.h
+__ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEED1Ev
+__GLOBAL__sub_I_MessageTypeName.cpp
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/MessageTypeName.cpp
+_GLOBAL__sub_I_MessageTypeName.cpp
+__cxx_global_var_init.18
+__cxx_global_var_init
+messageTypeForName
+distance<std::__1::__wrap_iter<const std::__1::basic_string<char> *> >
+__distance<std::__1::__wrap_iter<const std::__1::basic_string<char> *> >
+operator-<const std::__1::basic_string<char> *, const std::__1::basic_string<char> *>
+operator!=<const std::__1::basic_string<char> *>
+operator==<const std::__1::basic_string<char> *, const std::__1::basic_string<char> *>
+find<std::__1::__wrap_iter<const std::__1::basic_string<char> *>, std::__1::basic_string<char> >
+operator==<std::__1::allocator<char> >
+compare
+base
+nameForMessageType
+-[MPForwardQueueParameters init]
+-[MPForwardQueueParameters initWithParameters:]
+-[MPForwardQueueParameters parameters]
+-[MPForwardQueueParameters count]
+-[MPForwardQueueParameters addParameter:]
+-[MPForwardQueueParameters objectAtIndexedSubscript:]
+-[MPForwardQueueParameters setParameters:]
+-[MPForwardQueueParameters .cxx_destruct]
+_OBJC_IVAR_$_MPForwardQueueParameters._parameters
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPForwardQueueParameters.m
+-[MPSegment initWithSegmentId:UUID:name:memberships:endpointIds:]
+-[MPSegment initWithDictionary:]
+-[MPSegment dealloc]
+-[MPSegment description]
+-[MPSegment isEqual:]
+-[MPSegment observeValueForKeyPath:ofObject:change:context:]
+-[MPSegment copyWithZone:]
+-[MPSegment expiration]
+-[MPSegment expired]
+-[MPSegment segmentId]
+-[MPSegment setSegmentId:]
+-[MPSegment endpointIds]
+-[MPSegment setEndpointIds:]
+-[MPSegment name]
+-[MPSegment setName:]
+-[MPSegment memberships]
+-[MPSegment setMemberships:]
+-[MPSegment .cxx_destruct]
+_OBJC_IVAR_$_MPSegment._segmentId
+_OBJC_IVAR_$_MPSegment._endpointIds
+_OBJC_IVAR_$_MPSegment._name
+_OBJC_IVAR_$_MPSegment._memberships
+_OBJC_IVAR_$_MPSegment._expiration
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSegment.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPSegment.h
+-[MPForwardQueueItem initWithCommerceEvent:completionHandler:]
+-[MPForwardQueueItem initWithSelector:event:messageType:completionHandler:]
+-[MPForwardQueueItem initWithSelector:parameters:messageType:completionHandler:]
+-[MPForwardQueueItem queueItemType]
+-[MPForwardQueueItem commerceEvent]
+-[MPForwardQueueItem event]
+-[MPForwardQueueItem commerceEventCompletionHandler]
+-[MPForwardQueueItem eventCompletionHandler]
+-[MPForwardQueueItem generalPurposeCompletionHandler]
+-[MPForwardQueueItem messageType]
+-[MPForwardQueueItem selector]
+-[MPForwardQueueItem queueParameters]
+-[MPForwardQueueItem .cxx_destruct]
+_OBJC_IVAR_$_MPForwardQueueItem._queueItemType
+_OBJC_IVAR_$_MPForwardQueueItem._commerceEvent
+_OBJC_IVAR_$_MPForwardQueueItem._commerceEventCompletionHandler
+_OBJC_IVAR_$_MPForwardQueueItem._selector
+_OBJC_IVAR_$_MPForwardQueueItem._event
+_OBJC_IVAR_$_MPForwardQueueItem._messageType
+_OBJC_IVAR_$_MPForwardQueueItem._eventCompletionHandler
+_OBJC_IVAR_$_MPForwardQueueItem._generalPurposeCompletionHandler
+_OBJC_IVAR_$_MPForwardQueueItem._queueParameters
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPForwardQueueItem.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPForwardQueueItem.h
+-[MPProjectionMatch isEqual:]
+-[MPProjectionMatch encodeWithCoder:]
+-[MPProjectionMatch initWithCoder:]
+-[MPProjectionMatch copyWithZone:]
+-[MPProjectionMatch attributeKey]
+-[MPProjectionMatch setAttributeKey:]
+-[MPProjectionMatch attributeValues]
+-[MPProjectionMatch setAttributeValues:]
+-[MPProjectionMatch .cxx_destruct]
+-[MPEventProjection init]
+-[MPEventProjection initWithConfiguration:projectionType:attributeIndex:]
+-[MPEventProjection initWithConfiguration:]
+___43-[MPEventProjection initWithConfiguration:]_block_invoke
+___Block_byref_object_copy_.110
+___Block_byref_object_dispose_.111
+___43-[MPEventProjection initWithConfiguration:]_block_invoke.112
+___copy_helper_block_.114
+___destroy_helper_block_.115
+-[MPEventProjection isEqual:]
+-[MPEventProjection encodeWithCoder:]
+-[MPEventProjection initWithCoder:]
+-[MPEventProjection copyWithZone:]
+-[MPEventProjection projectionMatches]
+-[MPEventProjection setProjectionMatches:]
+-[MPEventProjection attributeProjections]
+-[MPEventProjection setAttributeProjections:]
+-[MPEventProjection behaviorSelector]
+-[MPEventProjection setBehaviorSelector:]
+-[MPEventProjection eventType]
+-[MPEventProjection setEventType:]
+-[MPEventProjection messageType]
+-[MPEventProjection setMessageType:]
+-[MPEventProjection outboundMessageType]
+-[MPEventProjection setOutboundMessageType:]
+-[MPEventProjection maxCustomParameters]
+-[MPEventProjection setMaxCustomParameters:]
+-[MPEventProjection appendAsIs]
+-[MPEventProjection setAppendAsIs:]
+-[MPEventProjection isDefault]
+-[MPEventProjection setIsDefault:]
+-[MPEventProjection .cxx_destruct]
+_OBJC_IVAR_$_MPProjectionMatch._attributeKey
+_OBJC_IVAR_$_MPProjectionMatch._attributeValues
+_OBJC_IVAR_$_MPEventProjection._eventType
+_OBJC_IVAR_$_MPEventProjection._messageType
+_OBJC_IVAR_$_MPEventProjection._projectionMatches
+_OBJC_IVAR_$_MPEventProjection._appendAsIs
+_OBJC_IVAR_$_MPEventProjection._isDefault
+_OBJC_IVAR_$_MPEventProjection._maxCustomParameters
+_OBJC_IVAR_$_MPEventProjection._behaviorSelector
+_OBJC_IVAR_$_MPEventProjection._outboundMessageType
+___block_descriptor_tmp.116
+_OBJC_IVAR_$_MPEventProjection._attributeProjections
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPEventProjection.mm
+destroy<MPAttributeProjection *>
+__destroy<MPAttributeProjection *>
+__compressed_pair<nullptr_t, std::__1::allocator<MPAttributeProjection *> &>
+__compressed_pair_elem<std::__1::allocator<MPAttributeProjection *> &, void>
+__push_back_slow_path<MPAttributeProjection *const __strong &>
+swap<MPAttributeProjection *__strong *>
+__construct_backward<MPAttributeProjection *__strong *>
+construct<MPAttributeProjection *, MPAttributeProjection *>
+__construct<MPAttributeProjection *, MPAttributeProjection *>
+construct<MPAttributeProjection *, MPAttributeProjection *const __strong &>
+__construct<MPAttributeProjection *, MPAttributeProjection *const __strong &>
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPEventProjection.h
+__43-[MPEventProjection initWithConfiguration:]_block_invoke.112
+__43-[MPEventProjection initWithConfiguration:]_block_invoke
+-[MPUserSegments description]
+-[MPUserSegments copyWithZone:]
+-[MPUserSegments expired]
+-[MPUserSegments commaSeparatedSegments]
+-[MPUserSegments segmentsIds]
+-[MPUserSegments expiration]
+-[MPUserSegments .cxx_destruct]
+-[MPUserSegments(Setters) initWithSegments:]
+_OBJC_IVAR_$_MPUserSegments._segmentsIds
+_OBJC_IVAR_$_MPUserSegments._expiration
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPUserSegments.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPUserSegments.h
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPZip.cpp
+expand
+compress
+-[MPKitAPI kitName]
+___19-[MPKitAPI kitName]_block_invoke
+-[MPKitAPI logMessageWithFormat:withParameters:]
+-[MPKitAPI logError:]
+-[MPKitAPI logWarning:]
+-[MPKitAPI logDebug:]
+-[MPKitAPI logVerbose:]
+-[MPKitAPI initWithKitCode:]
+-[MPKitAPI integrationAttributes]
+-[MPKitAPI onAttributionCompleteWithResult:error:]
+-[MPKitAPI getCurrentUserWithKit:]
+-[MPKitAPI incrementUserAttribute:byValue:forUser:]
+-[MPKitAPI setUserAttribute:value:forUser:]
+-[MPKitAPI setUserAttributeList:values:forUser:]
+-[MPKitAPI setUserTag:forUser:]
+-[MPKitAPI removeUserAttribute:forUser:]
+-[MPKitAPI kitCode]
+-[MPKitAPI setKitCode:]
+-[MPKitAPI .cxx_destruct]
+_OBJC_IVAR_$_MPKitAPI._kitCode
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitAPI.m
+__19-[MPKitAPI kitName]_block_invoke
+-[MPBaseProjection initWithConfiguration:projectionType:attributeIndex:]
+___72-[MPBaseProjection initWithConfiguration:projectionType:attributeIndex:]_block_invoke
+-[MPBaseProjection isEqual:]
+-[MPBaseProjection description]
+-[MPBaseProjection encodeWithCoder:]
+-[MPBaseProjection initWithCoder:]
+-[MPBaseProjection copyWithZone:]
+-[MPBaseProjection name]
+-[MPBaseProjection setName:]
+-[MPBaseProjection projectedName]
+-[MPBaseProjection setProjectedName:]
+-[MPBaseProjection matchType]
+-[MPBaseProjection setMatchType:]
+-[MPBaseProjection projectionType]
+-[MPBaseProjection propertyKind]
+-[MPBaseProjection projectionId]
+-[MPBaseProjection .cxx_destruct]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPBaseProjection.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPBaseProjection.h
+__72-[MPBaseProjection initWithConfiguration:projectionType:attributeIndex:]_block_invoke
++[MPURLRequestBuilder initialize]
+-[MPURLRequestBuilder initWithURL:]
+-[MPURLRequestBuilder hmacSha256Encode:key:]
+-[MPURLRequestBuilder userAgent]
+-[MPURLRequestBuilder setUserAgent:]
++[MPURLRequestBuilder newBuilderWithURL:]
++[MPURLRequestBuilder newBuilderWithURL:message:httpMethod:]
++[MPURLRequestBuilder requestTimeout]
++[MPURLRequestBuilder tryToCaptureUserAgent]
+-[MPURLRequestBuilder withHeaderData:]
+-[MPURLRequestBuilder withHttpMethod:]
+-[MPURLRequestBuilder withPostData:]
+-[MPURLRequestBuilder build]
+-[MPURLRequestBuilder httpMethod]
+-[MPURLRequestBuilder setHttpMethod:]
+-[MPURLRequestBuilder postData]
+-[MPURLRequestBuilder setPostData:]
+-[MPURLRequestBuilder url]
+-[MPURLRequestBuilder setUrl:]
+-[MPURLRequestBuilder headerData]
+-[MPURLRequestBuilder setHeaderData:]
+-[MPURLRequestBuilder message]
+-[MPURLRequestBuilder setMessage:]
+-[MPURLRequestBuilder .cxx_destruct]
+_mpUserAgent
+_RFC1123DateFormatter
+_OBJC_IVAR_$_MPURLRequestBuilder._url
+_OBJC_IVAR_$_MPURLRequestBuilder._headerData
+_OBJC_IVAR_$_MPURLRequestBuilder._httpMethod
+_OBJC_IVAR_$_MPURLRequestBuilder._message
+_OBJC_IVAR_$_MPURLRequestBuilder._postData
+_OBJC_IVAR_$_MPURLRequestBuilder.SDKURLRequest
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPURLRequestBuilder.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPURLRequestBuilder.h
+-[MPForwardRecord initWithId:data:mpid:]
+-[MPForwardRecord initWithMessageType:execStatus:]
+-[MPForwardRecord initWithMessageType:execStatus:stateFlag:]
+-[MPForwardRecord initWithMessageType:execStatus:kitFilter:originalEvent:]
+-[MPForwardRecord timestamp]
+-[MPForwardRecord setTimestamp:]
+-[MPForwardRecord description]
+-[MPForwardRecord isEqual:]
+-[MPForwardRecord dataRepresentation]
+-[MPForwardRecord forwardRecordId]
+-[MPForwardRecord setForwardRecordId:]
+-[MPForwardRecord dataDictionary]
+-[MPForwardRecord setDataDictionary:]
+-[MPForwardRecord mpid]
+-[MPForwardRecord setMpid:]
+-[MPForwardRecord .cxx_destruct]
+_OBJC_IVAR_$_MPForwardRecord._forwardRecordId
+_OBJC_IVAR_$_MPForwardRecord._mpid
+_OBJC_IVAR_$_MPForwardRecord._dataDictionary
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPForwardRecord.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPForwardRecord.h
++[MPIHasher hashFNV1a:]
++[MPIHasher hashString:]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPIHasher.mm
+-[MPCart initWithUserId:]
+-[MPCart cartFile]
+-[MPCart productsList]
+-[MPCart migrate]
+-[MPCart persistCart]
+-[MPCart removePersistedCart]
+-[MPCart retrieveCart]
+-[MPCart encodeWithCoder:]
+-[MPCart initWithCoder:]
+-[MPCart addProducts:logEvent:updateProductList:]
+-[MPCart dictionaryRepresentation]
+___34-[MPCart dictionaryRepresentation]_block_invoke
+-[MPCart removeProducts:logEvent:updateProductList:]
+-[MPCart validateProduct:]
+-[MPCart validateProducts:]
+___27-[MPCart validateProducts:]_block_invoke
+___copy_helper_block_.102
+___destroy_helper_block_.103
+-[MPCart addProduct:]
+-[MPCart addAllProducts:shouldLogEvents:]
+-[MPCart clear]
+-[MPCart products]
+-[MPCart removeProduct:]
+-[MPCart setProductsList:]
+-[MPCart mpid]
+-[MPCart cartInitialized]
+-[MPCart setCartInitialized:]
+-[MPCart .cxx_destruct]
+_OBJC_IVAR_$_MPCart._mpid
+_OBJC_IVAR_$_MPCart._productsList
+_OBJC_IVAR_$_MPCart._cartInitialized
+_OBJC_IVAR_$_MPCart._cartFile
+___block_descriptor_tmp.104
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPCart.m
+__27-[MPCart validateProducts:]_block_invoke
+__34-[MPCart dictionaryRepresentation]_block_invoke
+__GLOBAL__sub_I_EventTypeName.cpp
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/EventTypeName.cpp
+_GLOBAL__sub_I_EventTypeName.cpp
+__cxx_global_var_init.24
+for_each<std::__1::__wrap_iter<int *>, (lambda at /Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/EventTypeName.cpp:14:56)>
+__cxx_global_var_init.23
+nameForEventType
+hashForEventType
+eventTypeForHash
++[MPConvertJS MPCommerceEventAction:]
++[MPConvertJS MPCommerceEvent:]
+___31+[MPConvertJS MPCommerceEvent:]_block_invoke
+___31+[MPConvertJS MPCommerceEvent:]_block_invoke.72
+___31+[MPConvertJS MPCommerceEvent:]_block_invoke_2
+___copy_helper_block_.77
+___destroy_helper_block_.78
+___copy_helper_block_.80
+___destroy_helper_block_.81
++[MPConvertJS MPPromotionContainer:]
+___36+[MPConvertJS MPPromotionContainer:]_block_invoke
+___copy_helper_block_.95
+___destroy_helper_block_.96
++[MPConvertJS MPPromotion:]
++[MPConvertJS MPTransactionAttributes:]
++[MPConvertJS MPProduct:]
++[MPConvertJS MPUserIdentity:identity:]
++[MPConvertJS MPIdentityApiRequest:]
+___36+[MPConvertJS MPIdentityApiRequest:]_block_invoke
+___block_descriptor_tmp.79
+___block_descriptor_tmp.83
+___block_descriptor_tmp.97
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPConvertJS.m
+__36+[MPConvertJS MPIdentityApiRequest:]_block_invoke
+__36+[MPConvertJS MPPromotionContainer:]_block_invoke
+__31+[MPConvertJS MPCommerceEvent:]_block_invoke_2
+__31+[MPConvertJS MPCommerceEvent:]_block_invoke.72
+__31+[MPConvertJS MPCommerceEvent:]_block_invoke
++[MPPromotion initialize]
+-[MPPromotion description]
+___26-[MPPromotion description]_block_invoke
+-[MPPromotion isEqual:]
+-[MPPromotion attributes]
+-[MPPromotion beautifiedAttributes]
+-[MPPromotion copyWithZone:]
+-[MPPromotion encodeWithCoder:]
+-[MPPromotion initWithCoder:]
+-[MPPromotion dictionaryRepresentation]
+-[MPPromotion beautifiedDictionaryRepresentation]
+-[MPPromotion copyMatchingHashedProperties:]
+___44-[MPPromotion copyMatchingHashedProperties:]_block_invoke
+___copy_helper_block_.87
+___destroy_helper_block_.88
+-[MPPromotion creative]
+-[MPPromotion setCreative:]
+-[MPPromotion name]
+-[MPPromotion setName:]
+-[MPPromotion position]
+-[MPPromotion setPosition:]
+-[MPPromotion promotionId]
+-[MPPromotion setPromotionId:]
+-[MPPromotion setBeautifiedAttributes:]
+-[MPPromotion setAttributes:]
+-[MPPromotion .cxx_destruct]
+-[MPPromotionContainer initWithAction:promotion:]
+-[MPPromotionContainer isEqual:]
+-[MPPromotionContainer promotionsArray]
+-[MPPromotionContainer copyWithZone:]
+-[MPPromotionContainer encodeWithCoder:]
+-[MPPromotionContainer initWithCoder:]
+-[MPPromotionContainer actionNameForAction:]
+-[MPPromotionContainer actionWithName:]
+-[MPPromotionContainer dictionaryRepresentation]
+___48-[MPPromotionContainer dictionaryRepresentation]_block_invoke
+-[MPPromotionContainer beautifiedDictionaryRepresentation]
+___58-[MPPromotionContainer beautifiedDictionaryRepresentation]_block_invoke
+-[MPPromotionContainer setPromotions:]
+-[MPPromotionContainer copyMatchingHashedProperties:]
+___53-[MPPromotionContainer copyMatchingHashedProperties:]_block_invoke
+-[MPPromotionContainer promotions]
+-[MPPromotionContainer addPromotion:]
+-[MPPromotionContainer action]
+-[MPPromotionContainer setPromotionsArray:]
+-[MPPromotionContainer .cxx_destruct]
+_OBJC_IVAR_$_MPPromotion._attributes
+_OBJC_IVAR_$_MPPromotion._beautifiedAttributes
+___block_descriptor_tmp.90
+_OBJC_IVAR_$_MPPromotionContainer._action
+_OBJC_IVAR_$_MPPromotionContainer._promotionsArray
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPPromotion.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Ecommerce/MPPromotion.h
+__53-[MPPromotionContainer copyMatchingHashedProperties:]_block_invoke
+__58-[MPPromotionContainer beautifiedDictionaryRepresentation]_block_invoke
+__48-[MPPromotionContainer dictionaryRepresentation]_block_invoke
+__44-[MPPromotion copyMatchingHashedProperties:]_block_invoke
+__26-[MPPromotion description]_block_invoke
+-[MPUpload initWithSessionId:uploadDictionary:]
+-[MPUpload initWithSessionId:uploadId:UUID:uploadData:timestamp:]
+-[MPUpload description]
+-[MPUpload isEqual:]
+-[MPUpload copyWithZone:]
+-[MPUpload dictionaryRepresentation]
+-[MPUpload serializedString]
+-[MPUpload uploadData]
+-[MPUpload setUploadData:]
+-[MPUpload timestamp]
+-[MPUpload setTimestamp:]
+-[MPUpload sessionId]
+-[MPUpload setSessionId:]
+-[MPUpload uploadId]
+-[MPUpload setUploadId:]
+-[MPUpload .cxx_destruct]
+_OBJC_IVAR_$_MPUpload._sessionId
+_OBJC_IVAR_$_MPUpload._uploadId
+_OBJC_IVAR_$_MPUpload._timestamp
+_OBJC_IVAR_$_MPUpload._uploadData
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPUpload.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Data Model/MPUpload.h
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPIConstants.m
+-[MPEvent init]
+-[MPEvent initWithName:type:]
+-[MPEvent description]
+-[MPEvent isEqual:]
+-[MPEvent copyWithZone:]
+-[MPEvent messageType]
+-[MPEvent setMessageType:]
+-[MPEvent customFlagsDictionary]
+-[MPEvent setCategory:]
+-[MPEvent customFlags]
+-[MPEvent setInfo:]
+___19-[MPEvent setInfo:]_block_invoke
+-[MPEvent setName:]
+-[MPEvent setType:]
+-[MPEvent typeName]
+-[MPEvent addCustomFlag:withKey:]
+-[MPEvent addCustomFlags:withKey:]
+-[MPEvent category]
+-[MPEvent duration]
+-[MPEvent setDuration:]
+-[MPEvent endTime]
+-[MPEvent setEndTime:]
+-[MPEvent info]
+-[MPEvent name]
+-[MPEvent startTime]
+-[MPEvent setStartTime:]
+-[MPEvent type]
+-[MPEvent setCustomFlagsDictionary:]
+-[MPEvent .cxx_destruct]
+_OBJC_IVAR_$_MPEvent._info
+_OBJC_IVAR_$_MPEvent._endTime
+_OBJC_IVAR_$_MPEvent._name
+_OBJC_IVAR_$_MPEvent._startTime
+_OBJC_IVAR_$_MPEvent._duration
+_OBJC_IVAR_$_MPEvent._customFlagsDictionary
+_OBJC_IVAR_$_MPEvent._type
+_OBJC_IVAR_$_MPEvent._category
+_OBJC_IVAR_$_MPEvent._messageType
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/MPEvent.mm
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Event/MPEvent.h
+__19-[MPEvent setInfo:]_block_invoke
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/MPEnums.m
+-[NSNumber(MPFormatter) formatWithNonScientificNotation]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/NSNumber+MPFormatter.m
+-[MPDatabaseMigrationController initWithDatabaseVersions:]
+-[MPDatabaseMigrationController deleteRecordsOlderThan:version:fromDatabase:]
+-[MPDatabaseMigrationController migratedSessionsInDatabase:]
+-[MPDatabaseMigrationController sessionWithUUID:database:]
+-[MPDatabaseMigrationController migrateUserDefaultsWithVersion:]
+-[MPDatabaseMigrationController migrateCartWithVersion:]
+-[MPDatabaseMigrationController migrateSessionsFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateMessagesFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateUploadsFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateSegmentsFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateSegmentMembershipsFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateForwardingRecordsFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateConsumerInfoFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController migrateIntegrationAttributesFromDatabase:version:toDatabase:]
+-[MPDatabaseMigrationController removeSessionNumberFile]
+-[MPDatabaseMigrationController migrateDatabaseFromVersion:]
+-[MPDatabaseMigrationController needsMigration]
+___47-[MPDatabaseMigrationController needsMigration]_block_invoke
+-[MPDatabaseMigrationController databaseVersions]
+-[MPDatabaseMigrationController setDatabaseVersions:]
+-[MPDatabaseMigrationController .cxx_destruct]
+_OBJC_IVAR_$_MPDatabaseMigrationController.migratedSessions
+_OBJC_IVAR_$_MPDatabaseMigrationController._databaseVersions
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Persistence/MPDatabaseMigrationController.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Persistence/MPDatabaseMigrationController.h
+__47-[MPDatabaseMigrationController needsMigration]_block_invoke
++[MPApplication initialize]
+-[MPApplication init]
+-[MPApplication dealloc]
+___24-[MPApplication dealloc]_block_invoke
+-[MPApplication description]
+-[MPApplication architecture]
+-[MPApplication build]
+-[MPApplication buildUUID]
+-[MPApplication bundleIdentifier]
+-[MPApplication environment]
+-[MPApplication firstSeenInstallation]
+-[MPApplication initialLaunchTime]
+-[MPApplication name]
+-[MPApplication lastUseDate]
+-[MPApplication setLastUseDate:]
+-[MPApplication launchCount]
+-[MPApplication setLaunchCount:]
+-[MPApplication launchCountSinceUpgrade]
+-[MPApplication setLaunchCountSinceUpgrade:]
+-[MPApplication pirated]
+-[MPApplication storedBuild]
+-[MPApplication setStoredBuild:]
+-[MPApplication storedVersion]
+-[MPApplication setStoredVersion:]
+-[MPApplication upgradeDate]
+-[MPApplication setUpgradeDate:]
+-[MPApplication version]
+-[MPApplication searchAdsAttribution]
+-[MPApplication copyWithZone:]
++[MPApplication appStoreReceipt]
++[MPApplication markInitialLaunchTime]
+___38+[MPApplication markInitialLaunchTime]_block_invoke
++[MPApplication updateLastUseDate:]
++[MPApplication updateLaunchCountsAndDates]
++[MPApplication updateStoredVersionAndBuildNumbers]
+-[MPApplication dictionaryRepresentation]
+-[MPApplication .cxx_destruct]
+_kMPAppStoreReceiptString
+_OBJC_IVAR_$_MPApplication.userDefaults
+_OBJC_IVAR_$_MPApplication.syncUserDefaults
+_OBJC_IVAR_$_MPApplication._architecture
+_OBJC_IVAR_$_MPApplication._buildUUID
+_OBJC_IVAR_$_MPApplication._initialLaunchTime
+_OBJC_IVAR_$_MPApplication._pirated
+___block_descriptor_tmp.113
+_OBJC_IVAR_$_MPApplication.appInfo
+_OBJC_IVAR_$_MPApplication._environment
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPApplication.m
+__38+[MPApplication markInitialLaunchTime]_block_invoke
+__24-[MPApplication dealloc]_block_invoke
+-[MPNetworkPerformance initWithURLRequest:networkMeasurementMode:]
+-[MPNetworkPerformance copyWithZone:]
+-[MPNetworkPerformance setStartTime:]
+-[MPNetworkPerformance setEndTime:]
+-[MPNetworkPerformance setElapsedTime:]
+-[MPNetworkPerformance POSTBody]
+-[MPNetworkPerformance description]
+-[MPNetworkPerformance setStartDate:]
+-[MPNetworkPerformance setEndDate:]
+-[MPNetworkPerformance dictionaryRepresentation]
+-[MPNetworkPerformance urlString]
+-[MPNetworkPerformance setUrlString:]
+-[MPNetworkPerformance httpMethod]
+-[MPNetworkPerformance setHttpMethod:]
+-[MPNetworkPerformance startTime]
+-[MPNetworkPerformance endTime]
+-[MPNetworkPerformance elapsedTime]
+-[MPNetworkPerformance bytesIn]
+-[MPNetworkPerformance setBytesIn:]
+-[MPNetworkPerformance bytesOut]
+-[MPNetworkPerformance setBytesOut:]
+-[MPNetworkPerformance responseCode]
+-[MPNetworkPerformance setResponseCode:]
+-[MPNetworkPerformance networkMeasurementMode]
+-[MPNetworkPerformance .cxx_destruct]
+_OBJC_IVAR_$_MPNetworkPerformance._networkMeasurementMode
+_OBJC_IVAR_$_MPNetworkPerformance.urlRequest
+_OBJC_IVAR_$_MPNetworkPerformance.url
+_OBJC_IVAR_$_MPNetworkPerformance._urlString
+_OBJC_IVAR_$_MPNetworkPerformance._httpMethod
+_OBJC_IVAR_$_MPNetworkPerformance._startTime
+_OBJC_IVAR_$_MPNetworkPerformance._endTime
+_OBJC_IVAR_$_MPNetworkPerformance._elapsedTime
+_OBJC_IVAR_$_MPNetworkPerformance._bytesIn
+_OBJC_IVAR_$_MPNetworkPerformance._bytesOut
+_OBJC_IVAR_$_MPNetworkPerformance._responseCode
+_OBJC_IVAR_$_MPNetworkPerformance._POSTBody
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPNetworkPerformance.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPNetworkPerformance.h
+-[MPNetworkCommunication init]
+-[MPNetworkCommunication dealloc]
+-[MPNetworkCommunication configURL]
+-[MPNetworkCommunication eventURL]
+-[MPNetworkCommunication segmentURL]
+-[MPNetworkCommunication identifyURL]
+-[MPNetworkCommunication loginURL]
+-[MPNetworkCommunication logoutURL]
+-[MPNetworkCommunication modifyURL]
+-[MPNetworkCommunication processNetworkResponseAction:batchObject:]
+-[MPNetworkCommunication processNetworkResponseAction:batchObject:httpResponse:]
+-[MPNetworkCommunication handleReachabilityChanged:]
+-[MPNetworkCommunication inUse]
+-[MPNetworkCommunication retrievingSegments]
+-[MPNetworkCommunication configRequestDidSucceed]
+-[MPNetworkCommunication requestConfig:]
+___40-[MPNetworkCommunication requestConfig:]_block_invoke
+___40-[MPNetworkCommunication requestConfig:]_block_invoke.177
+___copy_helper_block_.184
+___destroy_helper_block_.185
+-[MPNetworkCommunication requestSegmentsWithTimeout:completionHandler:]
+___71-[MPNetworkCommunication requestSegmentsWithTimeout:completionHandler:]_block_invoke
+___copy_helper_block_.187
+___destroy_helper_block_.188
+___71-[MPNetworkCommunication requestSegmentsWithTimeout:completionHandler:]_block_invoke.228
+___copy_helper_block_.231
+___destroy_helper_block_.232
+-[MPNetworkCommunication upload:index:completionHandler:]
+___57-[MPNetworkCommunication upload:index:completionHandler:]_block_invoke
+___copy_helper_block_.234
+___destroy_helper_block_.235
+___57-[MPNetworkCommunication upload:index:completionHandler:]_block_invoke.270
+___copy_helper_block_.273
+___destroy_helper_block_.274
+-[MPNetworkCommunication identityApiRequestWithURL:identityRequest:blockOtherRequests:completion:]
+___98-[MPNetworkCommunication identityApiRequestWithURL:identityRequest:blockOtherRequests:completion:]_block_invoke
+___copy_helper_block_.278
+___destroy_helper_block_.279
+___98-[MPNetworkCommunication identityApiRequestWithURL:identityRequest:blockOtherRequests:completion:]_block_invoke.323
+-[MPNetworkCommunication identify:completion:]
+-[MPNetworkCommunication login:completion:]
+-[MPNetworkCommunication logout:completion:]
+-[MPNetworkCommunication modify:completion:]
+___44-[MPNetworkCommunication modify:completion:]_block_invoke
+___copy_helper_block_.359
+___destroy_helper_block_.360
+-[MPNetworkCommunication modifyDeviceID:value:oldValue:]
+-[MPNetworkCommunication modifyWithIdentityChanges:blockOtherRequests:completion:]
+___82-[MPNetworkCommunication modifyWithIdentityChanges:blockOtherRequests:completion:]_block_invoke
+-[MPNetworkCommunication context]
+-[MPNetworkCommunication setContext:]
+-[MPNetworkCommunication .cxx_destruct]
+_OBJC_IVAR_$_MPNetworkCommunication.retrievingSegments
+_OBJC_IVAR_$_MPNetworkCommunication.identifying
+_OBJC_IVAR_$_MPNetworkCommunication._configURL
+_OBJC_IVAR_$_MPNetworkCommunication._eventURL
+_OBJC_IVAR_$_MPNetworkCommunication._identifyURL
+_OBJC_IVAR_$_MPNetworkCommunication._loginURL
+_OBJC_IVAR_$_MPNetworkCommunication._logoutURL
+___block_descriptor_tmp.186
+___block_descriptor_tmp.189
+___block_descriptor_tmp.233
+___block_descriptor_tmp.280
+_OBJC_IVAR_$_MPNetworkCommunication._context
+___block_descriptor_tmp.362
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Network/MPNetworkCommunication.mm
+__82-[MPNetworkCommunication modifyWithIdentityChanges:blockOtherRequests:completion:]_block_invoke
+__44-[MPNetworkCommunication modify:completion:]_block_invoke
+__98-[MPNetworkCommunication identityApiRequestWithURL:identityRequest:blockOtherRequests:completion:]_block_invoke.323
+__98-[MPNetworkCommunication identityApiRequestWithURL:identityRequest:blockOtherRequests:completion:]_block_invoke
+__57-[MPNetworkCommunication upload:index:completionHandler:]_block_invoke.270
+__57-[MPNetworkCommunication upload:index:completionHandler:]_block_invoke
+__71-[MPNetworkCommunication requestSegmentsWithTimeout:completionHandler:]_block_invoke.228
+__71-[MPNetworkCommunication requestSegmentsWithTimeout:completionHandler:]_block_invoke
+__40-[MPNetworkCommunication requestConfig:]_block_invoke.177
+__40-[MPNetworkCommunication requestConfig:]_block_invoke
++[MPDevice initialize]
+-[MPDevice init]
+-[MPDevice description]
+-[MPDevice advertiserId]
+-[MPDevice architecture]
+-[MPDevice brand]
+-[MPDevice country]
+-[MPDevice deviceIdentifier]
+___28-[MPDevice deviceIdentifier]_block_invoke
+-[MPDevice isDaylightSavingTime]
+-[MPDevice isTablet]
+-[MPDevice language]
+-[MPDevice limitAdTracking]
+-[MPDevice manufacturer]
+-[MPDevice model]
+-[MPDevice name]
+-[MPDevice platform]
+-[MPDevice product]
+-[MPDevice operatingSystem]
+-[MPDevice timezoneOffset]
+-[MPDevice timezoneDescription]
+-[MPDevice vendorId]
+-[MPDevice buildId]
+-[MPDevice screenSize]
+-[MPDevice copyWithZone:]
++[MPDevice jailbrokenInfo]
+-[MPDevice dictionaryRepresentation]
+-[MPDevice .cxx_destruct]
+_jailbrokenInfo
+_OBJC_IVAR_$_MPDevice.calendar
+_OBJC_IVAR_$_MPDevice.isAdTrackingLimited
+_OBJC_IVAR_$_MPDevice._advertiserId
+_OBJC_IVAR_$_MPDevice._architecture
+_OBJC_IVAR_$_MPDevice._deviceIdentifier
+_OBJC_IVAR_$_MPDevice._model
+_OBJC_IVAR_$_MPDevice._vendorId
+_OBJC_IVAR_$_MPDevice._buildId
+_OBJC_IVAR_$_MPDevice._screenSize
+_OBJC_IVAR_$_MPDevice.deviceInfo
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/MPDevice.m
+__CGSizeEqualToSize
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+__28-[MPDevice deviceIdentifier]_block_invoke
+-[MPGDPRConsent init]
+-[MPGDPRConsent copyWithZone:]
+-[MPGDPRConsent consented]
+-[MPGDPRConsent setConsented:]
+-[MPGDPRConsent document]
+-[MPGDPRConsent setDocument:]
+-[MPGDPRConsent timestamp]
+-[MPGDPRConsent setTimestamp:]
+-[MPGDPRConsent location]
+-[MPGDPRConsent setLocation:]
+-[MPGDPRConsent hardwareId]
+-[MPGDPRConsent setHardwareId:]
+-[MPGDPRConsent .cxx_destruct]
+_OBJC_IVAR_$_MPGDPRConsent._consented
+_OBJC_IVAR_$_MPGDPRConsent._document
+_OBJC_IVAR_$_MPGDPRConsent._timestamp
+_OBJC_IVAR_$_MPGDPRConsent._location
+_OBJC_IVAR_$_MPGDPRConsent._hardwareId
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Consent/MPGDPRConsent.m
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Consent/MPGDPRConsent.h
++[MPKitInstanceValidator initialize]
++[MPKitInstanceValidator isValidKitCode:]
++[MPKitInstanceValidator includeUnitTestKits:]
+_validKitCodes
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Kits/MPKitInstanceValidator.m
++[NSString(MPPercentEscape) percentEscapeString:]
+-[NSString(MPPercentEscape) percentEscape]
+/Users/pjenkins/Documents/work/mparticle-apple-sdk/mParticle-Apple-SDK/Utils/NSString+MPPercentEscape.m
+/Users/pjenkins/Library/Developer/Xcode/DerivedData/mParticle-Apple-SDK-achkanxpqhqoosedqxlxiyrjuqbh/Build/Intermediates.noindex/ArchiveIntermediates/mParticle-tvOS-SDK/IntermediateBuildFilesPath/mParticle-Apple-SDK.build/Release-appletvos/mParticle-tvOS-SDK.build/DerivedSources/mParticle_Apple_SDK_vers.c

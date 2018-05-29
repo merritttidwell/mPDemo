@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import mParticle_Apple_SDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        let mParticleOptions = MParticleOptions(key: "c50ea2e59ee45c40bd8bfe7f31a2e876", secret: "Vpys374Tsqe8HoD1rDda_GRnpCSzFVHYlm4T7ETc4VCRTSuPo0i5Md5GaI6kF_TY")
+        
+        let request = MPIdentityApiRequest()
+        request.customerId = "SBC-0983"
+        mParticleOptions.identifyRequest = request
+        mParticleOptions.onIdentifyComplete = { (apiResult, error) in
+            NSLog("Identify complete. userId = %@ error = %@", apiResult?.user.userId.stringValue ?? "Null User ID", error?.localizedDescription ?? "No Error Available")
+        }
+        MParticle.sharedInstance().start(with: mParticleOptions)
+        
         return true
     }
 
